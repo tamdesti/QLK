@@ -218,10 +218,40 @@ namespace QuanLyKho.DataLayer
             }
             OleDbCommand cmd = new OleDbCommand("SELECT [HO_TEN] & \"_\" & [DIEN_THOAI] AS [Tên Khách hàng], CTPB.NGAY_BAN AS [Ngày], SO_LUONG AS [Số lượng], DON_GIA AS [Đơn giá], THANH_TIEN AS [Tiền hàng] " +
                                                 "FROM (CHI_TIET_PHIEU_BAN CTPB INNER JOIN PHIEU_BAN PB ON PB.ID = CTPB.ID_PHIEU_BAN) INNER JOIN KHACH_HANG KH ON KH.ID = PB.ID_KHACH_HANG " +
-                                                "WHERE CTPB.NGAY_BAN >= @date1 AND CTPB.NGAY_BAN <= @date2 " + WhereString);
+                                                "WHERE CTPB.NGAY_BAN >= @date1 AND CTPB.NGAY_BAN <= @date2 " + WhereString +
+                                                " ORDER BY CTPB.NGAY_BAN");
             cmd.Parameters.Add("date1", OleDbType.Date).Value = fromDate.Date;
             cmd.Parameters.Add("date2", OleDbType.Date).Value = toDate.Date;
             if (IDSP != "0") cmd.Parameters.Add("SP", OleDbType.VarChar, 50).Value = IDSP;
+            if (IDKHO != "0") cmd.Parameters.Add("KHO", OleDbType.VarChar, 50).Value = IDKHO;
+            m_Ds.Load(cmd);
+            return m_Ds;
+        }
+        public DataTable ChiTietXuatKhoTheoKhachHang(string IDKH, string IDKHO, DateTime fromDate, DateTime toDate)
+        {
+            string WhereString = "";
+            if (IDKH != "0")
+            {
+                WhereString = "AND PB.ID_KHACH_HANG = @KH ";
+                if (IDKHO != "0")
+                {
+                    WhereString += "AND CTPB.ID_KHO = @KHO";
+                }
+            }
+            else
+            {
+                if (IDKHO != "0")
+                {
+                    WhereString += "AND CTPB.ID_KHO = @KHO";
+                }
+            }
+            OleDbCommand cmd = new OleDbCommand("SELECT SP.TEN_SAN_PHAM AS [Mặt hàng], CTPB.NGAY_BAN AS [Ngày], CTPB.SO_LUONG AS [Số lượng], DON_GIA AS [Đơn giá], THANH_TIEN AS [Tiền hàng] " +
+                                                "FROM ((CHI_TIET_PHIEU_BAN CTPB INNER JOIN PHIEU_BAN PB ON PB.ID = CTPB.ID_PHIEU_BAN) INNER JOIN KHACH_HANG KH ON KH.ID = PB.ID_KHACH_HANG) INNER JOIN SAN_PHAM SP ON SP.ID = CTPB.ID_SAN_PHAM " +
+                                                "WHERE CTPB.NGAY_BAN >= @date1 AND CTPB.NGAY_BAN <= @date2 " + WhereString +
+                                                " ORDER BY CTPB.NGAY_BAN");
+            cmd.Parameters.Add("date1", OleDbType.Date).Value = fromDate.Date;
+            cmd.Parameters.Add("date2", OleDbType.Date).Value = toDate.Date;
+            if (IDKH != "0") cmd.Parameters.Add("KH", OleDbType.VarChar, 50).Value = IDKH;
             if (IDKHO != "0") cmd.Parameters.Add("KHO", OleDbType.VarChar, 50).Value = IDKHO;
             m_Ds.Load(cmd);
             return m_Ds;

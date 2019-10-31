@@ -226,23 +226,11 @@ D:\QLK\obj\Debug\QuanLyKho.frmTongHopNoDaiLy.resources
 D:\QLK\obj\Debug\QuanLyKho.Properties.Resources.resources
 D:\QLK\obj\Debug\QuanLyKho.QuanLySanPhamMoi.resources
 D:\QLK\obj\Debug\QuanLyKho.csproj.GenerateResource.cache
-D:\QLK\obj\Debug\CH TTY Thuy - Thao.exe
-D:\QLK\obj\Debug\CH TTY Thuy - Thao.pdb
-D:\QLK\bin\Debug\CH TTY Thuy - Thao.exe.config
-D:\QLK\bin\Debug\CH TTY Thuy - Thao.exe.manifest
-D:\QLK\bin\Debug\CH TTY Thuy - Thao.application
-D:\QLK\bin\Debug\CH TTY Thuy - Thao.exe
-D:\QLK\bin\Debug\CH TTY Thuy - Thao.pdb
-D:\QLK\bin\Debug\FlashControlV71.dll
 D:\QLK\bin\Debug\Microsoft.ReportViewer.WebForms.dll
 D:\QLK\bin\Debug\Microsoft.SqlServer.Types.dll
 D:\QLK\bin\Debug\ShockwaveFlashObjects.dll
 D:\QLK\bin\Debug\stdole.dll
-D:\QLK\obj\Debug\CH TTY Thuy - Thao.TrustInfo.xml
-D:\QLK\obj\Debug\CH TTY Thuy - Thao.exe.manifest
-D:\QLK\obj\Debug\CH TTY Thuy - Thao.application
 D:\QLK\obj\Debug\QuanLyKho.csproj.CopyComplete
-D:\QLK\obj\Debug\CH TTY Thuy - Thao.exe.config
 D:\QLK\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 D:\QLK\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
 D:\QLK\bin\Debug\SqlServerTypes\x86\msvcr120.dll
@@ -367,3 +355,20 @@ D:\My Linh\QLK\obj\Debug\QuanLyKho.csprojResolveAssemblyReference.cache
 D:\My Linh\QLK\obj\Debug\QuanLyKho.csproj.CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.exe.config
 D:\My Linh\QLK\obj\Debug\QuanLyKho.frmDanhSachKhoanPhaiThu.resources
 D:\My Linh\QLK\obj\Debug\QuanLyKho.FrmChiTietXuatKho.resources
+D:\QLK\bin\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.exe.config
+D:\QLK\bin\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.exe.manifest
+D:\QLK\bin\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.application
+D:\QLK\bin\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.exe
+D:\QLK\bin\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.pdb
+D:\QLK\obj\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.exe.config
+D:\QLK\obj\Debug\QuanLyKho.FrmChiTietXuatKho.resources
+D:\QLK\obj\Debug\QuanLyKho.frmDanhSachKhoanPhaiThu.resources
+D:\QLK\obj\Debug\QuanLyKho.frmKhoHang.resources
+D:\QLK\obj\Debug\RdlCompile.cache
+D:\QLK\obj\Debug\RdlCompile.compiled
+D:\QLK\obj\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.TrustInfo.xml
+D:\QLK\obj\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.exe.manifest
+D:\QLK\obj\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.application
+D:\QLK\obj\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.exe
+D:\QLK\obj\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.pdb
+D:\QLK\obj\Debug\QuanLyKho.FrmChiTietXuatKhoTheoKhachHang.resources

@@ -169,6 +169,12 @@
     <Compile Include="Form Quản lý\FrmChiTietXuatKho.Designer.cs">
       <DependentUpon>FrmChiTietXuatKho.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form Quản lý\FrmChiTietXuatKhoTheoKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Quản lý\FrmChiTietXuatKhoTheoKhachHang.Designer.cs">
+      <DependentUpon>FrmChiTietXuatKhoTheoKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmChiTietPhieuChi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -428,6 +434,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form Quản lý\FrmChiTietXuatKho.resx">
       <DependentUpon>FrmChiTietXuatKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Quản lý\FrmChiTietXuatKhoTheoKhachHang.resx">
+      <DependentUpon>FrmChiTietXuatKhoTheoKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmChiTietPhieuChi.resx">
       <DependentUpon>frmChiTietPhieuChi.cs</DependentUpon>

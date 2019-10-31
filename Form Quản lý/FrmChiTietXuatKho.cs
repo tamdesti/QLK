@@ -30,6 +30,13 @@ namespace QuanLyKho
             {
                 col.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
             }
+            dataGridView1.Columns["Tên Khách hàng"].Width = 300;
+            dataGridView1.Columns["Số lượng"].DefaultCellStyle.Format = "N0";
+            dataGridView1.Columns["Số lượng"].Width = 120;
+            dataGridView1.Columns["Đơn giá"].DefaultCellStyle.Format = "N0";
+            dataGridView1.Columns["Đơn giá"].Width = 120;
+            dataGridView1.Columns["Tiền hàng"].DefaultCellStyle.Format = "N0";
+            dataGridView1.Columns["Tiền hàng"].Width = 120;
         }
         private void cmbKho_SelectedIndexChanged(object sender, EventArgs e)
         {

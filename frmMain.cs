@@ -534,5 +534,18 @@ namespace QuanLyKho
             else
                 frmChiTietXuatKho.Activate();
         }
+        FrmChiTietXuatKhoTheoKhachHang frmChiTietXuatKhoTheoKhachHang = null;
+        private void chiTiếtXuấtKhoTheoKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (frmChiTietXuatKhoTheoKhachHang == null || frmChiTietXuatKhoTheoKhachHang.IsDisposed)
+            {
+                frmChiTietXuatKhoTheoKhachHang = new FrmChiTietXuatKhoTheoKhachHang();
+                FillFullScreen(frmChiTietXuatKhoTheoKhachHang);
+                frmChiTietXuatKhoTheoKhachHang.MdiParent = this;
+                frmChiTietXuatKhoTheoKhachHang.Show();
+            }
+            else
+                frmChiTietXuatKhoTheoKhachHang.Activate();
+        }
     }
 }

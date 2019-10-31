@@ -214,6 +214,15 @@ namespace QuanLyKho.Controller
             dt = PBFactory.ChiTietXuatKhoTheoSanPham(IDSP, IDKHO, from, to);
             BusinessObject.Util.AddSTTColumn(ref dt, ref bs, ref bn, ref dg);
         }
+        public void HienThiChiTietXuatKhoTheoKhachHang(DataGridView dg, string IDKhach, string IDKHO, DateTime from, DateTime to)
+        {
+            System.Windows.Forms.BindingSource bs = new System.Windows.Forms.BindingSource();
+            PhieuBanFactory PBFactory = new PhieuBanFactory();
+            DataTable dt = new DataTable();
+            System.Windows.Forms.BindingNavigator bn = new BindingNavigator();
+            dt = PBFactory.ChiTietXuatKhoTheoKhachHang(IDKhach, IDKHO, from, to);
+            BusinessObject.Util.AddSTTColumn(ref dt, ref bs, ref bn, ref dg);
+        }
         public int VitriPhieuBanTuKhachHang(String ID_KhachHang, String ID_PhieuBan)
         {
             PhieuBanFactory PBFactory = new PhieuBanFactory();
