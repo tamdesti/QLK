@@ -1,0 +1,369 @@
+E:\LongPhi\QLK\bin\Debug\QuanLyKho.exe.config
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.exe
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.pdb
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.csprojResolveAssemblyReference.cache
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmInPhieuChi.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmPhieuChi.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmLyDoChi.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmBanSi.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmDanhsachPhieuBanSi.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmDanhsachPhieuBanLe.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmBanLe.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmDaiLy.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmDanhsachPhieuNhap.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmDoanhThu.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmDonViTinh.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmDunoKhachhang.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmInDunoKhachHang.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmInPhieuBan.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmInPhieuNhap.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmKhachHang.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmMain.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmNhaCungCap.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmNhapHang.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmInPhieuThanhToan.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmSanPham.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmSanphamHethan.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmSoLuongBan.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmSoLuongTon.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmThanhToan.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmThongtinCuahang.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmThongtinLienhe.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmTimPhieuBanLe.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmTimPhieuChi.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmTimPhieuNhap.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmTimPhieuThu.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.Properties.Resources.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.csproj.GenerateResource.Cache
+E:\LongPhi\QLK\bin\Debug\QuanLyKho.exe.manifest
+E:\LongPhi\QLK\bin\Debug\QuanLyKho.application
+E:\LongPhi\QLK\bin\Debug\QuanLyKho.exe
+E:\LongPhi\QLK\bin\Debug\QuanLyKho.pdb
+E:\LongPhi\QLK\bin\Debug\Microsoft.ReportViewer.Common.dll
+E:\LongPhi\QLK\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+E:\LongPhi\QLK\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+E:\LongPhi\QLK\bin\Debug\Microsoft.SqlServer.Types.dll
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.TrustInfo.xml
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.exe.manifest
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.application
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmLoaiSanPham.resources
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmQuyCach.resources
+E:\LongPhi\QLK\obj\Debug\RdlCompile.cache
+E:\LongPhi\QLK\obj\Debug\RdlCompile.compiled
+E:\LongPhi\QLK\obj\Debug\QuanLyKho.frmInChiTietPhieuBan.resources
+E:\LongPhi\QLK\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\LongPhi\QLK\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+E:\LongPhi\QLK\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\LongPhi\QLK\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\LongPhi\QLK\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\LongPhi\QLK\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\LongPhi\QLK\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\LongPhi\QLK\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\LongPhi\QLK\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\LongPhi\QLK\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\LongPhi\QLK\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\LongPhi\QLK\bin\Debug\ShockwaveFlashObjects.dll
+E:\LongPhi\QLK\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+E:\LongPhi\QLK\bin\Debug\stdole.dll
+D:\Destinet\QLK\bin\Debug\FlashControlV71.dll
+D:\Destinet\QLK\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Destinet\QLK\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\Destinet\QLK\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Destinet\QLK\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Destinet\QLK\bin\Debug\ShockwaveFlashObjects.dll
+D:\Destinet\QLK\bin\Debug\stdole.dll
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmChiTietPhieuChi.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmChiTietPhieuThu.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmDanhSachPhieuChi.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmDanhSachPhieuThu.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmDuNo.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmDuNoKhachHang.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmGanHetHan.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmInChiTietPhieuBan.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmInChiTietPhieuBanLe.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmInDaBan.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmInDaNhap.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmInHetHan.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmInPhieuChi.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmInPhieuThu.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmInPhieuThuBanLe.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmInTonKho.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmLyDoChi.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmBanSi.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmDanhsachPhieuBanSi.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmDanhsachPhieuBanLe.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmBanLe.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmDaiLy.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmDanhsachPhieuNhap.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmDonViTinh.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmKhachHang.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmMain.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmNhaCungCap.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmNhapHang.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmSanPham.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmSanphamHethan.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmSoLuongBan.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmQuanLy.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmThongtinCuahang.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmThongtinLienhe.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmTimPhieuBanLe.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmTimPhieuNhap.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmTongHopNoCongTy.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.frmTongHopNoDaiLy.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.Properties.Resources.resources
+D:\Destinet\QLK\obj\Debug\QuanLyKho.csproj.GenerateResource.Cache
+D:\Destinet\QLK\obj\Debug\QuanLyKho.csproj.CoreCompileInputs.cache
+D:\Projects\QLK\bin\Debug\CH TTY Thuy - Thao.exe.config
+D:\Projects\QLK\bin\Debug\CH TTY Thuy - Thao.exe.manifest
+D:\Projects\QLK\bin\Debug\CH TTY Thuy - Thao.application
+D:\Projects\QLK\bin\Debug\CH TTY Thuy - Thao.exe
+D:\Projects\QLK\bin\Debug\CH TTY Thuy - Thao.pdb
+D:\Projects\QLK\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Projects\QLK\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\Projects\QLK\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Projects\QLK\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Projects\QLK\obj\Debug\QuanLyKho.csproj.CH TTY Thuy - Thao.exe.config
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmChiTietPhieuChi.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmChiTietPhieuThu.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmDanhSachPhieuChi.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmDanhSachPhieuThu.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmDuNo.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmDuNoKhachHang.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmGanHetHan.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmInChiTietPhieuBan.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmInChiTietPhieuBanLe.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmInDaBan.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmInDaNhap.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmInHetHan.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmInPhieuChi.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmInPhieuThu.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmInPhieuThuBanLe.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmInTonKho.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmLyDoChi.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmBanSi.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmDanhsachPhieuBanSi.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmDanhsachPhieuBanLe.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmBanLe.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmDaiLy.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmDanhsachPhieuNhap.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmDonViTinh.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmKhachHang.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmMain.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmNhaCungCap.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmNhapHang.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmSanPham.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmSanphamHethan.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmSoLuongBan.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmQuanLy.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmThongtinCuahang.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmThongtinLienhe.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmTimPhieuBanLe.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmTimPhieuNhap.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmTongHopNoCongTy.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.frmTongHopNoDaiLy.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.Properties.Resources.resources
+D:\Projects\QLK\obj\Debug\QuanLyKho.csproj.GenerateResource.Cache
+D:\Projects\QLK\obj\Debug\CH TTY Thuy - Thao.TrustInfo.xml
+D:\Projects\QLK\obj\Debug\CH TTY Thuy - Thao.exe.manifest
+D:\Projects\QLK\obj\Debug\CH TTY Thuy - Thao.application
+D:\Projects\QLK\obj\Debug\CH TTY Thuy - Thao.exe
+D:\Projects\QLK\obj\Debug\CH TTY Thuy - Thao.pdb
+D:\Destinet\QLK\bin\Debug\CH TTY Thuy - Thao.exe.config
+D:\Destinet\QLK\bin\Debug\CH TTY Thuy - Thao.exe.manifest
+D:\Destinet\QLK\bin\Debug\CH TTY Thuy - Thao.application
+D:\Destinet\QLK\bin\Debug\CH TTY Thuy - Thao.exe
+D:\Destinet\QLK\bin\Debug\CH TTY Thuy - Thao.pdb
+D:\Destinet\QLK\obj\Debug\QuanLyKho.csproj.CH TTY Thuy - Thao.exe.config
+D:\Destinet\QLK\obj\Debug\CH TTY Thuy - Thao.TrustInfo.xml
+D:\Destinet\QLK\obj\Debug\CH TTY Thuy - Thao.exe.manifest
+D:\Destinet\QLK\obj\Debug\CH TTY Thuy - Thao.application
+D:\Destinet\QLK\obj\Debug\CH TTY Thuy - Thao.exe
+D:\Destinet\QLK\obj\Debug\CH TTY Thuy - Thao.pdb
+D:\Destinet\QLK\obj\Debug\QuanLyKho.csprojResolveAssemblyReference.cache
+D:\Projects\QLK\obj\Debug\QuanLyKho.csprojResolveAssemblyReference.cache
+D:\Projects\QLK\obj\Debug\QuanLyKho.QuanLySanPhamMoi.resources
+D:\Projects\QLK\obj\Debug\RdlCompile.cache
+D:\Projects\QLK\obj\Debug\RdlCompile.compiled
+D:\QLK\obj\Debug\QuanLyKho.csprojAssemblyReference.cache
+D:\QLK\obj\Debug\QuanLyKho.frmChiTietPhieuChi.resources
+D:\QLK\obj\Debug\QuanLyKho.frmChiTietPhieuThu.resources
+D:\QLK\obj\Debug\QuanLyKho.frmDanhSachPhieuChi.resources
+D:\QLK\obj\Debug\QuanLyKho.frmDanhSachPhieuThu.resources
+D:\QLK\obj\Debug\QuanLyKho.frmDuNo.resources
+D:\QLK\obj\Debug\QuanLyKho.frmDuNoKhachHang.resources
+D:\QLK\obj\Debug\QuanLyKho.frmGanHetHan.resources
+D:\QLK\obj\Debug\QuanLyKho.frmInChiTietPhieuBan.resources
+D:\QLK\obj\Debug\QuanLyKho.frmInChiTietPhieuBanLe.resources
+D:\QLK\obj\Debug\QuanLyKho.frmInDaBan.resources
+D:\QLK\obj\Debug\QuanLyKho.frmInDaNhap.resources
+D:\QLK\obj\Debug\QuanLyKho.frmInHetHan.resources
+D:\QLK\obj\Debug\QuanLyKho.frmInPhieuChi.resources
+D:\QLK\obj\Debug\QuanLyKho.frmInPhieuThu.resources
+D:\QLK\obj\Debug\QuanLyKho.frmInPhieuThuBanLe.resources
+D:\QLK\obj\Debug\QuanLyKho.frmInTonKho.resources
+D:\QLK\obj\Debug\QuanLyKho.frmLyDoChi.resources
+D:\QLK\obj\Debug\QuanLyKho.frmBanSi.resources
+D:\QLK\obj\Debug\QuanLyKho.frmDanhsachPhieuBanSi.resources
+D:\QLK\obj\Debug\QuanLyKho.frmDanhsachPhieuBanLe.resources
+D:\QLK\obj\Debug\QuanLyKho.frmBanLe.resources
+D:\QLK\obj\Debug\QuanLyKho.frmDaiLy.resources
+D:\QLK\obj\Debug\QuanLyKho.frmDanhsachPhieuNhap.resources
+D:\QLK\obj\Debug\QuanLyKho.frmDonViTinh.resources
+D:\QLK\obj\Debug\QuanLyKho.frmKhachHang.resources
+D:\QLK\obj\Debug\QuanLyKho.frmMain.resources
+D:\QLK\obj\Debug\QuanLyKho.frmNhaCungCap.resources
+D:\QLK\obj\Debug\QuanLyKho.frmNhapHang.resources
+D:\QLK\obj\Debug\QuanLyKho.frmSanPham.resources
+D:\QLK\obj\Debug\QuanLyKho.frmSanphamHethan.resources
+D:\QLK\obj\Debug\QuanLyKho.frmSoLuongBan.resources
+D:\QLK\obj\Debug\QuanLyKho.frmQuanLy.resources
+D:\QLK\obj\Debug\QuanLyKho.frmThongtinCuahang.resources
+D:\QLK\obj\Debug\QuanLyKho.frmThongtinLienhe.resources
+D:\QLK\obj\Debug\QuanLyKho.frmTimPhieuBanLe.resources
+D:\QLK\obj\Debug\QuanLyKho.frmTimPhieuNhap.resources
+D:\QLK\obj\Debug\QuanLyKho.frmTongHopNoCongTy.resources
+D:\QLK\obj\Debug\QuanLyKho.frmTongHopNoDaiLy.resources
+D:\QLK\obj\Debug\QuanLyKho.Properties.Resources.resources
+D:\QLK\obj\Debug\QuanLyKho.QuanLySanPhamMoi.resources
+D:\QLK\obj\Debug\QuanLyKho.csproj.GenerateResource.cache
+D:\QLK\obj\Debug\CH TTY Thuy - Thao.exe
+D:\QLK\obj\Debug\CH TTY Thuy - Thao.pdb
+D:\QLK\bin\Debug\CH TTY Thuy - Thao.exe.config
+D:\QLK\bin\Debug\CH TTY Thuy - Thao.exe.manifest
+D:\QLK\bin\Debug\CH TTY Thuy - Thao.application
+D:\QLK\bin\Debug\CH TTY Thuy - Thao.exe
+D:\QLK\bin\Debug\CH TTY Thuy - Thao.pdb
+D:\QLK\bin\Debug\FlashControlV71.dll
+D:\QLK\bin\Debug\Microsoft.ReportViewer.WebForms.dll
+D:\QLK\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\QLK\bin\Debug\ShockwaveFlashObjects.dll
+D:\QLK\bin\Debug\stdole.dll
+D:\QLK\obj\Debug\CH TTY Thuy - Thao.TrustInfo.xml
+D:\QLK\obj\Debug\CH TTY Thuy - Thao.exe.manifest
+D:\QLK\obj\Debug\CH TTY Thuy - Thao.application
+D:\QLK\obj\Debug\QuanLyKho.csproj.CopyComplete
+D:\QLK\obj\Debug\CH TTY Thuy - Thao.exe.config
+D:\QLK\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\QLK\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\QLK\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\QLK\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\QLK\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\QLK\bin\Debug\Microsoft.ReportViewer.DataVisualization.DLL
+D:\QLK\bin\Debug\Microsoft.ReportViewer.Design.DLL
+D:\QLK\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\QLK\bin\Debug\Microsoft.ReportViewer.WebDesign.DLL
+D:\QLK\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+D:\QLK\bin\Debug\EnvDTE.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\QLK\bin\Debug\EnvDTE80.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.VSHelp.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.Shell.Interop.10.0.dll
+D:\QLK\bin\Debug\VSLangProj.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.Data.Services.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.Data.Core.dll
+D:\QLK\bin\Debug\VSLangProj80.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.Debugger.InteropA.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.ComponentModelHost.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.ManagedInterfaces.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.ProjectAggregator.dll
+D:\QLK\bin\Debug\Microsoft.MSXML.dll
+D:\QLK\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+D:\QLK\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+D:\QLK\bin\Debug\VSLangProj2.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml
+D:\QLK\bin\Debug\Microsoft.Windows.Design.Interaction.xml
+D:\QLK\bin\Debug\Microsoft.Windows.Design.Extensibility.xml
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmChiTietPhieuChi.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmChiTietPhieuThu.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmDanhSachPhieuChi.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmDanhSachPhieuThu.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmDuNo.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmDuNoKhachHang.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmGanHetHan.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmInChiTietPhieuBan.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmInChiTietPhieuBanLe.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmInDaBan.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmInDaNhap.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmInHetHan.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmInPhieuChi.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmInPhieuThu.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmInPhieuThuBanLe.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmInTonKho.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmLyDoChi.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmBanSi.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmDanhsachPhieuBanSi.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmDanhsachPhieuBanLe.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmBanLe.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmDaiLy.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmDanhsachPhieuNhap.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmDonViTinh.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmKhachHang.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmMain.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmNhaCungCap.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmNhapHang.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmSanPham.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmSanphamHethan.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmSoLuongBan.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmQuanLy.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmThongtinCuahang.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmThongtinLienhe.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmTimPhieuBanLe.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmTimPhieuNhap.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmTongHopNoCongTy.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmTongHopNoDaiLy.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.Properties.Resources.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.QuanLySanPhamMoi.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.csproj.GenerateResource.Cache
+D:\My Linh\QLK\obj\Debug\RdlCompile.cache
+D:\My Linh\QLK\obj\Debug\RdlCompile.compiled
+D:\My Linh\QLK\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\My Linh\QLK\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\My Linh\QLK\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\My Linh\QLK\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\My Linh\QLK\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\My Linh\QLK\bin\Debug\Microsoft.ReportViewer.DataVisualization.DLL
+D:\My Linh\QLK\bin\Debug\Microsoft.ReportViewer.Design.DLL
+D:\My Linh\QLK\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\My Linh\QLK\bin\Debug\Microsoft.ReportViewer.WebDesign.DLL
+D:\My Linh\QLK\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+D:\My Linh\QLK\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+D:\My Linh\QLK\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\My Linh\QLK\bin\Debug\ShockwaveFlashObjects.dll
+D:\My Linh\QLK\bin\Debug\EnvDTE.dll
+D:\My Linh\QLK\bin\Debug\EnvDTE80.dll
+D:\My Linh\QLK\bin\Debug\stdole.dll
+D:\My Linh\QLK\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.dll
+D:\My Linh\QLK\bin\Debug\Microsoft.VisualStudio.VSHelp.dll
+D:\My Linh\QLK\bin\Debug\VSLangProj.dll
+D:\My Linh\QLK\bin\Debug\VSLangProj80.dll
+D:\My Linh\QLK\bin\Debug\Microsoft.VisualStudio.ComponentModelHost.dll
+D:\My Linh\QLK\bin\Debug\Microsoft.MSXML.dll
+D:\My Linh\QLK\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+D:\My Linh\QLK\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+D:\My Linh\QLK\bin\Debug\VSLangProj2.dll
+D:\My Linh\QLK\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml
+D:\My Linh\QLK\bin\Debug\Microsoft.Windows.Design.Interaction.xml
+D:\My Linh\QLK\bin\Debug\Microsoft.Windows.Design.Extensibility.xml
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmKhoHang.resources
+D:\My Linh\QLK\bin\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.exe.config
+D:\My Linh\QLK\bin\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.exe.manifest
+D:\My Linh\QLK\bin\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.application
+D:\My Linh\QLK\bin\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.exe
+D:\My Linh\QLK\bin\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.pdb
+D:\My Linh\QLK\obj\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.TrustInfo.xml
+D:\My Linh\QLK\obj\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.exe.manifest
+D:\My Linh\QLK\obj\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.application
+D:\My Linh\QLK\obj\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.exe
+D:\My Linh\QLK\obj\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.pdb
+D:\My Linh\QLK\bin\Debug\FlashControlV71.dll
+D:\My Linh\QLK\obj\Debug\QuanLyKho.csprojResolveAssemblyReference.cache
+D:\My Linh\QLK\obj\Debug\QuanLyKho.csproj.CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.exe.config
+D:\My Linh\QLK\obj\Debug\QuanLyKho.frmDanhSachKhoanPhaiThu.resources
+D:\My Linh\QLK\obj\Debug\QuanLyKho.FrmChiTietXuatKho.resources
