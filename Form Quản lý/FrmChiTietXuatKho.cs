@@ -105,5 +105,12 @@ namespace QuanLyKho
             }
             SanPhamLoading();
         }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            frmInChiTietXuatKhoTheoSanPham frm = new frmInChiTietXuatKhoTheoSanPham(dataGridView1, fromDate.Value, toDate.Value, cmbSanPham.Text);
+            frm.WindowState = FormWindowState.Maximized;
+            frm.ShowDialog();
+        }
     }
 }

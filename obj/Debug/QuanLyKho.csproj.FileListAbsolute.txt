@@ -184,7 +184,6 @@ D:\Projects\QLK\obj\Debug\QuanLyKho.csprojResolveAssemblyReference.cache
 D:\Projects\QLK\obj\Debug\QuanLyKho.QuanLySanPhamMoi.resources
 D:\Projects\QLK\obj\Debug\RdlCompile.cache
 D:\Projects\QLK\obj\Debug\RdlCompile.compiled
-D:\QLK\obj\Debug\QuanLyKho.csprojAssemblyReference.cache
 D:\QLK\obj\Debug\QuanLyKho.frmChiTietPhieuChi.resources
 D:\QLK\obj\Debug\QuanLyKho.frmChiTietPhieuThu.resources
 D:\QLK\obj\Debug\QuanLyKho.frmDanhSachPhieuChi.resources
@@ -230,7 +229,6 @@ D:\QLK\bin\Debug\Microsoft.ReportViewer.WebForms.dll
 D:\QLK\bin\Debug\Microsoft.SqlServer.Types.dll
 D:\QLK\bin\Debug\ShockwaveFlashObjects.dll
 D:\QLK\bin\Debug\stdole.dll
-D:\QLK\obj\Debug\QuanLyKho.csproj.CopyComplete
 D:\QLK\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 D:\QLK\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
 D:\QLK\bin\Debug\SqlServerTypes\x86\msvcr120.dll
@@ -242,29 +240,16 @@ D:\QLK\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
 D:\QLK\bin\Debug\Microsoft.ReportViewer.WebDesign.DLL
 D:\QLK\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
 D:\QLK\bin\Debug\EnvDTE.dll
-D:\QLK\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
-D:\QLK\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
 D:\QLK\bin\Debug\EnvDTE80.dll
-D:\QLK\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
-D:\QLK\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
-D:\QLK\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
 D:\QLK\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.dll
 D:\QLK\bin\Debug\Microsoft.VisualStudio.VSHelp.dll
-D:\QLK\bin\Debug\Microsoft.VisualStudio.Shell.Interop.10.0.dll
 D:\QLK\bin\Debug\VSLangProj.dll
-D:\QLK\bin\Debug\Microsoft.VisualStudio.Data.Services.dll
-D:\QLK\bin\Debug\Microsoft.VisualStudio.Data.Core.dll
 D:\QLK\bin\Debug\VSLangProj80.dll
-D:\QLK\bin\Debug\Microsoft.VisualStudio.Debugger.InteropA.dll
 D:\QLK\bin\Debug\Microsoft.VisualStudio.ComponentModelHost.dll
-D:\QLK\bin\Debug\Microsoft.VisualStudio.ManagedInterfaces.dll
-D:\QLK\bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll
-D:\QLK\bin\Debug\Microsoft.VisualStudio.ProjectAggregator.dll
 D:\QLK\bin\Debug\Microsoft.MSXML.dll
 D:\QLK\bin\Debug\Microsoft.Windows.Design.Interaction.dll
 D:\QLK\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
 D:\QLK\bin\Debug\VSLangProj2.dll
-D:\QLK\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
 D:\QLK\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml
 D:\QLK\bin\Debug\Microsoft.Windows.Design.Interaction.xml
 D:\QLK\bin\Debug\Microsoft.Windows.Design.Extensibility.xml
@@ -360,7 +345,6 @@ D:\QLK\bin\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.exe.manifest
 D:\QLK\bin\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.application
 D:\QLK\bin\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.exe
 D:\QLK\bin\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.pdb
-D:\QLK\obj\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.exe.config
 D:\QLK\obj\Debug\QuanLyKho.FrmChiTietXuatKho.resources
 D:\QLK\obj\Debug\QuanLyKho.frmDanhSachKhoanPhaiThu.resources
 D:\QLK\obj\Debug\QuanLyKho.frmKhoHang.resources
@@ -372,3 +356,9 @@ D:\QLK\obj\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.application
 D:\QLK\obj\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.exe
 D:\QLK\obj\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.pdb
 D:\QLK\obj\Debug\QuanLyKho.FrmChiTietXuatKhoTheoKhachHang.resources
+D:\QLK\bin\Debug\FlashControlV71.dll
+D:\QLK\obj\Debug\QuanLyKho.csprojResolveAssemblyReference.cache
+D:\QLK\obj\Debug\QuanLyKho.csproj.CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.exe.config
+D:\QLK\obj\Debug\QuanLyKho.FrmInKhoanPhaiThu.resources
+D:\QLK\obj\Debug\QuanLyKho.frmInChiTietXuatKhoTheoKhachHang.resources
+D:\QLK\obj\Debug\QuanLyKho.frmInChiTietXuatKhoTheoSanPham.resources

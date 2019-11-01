@@ -55,5 +55,12 @@ namespace QuanLyKho
                 dataGridView1[3, i].Value = Math.Round(nodauky / 1000, 0) * 1000;
             }
         }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            FrmInKhoanPhaiThu frm = new FrmInKhoanPhaiThu(dataGridView1);
+            frm.WindowState = FormWindowState.Maximized;
+            frm.ShowDialog();
+        }
     }
 }

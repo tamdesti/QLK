@@ -119,5 +119,12 @@ namespace QuanLyKho
         {
             DataLoading();
         }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            frmInChiTietXuatKhoTheoKhachHang frm = new frmInChiTietXuatKhoTheoKhachHang(dataGridView1, fromDate.Value, toDate.Value, cmbKhachHang.Text);
+            frm.WindowState = FormWindowState.Maximized;
+            frm.ShowDialog();
+        }
     }
 }

@@ -203,6 +203,22 @@ namespace QuanLyKho.Controller
             DataTable dt = new DataTable();
             System.Windows.Forms.BindingNavigator bn = new BindingNavigator();
             dt = PBFactory.HienThiDanhSachKhoanPhaiThu();
+            List<int> removelist = new List<int>();
+            int deleterow = 0;
+            foreach (DataRow row in dt.Rows)
+            {
+                if (Convert.ToInt32(row[6].ToString()) <= 0)
+                {
+                    removelist.Add(deleterow);
+                }
+                deleterow++;
+            }
+            deleterow = 0;
+            foreach (int i in removelist)
+            {
+                dt.Rows.RemoveAt(i - deleterow);
+                deleterow++;
+            }
             BusinessObject.Util.AddSTTColumn(ref dt, ref bs, ref bn, ref dg);
         }
         public void HienThiChiTietXuatKhoTheoSanPham(DataGridView dg, string IDSP, string IDKHO, DateTime from, DateTime to)

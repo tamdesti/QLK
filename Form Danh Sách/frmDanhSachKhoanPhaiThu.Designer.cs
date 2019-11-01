@@ -85,6 +85,7 @@
             this.btnPrint.Size = new System.Drawing.Size(42, 34);
             this.btnPrint.TabIndex = 34;
             this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // frmDanhSachKhoanPhaiThu
             // 

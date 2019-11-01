@@ -123,9 +123,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessObject\ChiTietPhieuBan.cs" />
+    <Compile Include="BusinessObject\ChiTietXuatKho.cs" />
     <Compile Include="BusinessObject\InChiTietPhieuBan.cs" />
     <Compile Include="BusinessObject\InChiTietThuChi.cs" />
     <Compile Include="BusinessObject\InChiTietQuanLy.cs" />
+    <Compile Include="BusinessObject\InKhoanPhaiThu.cs" />
     <Compile Include="BusinessObject\KhoHang.cs" />
     <Compile Include="BusinessObject\LoaiSanPham.cs" />
     <Compile Include="BusinessObject\PhieuChi.cs" />
@@ -163,6 +165,24 @@
     <Compile Include="DataLayer\PhieuChiFactory.cs" />
     <Compile Include="DataLayer\SanPhamMoiFactory.cs" />
     <Compile Include="DataLayer\TonKhoFactory.cs" />
+    <Compile Include="Form In\frmInChiTietXuatKhoTheoSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form In\frmInChiTietXuatKhoTheoSanPham.Designer.cs">
+      <DependentUpon>frmInChiTietXuatKhoTheoSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form In\frmInChiTietXuatKhoTheoKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form In\frmInChiTietXuatKhoTheoKhachHang.Designer.cs">
+      <DependentUpon>frmInChiTietXuatKhoTheoKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form In\FrmInKhoanPhaiThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form In\FrmInKhoanPhaiThu.Designer.cs">
+      <DependentUpon>FrmInKhoanPhaiThu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form Quản lý\FrmChiTietXuatKho.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -432,6 +452,15 @@
     <Compile Include="Num2Str.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form In\frmInChiTietXuatKhoTheoSanPham.resx">
+      <DependentUpon>frmInChiTietXuatKhoTheoSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form In\frmInChiTietXuatKhoTheoKhachHang.resx">
+      <DependentUpon>frmInChiTietXuatKhoTheoKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form In\FrmInKhoanPhaiThu.resx">
+      <DependentUpon>FrmInKhoanPhaiThu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form Quản lý\FrmChiTietXuatKho.resx">
       <DependentUpon>FrmChiTietXuatKho.cs</DependentUpon>
     </EmbeddedResource>
@@ -586,22 +615,27 @@
     <EmbeddedResource Include="QuanLySanPhamMoi.resx">
       <DependentUpon>QuanLySanPhamMoi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\InChiTietXuatKhoTheoSanPham.rdlc" />
     <EmbeddedResource Include="Report\InDaBan.rdlc" />
     <EmbeddedResource Include="Report\InDaNhap.rdlc" />
+    <EmbeddedResource Include="Report\InChiTietXuatKhoTheoKhachHang.rdlc" />
     <EmbeddedResource Include="Report\InHangHetHan.rdlc" />
     <EmbeddedResource Include="Report\InPhieuBan.rdlc" />
     <EmbeddedResource Include="Report\InPhieuBanLe.rdlc" />
     <EmbeddedResource Include="Report\InPhieuChi.rdlc" />
     <EmbeddedResource Include="Report\InPhieuThuBanLe.rdlc" />
     <EmbeddedResource Include="Report\InPhieuThu.rdlc" />
+    <EmbeddedResource Include="Report\InDanhSachKhoanPhaiThu.rdlc" />
     <EmbeddedResource Include="Report\InTonKho.rdlc" />
     <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\DataSources\QuanLyKho.BusinessObject.ChiTietPhieuBan.datasource" />
+    <None Include="Properties\DataSources\QuanLyKho.BusinessObject.ChiTietXuatKho.datasource" />
     <None Include="Properties\DataSources\QuanLyKho.BusinessObject.InChiTietPhieuBan.datasource" />
     <None Include="Properties\DataSources\QuanLyKho.BusinessObject.InChiTietQuanLy.datasource" />
     <None Include="Properties\DataSources\QuanLyKho.BusinessObject.InChiTietThuChi.datasource" />
+    <None Include="Properties\DataSources\QuanLyKho.BusinessObject.InKhoanPhaiThu.datasource" />
     <None Include="Properties\DataSources\QuanLyKho.BusinessObject.KhachHang.datasource" />
     <None Include="Properties\DataSources\QuanLyKho.BusinessObject.MaSanPham.datasource" />
     <None Include="Properties\DataSources\QuanLyKho.BusinessObject.PhieuBan.datasource" />
