@@ -216,8 +216,8 @@ namespace QuanLyKho.DataLayer
                     WhereString += "AND ID_KHO = @KHO";
                 }
             }
-            OleDbCommand cmd = new OleDbCommand("SELECT [HO_TEN] & \"_\" & [DIEN_THOAI] AS [Tên Khách hàng], CTPB.NGAY_BAN AS [Ngày], SO_LUONG AS [Số lượng], DON_GIA AS [Đơn giá], THANH_TIEN AS [Tiền hàng] " +
-                                                "FROM (CHI_TIET_PHIEU_BAN CTPB INNER JOIN PHIEU_BAN PB ON PB.ID = CTPB.ID_PHIEU_BAN) INNER JOIN KHACH_HANG KH ON KH.ID = PB.ID_KHACH_HANG " +
+            OleDbCommand cmd = new OleDbCommand("SELECT [HO_TEN] & \"_\" & [DIEN_THOAI] AS [Tên Khách hàng], CTPB.NGAY_BAN AS [Ngày], CTPB.SO_LUONG AS [Số lượng], DON_GIA AS [Đơn giá], THANH_TIEN AS [Tiền hàng], SP.LOAI AS [Loại] " +
+                                                "FROM ((CHI_TIET_PHIEU_BAN CTPB INNER JOIN PHIEU_BAN PB ON PB.ID = CTPB.ID_PHIEU_BAN) INNER JOIN KHACH_HANG KH ON KH.ID = PB.ID_KHACH_HANG) INNER JOIN SAN_PHAM SP ON SP.ID = CTPB.ID_SAN_PHAM " +
                                                 "WHERE CTPB.NGAY_BAN >= @date1 AND CTPB.NGAY_BAN <= @date2 " + WhereString +
                                                 " ORDER BY CTPB.NGAY_BAN");
             cmd.Parameters.Add("date1", OleDbType.Date).Value = fromDate.Date;
@@ -245,7 +245,7 @@ namespace QuanLyKho.DataLayer
                     WhereString += "AND CTPB.ID_KHO = @KHO";
                 }
             }
-            OleDbCommand cmd = new OleDbCommand("SELECT SP.TEN_SAN_PHAM AS [Mặt hàng], CTPB.NGAY_BAN AS [Ngày], CTPB.SO_LUONG AS [Số lượng], DON_GIA AS [Đơn giá], THANH_TIEN AS [Tiền hàng] " +
+            OleDbCommand cmd = new OleDbCommand("SELECT SP.TEN_SAN_PHAM AS [Mặt hàng], CTPB.NGAY_BAN AS [Ngày], CTPB.SO_LUONG AS [Số lượng], DON_GIA AS [Đơn giá], THANH_TIEN AS [Tiền hàng], SP.LOAI AS [Loại] " +
                                                 "FROM ((CHI_TIET_PHIEU_BAN CTPB INNER JOIN PHIEU_BAN PB ON PB.ID = CTPB.ID_PHIEU_BAN) INNER JOIN KHACH_HANG KH ON KH.ID = PB.ID_KHACH_HANG) INNER JOIN SAN_PHAM SP ON SP.ID = CTPB.ID_SAN_PHAM " +
                                                 "WHERE CTPB.NGAY_BAN >= @date1 AND CTPB.NGAY_BAN <= @date2 " + WhereString +
                                                 " ORDER BY CTPB.NGAY_BAN");

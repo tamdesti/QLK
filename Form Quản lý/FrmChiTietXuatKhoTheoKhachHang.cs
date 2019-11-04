@@ -39,6 +39,7 @@ namespace QuanLyKho
                 dataGridView1.Columns["Đơn giá"].Width = 120;
                 dataGridView1.Columns["Tiền hàng"].DefaultCellStyle.Format = "N0";
                 dataGridView1.Columns["Tiền hàng"].Width = 120;
+                dataGridView1.Columns["Loại"].Visible = false;
             }
             catch { }
         }

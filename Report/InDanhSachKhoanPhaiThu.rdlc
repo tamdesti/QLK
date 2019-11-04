@@ -603,8 +603,10 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
-                              <Style />
+                              <Value>TỔNG CỘNG</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -625,39 +627,10 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <ColSpan>3</ColSpan>
                   </CellContents>
                 </TablixCell>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox11">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value />
-                              <Style />
-                            </TextRun>
-                          </TextRuns>
-                          <Style />
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox11</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                    <ColSpan>2</ColSpan>
-                  </CellContents>
-                </TablixCell>
+                <TablixCell />
                 <TablixCell />
                 <TablixCell>
                   <CellContents>
@@ -669,7 +642,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Sum(Fields!NoDauKy.Value)</Value>
-                              <Style />
+                              <Style>
+                                <Format>#,0;(#,0)</Format>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -701,7 +676,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Sum(Fields!PhatSingTang.Value)</Value>
-                              <Style />
+                              <Style>
+                                <Format>#,0;(#,0)</Format>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -733,7 +710,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Sum(Fields!PhatSinhGiam.Value)</Value>
-                              <Style />
+                              <Style>
+                                <Format>#,0;(#,0)</Format>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -765,7 +744,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Sum(Fields!NoHienTai.Value)</Value>
-                              <Style />
+                              <Style>
+                                <Format>#,0;(#,0)</Format>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>

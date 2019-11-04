@@ -22,6 +22,8 @@ namespace QuanLyKho
         void GetData()
         {
             int i = 1;
+            double tongsoluong = 0;
+            Num2Str num2Str = new Num2Str();
             foreach (BusinessObject.ChiTietPhieuBan ct in m_PhieuBan.ChiTiet)
             {
                 BusinessObject.InChiTietPhieuBan inchitiet = new BusinessObject.InChiTietPhieuBan();
@@ -30,6 +32,7 @@ namespace QuanLyKho
                 inchitiet.IDPhieuBan = m_PhieuBan.Id;
                 inchitiet.NgayLapPhieu = NgayThanhChu(m_PhieuBan.NgayBan);
                 inchitiet.TenSanPham = ct.SanPham.TenSanPham;
+                if (ct.SanPham.Loai != "Mài") tongsoluong += ct.SoLuong;
                 inchitiet.TenDonViTinh = ct.SanPham.DonViTinh.Ten;
                 inchitiet.NoCu = m_PhieuBan.NoCu;
                 inchitiet.TongTien = m_PhieuBan.TongTien;
@@ -42,9 +45,15 @@ namespace QuanLyKho
                 inchitiet.DiaChi = m_PhieuBan.KhachHang.DiaChi;
                 inchitiet.DienThoai = m_PhieuBan.KhachHang.DienThoai;
                 inchitiet.KhoiLuong = ct.SanPham.Dai * 0.001 * ct.SanPham.Rong * 0.001 * 2.4 * ct.SanPham.Li * ct.SoLuong;
+                if (inchitiet.DaTra > 0)
+                    inchitiet.TienBangChu = num2Str.NumberToString(inchitiet.ConNo.ToString());
+                else inchitiet.TienBangChu = num2Str.NumberToString((inchitiet.NoCu + inchitiet.TongTien).ToString());
                 listIn.Add(inchitiet);
             }
-
+            foreach (BusinessObject.InChiTietPhieuBan ct in listIn)
+            {
+                ct.TongSoLuong = tongsoluong;
+            }
         }
         private string NgayThanhChu(DateTime dt)
         {
@@ -53,7 +62,6 @@ namespace QuanLyKho
         private void frmInChiTietPhieuBanLe_Load(object sender, EventArgs e)
         {
             GetData();
-            listIn.Reverse();
             this.InChiTietPhieuBanBindingSource.DataSource = listIn;
             this.reportViewer1.RefreshReport();
         }

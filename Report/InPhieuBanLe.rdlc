@@ -561,21 +561,24 @@
                 <TablixCell />
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="SoLuong2">
+                    <Textbox Name="TongSoLuong">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(Fields!SoLuong.Value)</Value>
-                              <Style />
+                              <Value>=Fields!TongSoLuong.Value</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Format>#,0;(#,0)</Format>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>SoLuong2</rd:DefaultName>
+                      <rd:DefaultName>TongSoLuong</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -599,7 +602,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value />
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -631,7 +636,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!TongTien.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Format>#,0;(#,0)</Format>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -663,7 +671,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Sum(Fields!KhoiLuong.Value)</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Format>#,0;(#,0)</Format>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -714,7 +725,7 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>InPhieuBanLe</DataSetName>
-        <Top>3.28472in</Top>
+        <Top>2.03472in</Top>
         <Left>0.3259in</Left>
         <Height>0.83334in</Height>
         <Width>7.22867in</Width>
@@ -742,8 +753,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox30</rd:DefaultName>
-        <Top>1.31597in</Top>
-        <Left>2.24132in</Left>
+        <Top>0.81597in</Top>
+        <Left>2.61632in</Left>
         <Height>0.36458in</Height>
         <Width>2.66045in</Width>
         <ZIndex>1</ZIndex>
@@ -808,10 +819,22 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>0.9375in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>1.57587in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>0.4375in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.18404in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>0.5625in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.6528in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -828,7 +851,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Khách Hàng:</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -858,7 +883,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!HoTen.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -878,28 +905,25 @@
                     </Textbox>
                   </CellContents>
                 </TablixCell>
-              </TablixCells>
-            </TablixRow>
-            <TablixRow>
-              <Height>0.25in</Height>
-              <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox11">
+                    <Textbox Name="Textbox5">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>SĐT</Value>
-                              <Style />
+                              <Value>SĐT:</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox11</rd:DefaultName>
+                      <rd:DefaultName>Textbox5</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>White</Color>
@@ -915,7 +939,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="DienThoai">
+                    <Textbox Name="DienThoai1">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -923,13 +947,15 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!DienThoai.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>DienThoai</rd:DefaultName>
+                      <rd:DefaultName>DienThoai1</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>White</Color>
@@ -943,14 +969,9 @@
                     </Textbox>
                   </CellContents>
                 </TablixCell>
-              </TablixCells>
-            </TablixRow>
-            <TablixRow>
-              <Height>0.25in</Height>
-              <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox14">
+                    <Textbox Name="Textbox27">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -958,13 +979,15 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Địa chỉ:</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox14</rd:DefaultName>
+                      <rd:DefaultName>Textbox27</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>White</Color>
@@ -980,7 +1003,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="DiaChi">
+                    <Textbox Name="DiaChi1">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -988,13 +1011,15 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!DiaChi.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>DiaChi</rd:DefaultName>
+                      <rd:DefaultName>DiaChi1</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>White</Color>
@@ -1016,20 +1041,22 @@
           <TablixMembers>
             <TablixMember />
             <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
           </TablixMembers>
         </TablixColumnHierarchy>
         <TablixRowHierarchy>
           <TablixMembers>
             <TablixMember />
-            <TablixMember />
-            <TablixMember />
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>InPhieuBanLe</DataSetName>
-        <Top>2.25917in</Top>
+        <Top>1.63417in</Top>
         <Left>0.3259in</Left>
-        <Height>0.75in</Height>
-        <Width>2in</Width>
+        <Height>0.25in</Height>
+        <Width>6.35021in</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -1043,10 +1070,10 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>0.89804in</Width>
+              <Width>0.84596in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.6528in</Width>
+              <Width>1.2153in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -1201,7 +1228,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Tổng tiền</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -1232,6 +1261,7 @@
                             <TextRun>
                               <Value>=Fields!TongTien.Value + Fields!NoCu.Value</Value>
                               <Style>
+                                <FontWeight>Bold</FontWeight>
                                 <Format>#,0;(#,0)</Format>
                               </Style>
                             </TextRun>
@@ -1292,7 +1322,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox25">
+                    <Textbox Name="DaTra">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -1310,7 +1340,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox25</rd:DefaultName>
+                      <rd:DefaultName>DaTra</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -1339,7 +1369,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Còn nợ</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -1370,6 +1402,7 @@
                             <TextRun>
                               <Value>=Fields!ConNo.Value</Value>
                               <Style>
+                                <FontWeight>Bold</FontWeight>
                                 <Format>#,0;(#,0)</Format>
                               </Style>
                             </TextRun>
@@ -1405,18 +1438,34 @@
         </TablixColumnHierarchy>
         <TablixRowHierarchy>
           <TablixMembers>
+            <TablixMember>
+              <Visibility>
+                <Hidden>=iif(First(Fields!NoCu.Value) = 0, True, False)</Hidden>
+              </Visibility>
+            </TablixMember>
+            <TablixMember>
+              <Visibility>
+                <Hidden>=iif(First(Fields!NoCu.Value) = 0, True, False)</Hidden>
+              </Visibility>
+            </TablixMember>
             <TablixMember />
-            <TablixMember />
-            <TablixMember />
-            <TablixMember />
-            <TablixMember />
+            <TablixMember>
+              <Visibility>
+                <Hidden>=iif(First(Fields!DaTra.Value) = 0, true, false)</Hidden>
+              </Visibility>
+            </TablixMember>
+            <TablixMember>
+              <Visibility>
+                <Hidden>=iif(First(Fields!DaTra.Value) = 0, true, false)</Hidden>
+              </Visibility>
+            </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>InPhieuBanLe</DataSetName>
-        <Top>4.40625in</Top>
-        <Left>5.00373in</Left>
+        <Top>3.03125in</Top>
+        <Left>4.49331in</Left>
         <Height>1.25in</Height>
-        <Width>2.55084in</Width>
+        <Width>2.06126in</Width>
         <ZIndex>4</ZIndex>
         <Style>
           <Border>
@@ -1482,8 +1531,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>InPhieuBanLe</DataSetName>
-        <Top>1.74999in</Top>
-        <Left>2.57885in</Left>
+        <Top>1.24999in</Top>
+        <Left>2.95385in</Left>
         <Height>0.25in</Height>
         <Width>2.5in</Width>
         <ZIndex>5</ZIndex>
@@ -1584,7 +1633,7 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>InPhieuBanLe</DataSetName>
-        <Top>0.42708in</Top>
+        <Top>0.30208in</Top>
         <Left>5.85369in</Left>
         <Height>0.25in</Height>
         <Width>1.70088in</Width>
@@ -1614,8 +1663,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox46</rd:DefaultName>
-        <Top>6.03646in</Top>
-        <Left>0.60095in</Left>
+        <Top>4.67188in</Top>
+        <Left>6.16801in</Left>
         <Height>0.30729in</Height>
         <Width>1.26156in</Width>
         <ZIndex>7</ZIndex>
@@ -1648,8 +1697,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox46</rd:DefaultName>
-        <Top>6.03646in</Top>
-        <Left>2.31729in</Left>
+        <Top>4.67188in</Top>
+        <Left>0.60095in</Left>
         <Height>0.30729in</Height>
         <Width>1.48031in</Width>
         <ZIndex>8</ZIndex>
@@ -1682,8 +1731,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox46</rd:DefaultName>
-        <Top>6.03646in</Top>
-        <Left>4.28135in</Left>
+        <Top>4.67188in</Top>
+        <Left>2.59385in</Left>
         <Height>0.30729in</Height>
         <Width>1.26156in</Width>
         <ZIndex>9</ZIndex>
@@ -1716,8 +1765,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox46</rd:DefaultName>
-        <Top>6.03646in</Top>
-        <Left>6.08927in</Left>
+        <Top>4.67188in</Top>
+        <Left>4.39021in</Left>
         <Height>0.30729in</Height>
         <Width>1.26156in</Width>
         <ZIndex>10</ZIndex>
@@ -1731,6 +1780,85 @@
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
+      <Tablix Name="Tablix6">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>3.25295in</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.63667in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox11">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>(Bằng chữ: </Value>
+                              <Style>
+                                <TextDecoration>Underline</TextDecoration>
+                              </Style>
+                            </TextRun>
+                            <TextRun>
+                              <Value>=Fields!TienBangChu.Value</Value>
+                              <Style>
+                                <TextDecoration>Underline</TextDecoration>
+                              </Style>
+                            </TextRun>
+                            <TextRun>
+                              <Value>)</Value>
+                              <Style>
+                                <TextDecoration>Underline</TextDecoration>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox11</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember />
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <Top>3.03125in</Top>
+        <Left>0.3259in</Left>
+        <Height>0.63667in</Height>
+        <Width>3.25295in</Width>
+        <ZIndex>11</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
     </ReportItems>
     <Height>9in</Height>
     <Style />
@@ -1818,8 +1946,16 @@
           <DataField>ThanhTien</DataField>
           <rd:TypeName>System.Int64</rd:TypeName>
         </Field>
+        <Field Name="TienBangChu">
+          <DataField>TienBangChu</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
         <Field Name="TongTien">
           <DataField>TongTien</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="TongSoLuong">
+          <DataField>TongSoLuong</DataField>
           <rd:TypeName>System.Int64</rd:TypeName>
         </Field>
         <Field Name="KhoiLuong">

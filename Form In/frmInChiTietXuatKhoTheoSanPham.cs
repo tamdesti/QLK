@@ -21,6 +21,7 @@ namespace QuanLyKho
         IList<BusinessObject.ChiTietXuatKho> listIn = new List<BusinessObject.ChiTietXuatKho>();
         private void GetData(DataGridView dg, DateTime dtFrom, DateTime dtTo, string TenSanPham)
         {
+            double tongsoluong = 0;
             foreach (DataGridViewRow row in dg.Rows)
             {
                 BusinessObject.ChiTietXuatKho item = new BusinessObject.ChiTietXuatKho();
@@ -32,7 +33,12 @@ namespace QuanLyKho
                 item.DonGia = Convert.ToDouble(row.Cells["Đơn giá"].Value);
                 item.TienHang = Convert.ToDouble(row.Cells["Tiền hàng"].Value);
                 item.NgayLapPhieu = NgayThanhChu(dtFrom, dtTo);
+                if (row.Cells["Loại"].Value.ToString() != "Mài") tongsoluong += item.SoLuongBan;
                 listIn.Add(item);
+            }
+            foreach (BusinessObject.ChiTietXuatKho ct in listIn)
+            {
+                ct.TongSoLuong = tongsoluong;
             }
         }
         private string NgayThanhChu(DateTime dtFrom, DateTime dtTo)

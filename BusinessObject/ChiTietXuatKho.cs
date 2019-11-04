@@ -60,5 +60,11 @@ namespace QuanLyKho.BusinessObject
             get { return m_NgayLapPhieu; }
             set { m_NgayLapPhieu = value; }
         }
+        private double m_TongSoLuong;
+        public double TongSoLuong
+        {
+            get { return m_TongSoLuong; }
+            set { m_TongSoLuong = value; }
+        }
     }
 }

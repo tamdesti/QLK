@@ -201,7 +201,7 @@ namespace QuanLyKho
                     no = no.Substring(0, no.Length - 1);
                 }
             }
-            no = No2Str(no);
+            no = No2Str(no) + "đồng";
 
             return no;
         }

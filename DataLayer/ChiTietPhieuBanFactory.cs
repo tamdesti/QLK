@@ -40,7 +40,9 @@ namespace QuanLyKho.DataLayer
         }
         public DataTable DanhsachChiTietPhieuBan(String sp)
         {
-            OleDbCommand cmd = new OleDbCommand("SELECT CTPB.*, SP.ID_DON_VI_TINH FROM CHI_TiET_PHIEU_BAN CTPB INNER JOIN SAN_PHAM SP ON CTPB.ID_SAN_PHAM = SP.ID WHERE ID_PHIEU_BAN=@id ORDER BY CTPB.ID DESC");
+            OleDbCommand cmd = new OleDbCommand("SELECT CTPB.*, SP.ID_DON_VI_TINH " +
+                                                "FROM CHI_TiET_PHIEU_BAN CTPB INNER JOIN SAN_PHAM SP ON CTPB.ID_SAN_PHAM = SP.ID " +
+                                                "WHERE ID_PHIEU_BAN=@id ORDER BY CTPB.ID ASC");
             cmd.Parameters.Add("id", OleDbType.VarChar, 50).Value = sp;
             m_Ds.Load(cmd);
 

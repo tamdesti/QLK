@@ -356,9 +356,22 @@ D:\QLK\obj\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.application
 D:\QLK\obj\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.exe
 D:\QLK\obj\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.pdb
 D:\QLK\obj\Debug\QuanLyKho.FrmChiTietXuatKhoTheoKhachHang.resources
-D:\QLK\bin\Debug\FlashControlV71.dll
-D:\QLK\obj\Debug\QuanLyKho.csprojResolveAssemblyReference.cache
-D:\QLK\obj\Debug\QuanLyKho.csproj.CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.exe.config
 D:\QLK\obj\Debug\QuanLyKho.FrmInKhoanPhaiThu.resources
 D:\QLK\obj\Debug\QuanLyKho.frmInChiTietXuatKhoTheoKhachHang.resources
 D:\QLK\obj\Debug\QuanLyKho.frmInChiTietXuatKhoTheoSanPham.resources
+D:\QLK\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.Shell.Interop.10.0.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.Data.Services.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.Data.Core.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.Debugger.InteropA.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.ManagedInterfaces.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.ProjectAggregator.dll
+D:\QLK\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
+D:\QLK\obj\Debug\QuanLyKho.csprojAssemblyReference.cache
+D:\QLK\obj\Debug\CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC.exe.config
+D:\QLK\obj\Debug\QuanLyKho.csproj.CopyComplete

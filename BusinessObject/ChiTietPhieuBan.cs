@@ -52,6 +52,6 @@ namespace QuanLyKho.BusinessObject
             get { return m_KhoHang; }
             set { m_KhoHang = value; }
         }
-
+        
     }
 }
