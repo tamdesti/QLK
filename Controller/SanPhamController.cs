@@ -45,6 +45,43 @@ namespace QuanLyKho.Controller
             }
             return ds;
         }
+        public void HienthiAutoComboBoxByKhoVaKhach(System.Windows.Forms.ComboBox cmb, String IDKHO, string idKhach, DateTime from, DateTime to, bool isAll = false)
+        {
+            IList<SanPham> tbl = this.LayDanhSachSanPhamByKhoVaKhach(IDKHO, idKhach, from, to);
+            cmb.DataSource = tbl;
+            cmb.DisplayMember = "FullTenSanPham";
+            cmb.ValueMember = "Id";
+            if (isAll)
+            {
+                IList<SanPham> dsSP = this.LayDanhSachSanPhamByKhoVaKhach(IDKHO, idKhach, from, to);
+                IList<SanPham> ds = new List<SanPham>();
+                ds.Add(new SanPham("0", "Tất cả"));
+                foreach (SanPham sp in dsSP)
+                    ds.Add(sp);
+                cmb.DataSource = ds;
+                cmb.DisplayMember = "FullTenSanPham";
+                cmb.ValueMember = "Id";
+            }
+
+            cmb.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            cmb.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+        }
+        public IList<SanPham> LayDanhSachSanPhamByKhoVaKhach(string IDKHO, string IDKhach, DateTime from, DateTime to)
+        {
+            DataTable tbl = factory.DanhSachSanPhamByKhoVaKhach(IDKHO, IDKhach, from, to);
+            IList<SanPham> ds = new List<SanPham>();
+            DonViTinhController ctrlDVT = new DonViTinhController();
+            foreach (DataRow row in tbl.Rows)
+            {
+                SanPham sp = new SanPham();
+                sp.Id = Convert.ToString(row["ID"]);
+                sp.TenSanPham = Convert.ToString(row["TEN_SAN_PHAM"]);
+                sp.DonViTinh = ctrlDVT.LayDVT(Convert.ToInt32(row["ID_DON_VI_TINH"]));
+                sp.FullTenSanPham = row["TEN_SAN_PHAM"].ToString();
+                ds.Add(sp);
+            }
+            return ds;
+        }
         public void HienthiAutoComboBox(System.Windows.Forms.ComboBox cmb, String IDNCC, bool isAll = false)
         {
             SanPhamFactory SP = new SanPhamFactory();
@@ -87,6 +124,43 @@ namespace QuanLyKho.Controller
 
             cmb.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             cmb.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+        }
+        public void HienthiSanPhamXuatKho(System.Windows.Forms.ComboBox cmb, String IDKHO, DateTime from, DateTime to, bool isAll = false)
+        {
+            IList<SanPham> tbl = this.LayDanhSachSanPhamXuatKho(IDKHO, from, to);
+            cmb.DataSource = tbl;
+            cmb.DisplayMember = "FullTenSanPham";
+            cmb.ValueMember = "Id";
+            if (isAll)
+            {
+                IList<SanPham> dsSP = this.LayDanhSachSanPhamXuatKho(IDKHO, from, to);
+                IList<SanPham> ds = new List<SanPham>();
+                ds.Add(new SanPham("0", "Tất cả"));
+                foreach (SanPham sp in dsSP)
+                    ds.Add(sp);
+                cmb.DataSource = ds;
+                cmb.DisplayMember = "FullTenSanPham";
+                cmb.ValueMember = "Id";
+            }
+
+            cmb.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            cmb.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+        }
+        public IList<SanPham> LayDanhSachSanPhamXuatKho(string IDKHO, DateTime from, DateTime to)
+        {
+            DataTable tbl = factory.DanhSachSanPhamXuatKho(IDKHO, from, to);
+            IList<SanPham> ds = new List<SanPham>();
+            DonViTinhController ctrlDVT = new DonViTinhController();
+            foreach (DataRow row in tbl.Rows)
+            {
+                SanPham sp = new SanPham();
+                sp.Id = Convert.ToString(row["ID"]);
+                sp.TenSanPham = Convert.ToString(row["TEN_SAN_PHAM"]);
+                sp.DonViTinh = ctrlDVT.LayDVT(Convert.ToInt32(row["ID_DON_VI_TINH"]));
+                sp.FullTenSanPham = row["TEN_SAN_PHAM"].ToString();
+                ds.Add(sp);
+            }
+            return ds;
         }
         public void HienthiDataGridViewComboBoxColumn(System.Windows.Forms.DataGridViewComboBoxColumn cmb)
         {
@@ -147,13 +221,13 @@ namespace QuanLyKho.Controller
             BusinessObject.Util.AddSTTColumn(ref dt, ref bs, ref bn, ref dg);
             
         }
-        public void HangDaNhapByNCC(System.Windows.Forms.DataGridView dg, String NCC, DateTime fromdate, DateTime toDate)
+        public void HangDaNhapByKho(System.Windows.Forms.DataGridView dg, String NCC, DateTime fromdate, DateTime toDate)
         {
             System.Windows.Forms.BindingSource bs = new System.Windows.Forms.BindingSource();
             SanPhamFactory f = new SanPhamFactory();
             DataTable dt = new DataTable();
             System.Windows.Forms.BindingNavigator bn = new BindingNavigator();
-            dt = f.LayHangDaNhapByNCC(NCC, fromdate, toDate);
+            dt = f.LayHangDaNhapByKho(NCC, fromdate, toDate);
             BusinessObject.Util.AddSTTColumn(ref dt, ref bs, ref bn, ref dg);
         }
         public void HangDaNhapBySP(System.Windows.Forms.DataGridView dg, string IDSP, DateTime fromdate, DateTime toDate)
@@ -165,13 +239,13 @@ namespace QuanLyKho.Controller
             dt = f.LayHangDaNhapBySP(IDSP, fromdate, toDate);
             BusinessObject.Util.AddSTTColumn(ref dt, ref bs, ref bn, ref dg);
         }
-        public void HangDaBanByNCC(System.Windows.Forms.DataGridView dg, String NCC, DateTime fromdate, DateTime toDate)
+        public void HangDaBanByKho(System.Windows.Forms.DataGridView dg, String Kho, DateTime fromdate, DateTime toDate)
         {
             System.Windows.Forms.BindingSource bs = new System.Windows.Forms.BindingSource();
             SanPhamFactory f = new SanPhamFactory();
             DataTable dt = new DataTable();
             System.Windows.Forms.BindingNavigator bn = new BindingNavigator();
-            dt = f.LayHangDaBanByNCC(NCC, fromdate, toDate);
+            dt = f.LayHangDaBanByKho(Kho, fromdate, toDate);
             BusinessObject.Util.AddSTTColumn(ref dt, ref bs, ref bn, ref dg);
         }
         public void HangDaBanBySP(System.Windows.Forms.DataGridView dg, string IDSP, DateTime fromdate, DateTime toDate)
@@ -286,15 +360,6 @@ namespace QuanLyKho.Controller
                 sp.Loai = Convert.ToString(tbl.Rows[0]["LOAI"]);
             }
             return sp;
-        }
-        public Boolean SanPhamDaTonTai_coDVT(String ten)
-        {
-            DataTable tbl = factory.LaySanPhamTuTenVaDVT(ten);
-            if (tbl.Rows.Count > 0)
-            {
-                return true;
-            }
-            return false;
         }
         public Boolean SanPhamDaTonTai(String ten)
         {

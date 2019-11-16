@@ -62,8 +62,7 @@ namespace QuanLyKho.Controller
             cmb.DataSource = ncc.DanhsachNCC();
             cmb.DisplayMember = "HO_TEN";
             cmb.ValueMember = "ID";
-            cmb.DataPropertyName = "ID_NHA_CUNG_CAP";
-            cmb.HeaderText = "Nhà cung cấp";
+            cmb.AutoComplete = true;
         }
         
         public NhaCungCap LayNCC(String id)

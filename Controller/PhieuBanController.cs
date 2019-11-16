@@ -221,22 +221,22 @@ namespace QuanLyKho.Controller
             }
             BusinessObject.Util.AddSTTColumn(ref dt, ref bs, ref bn, ref dg);
         }
-        public void HienThiChiTietXuatKhoTheoSanPham(DataGridView dg, string IDSP, string IDKHO, DateTime from, DateTime to)
+        public void HienThiChiTietXuatKhoTheoSanPham(DataGridView dg, string IDSP, string IDKHO, string IDKhachHang, DateTime from, DateTime to)
         {
             System.Windows.Forms.BindingSource bs = new System.Windows.Forms.BindingSource();
             PhieuBanFactory PBFactory = new PhieuBanFactory();
             DataTable dt = new DataTable();
             System.Windows.Forms.BindingNavigator bn = new BindingNavigator();
-            dt = PBFactory.ChiTietXuatKhoTheoSanPham(IDSP, IDKHO, from, to);
+            dt = PBFactory.ChiTietXuatKhoTheoSanPham(IDSP, IDKHO, IDKhachHang, from, to);
             BusinessObject.Util.AddSTTColumn(ref dt, ref bs, ref bn, ref dg);
         }
-        public void HienThiChiTietXuatKhoTheoKhachHang(DataGridView dg, string IDKhach, string IDKHO, DateTime from, DateTime to)
+        public void HienThiChiTietXuatKhoTheoKhachHang(DataGridView dg, string IDKhach, string IDKHO, string IDSP, DateTime from, DateTime to)
         {
             System.Windows.Forms.BindingSource bs = new System.Windows.Forms.BindingSource();
             PhieuBanFactory PBFactory = new PhieuBanFactory();
             DataTable dt = new DataTable();
             System.Windows.Forms.BindingNavigator bn = new BindingNavigator();
-            dt = PBFactory.ChiTietXuatKhoTheoKhachHang(IDKhach, IDKHO, from, to);
+            dt = PBFactory.ChiTietXuatKhoTheoKhachHang(IDKhach, IDKHO, IDSP, from, to);
             BusinessObject.Util.AddSTTColumn(ref dt, ref bs, ref bn, ref dg);
         }
         public int VitriPhieuBanTuKhachHang(String ID_KhachHang, String ID_PhieuBan)

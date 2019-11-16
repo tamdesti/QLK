@@ -15,10 +15,9 @@ namespace QuanLyKho
         String NhaCungCap = "";
         DateTime FromDate = DateTime.Now;
         DateTime ToDate = DateTime.Now;
-        public frmInDaNhap(DataGridView dg, String NCC, String SP, DateTime fromdate, DateTime todate)
+        public frmInDaNhap(DataGridView dg, String Kho, String SP, DateTime fromdate, DateTime todate)
         {
             InitializeComponent();
-            NhaCungCap = NCC;
             FromDate = fromdate;
             ToDate = todate;
             GetData(dg);
@@ -30,21 +29,17 @@ namespace QuanLyKho
             int STT = 1;
             foreach (DataGridViewRow row in dg.Rows)
             {
-                //BusinessObject.InChiTietQuanLy item = new BusinessObject.InChiTietQuanLy();
-                //item.STT = STT;
-                //item.TenSanPham = row.Cells["colTenSanPham"].Value.ToString();
-                //item.LoHang = row.Cells["colLoID"].Value.ToString();
-                //item.TenDonViTinh = dvt.LayDVT(Convert.ToInt32(row.Cells["colDVT"].Value)).Ten;
-                //item.SoLuongNhap = Convert.ToInt32(row.Cells["Số lượng"].Value);
-                //item.Khuyenmai = Convert.ToInt32(row.Cells["Khuyến mãi"].Value);
-                //item.NgayHetHan = Convert.ToDateTime(row.Cells["colNgayHetHan"].Value);
-                //item.NgaySanXuat = Convert.ToDateTime(row.Cells["colNgaySanXuat"].Value);
-                //item.TongTien = Convert.ToDouble(row.Cells["Thành tiền"].Value);
-                //item.NhaCungCap = NhaCungCap;
-                //item.fromDate = FromDate;
-                //item.toDate = ToDate;
-                //listIn.Add(item);
-                //STT++;
+                BusinessObject.InChiTietQuanLy item = new BusinessObject.InChiTietQuanLy();
+                item.STT = STT;
+                item.TenSanPham = row.Cells["Tên Sản Phẩm"].Value.ToString();
+                item.SoLuongNhap = Convert.ToInt32(row.Cells["Số lượng"].Value);
+                item.DonGiaNhap = Convert.ToInt32(row.Cells["Đơn giá"].Value);
+                item.TongTien = Convert.ToDouble(row.Cells["Thành tiền"].Value);
+                item.NhaCungCap = row.Cells["colNCC"].FormattedValue.ToString();
+                item.fromDate = FromDate;
+                item.toDate = ToDate;
+                listIn.Add(item);
+                STT++;
             }
         }
 

@@ -48,6 +48,34 @@ namespace QuanLyKho.Controller
             return false;
 
         }
+        public IList<TonKho> LayTonKho()
+        {
+            SanPhamController spctrl = new SanPhamController();
+            DataTable tbl = factory.LayTonKho();
+            IList<TonKho> ds = new List<TonKho>();
+            foreach (DataRow row in tbl.Rows)
+            {
+                TonKho tk = new TonKho();
+                tk.KhoHang = Convert.ToString(row["ID_KHO"]);
+                tk.SanPham = spctrl.LaySanPham(Convert.ToString(row["ID_SAN_PHAM"]));
+                if (row["SO_LUONG_TON"].ToString() == "") tk.SoLuongTon = 0;
+                else tk.SoLuongTon = Convert.ToInt32(row["SO_LUONG_TON"]);
+                ds.Add(tk);
+            }
+            return ds;
+        }
+        public void CapNhatTatCaTonKho()
+        {
+            factory.CapNhatTatCaTonKho();
+        }
+        public long TongDaNhap(string IDSP, string IDKho)
+        {
+            return factory.TongSoNhap(IDSP, IDKho);
+        }
+        public long TongDaBan(string IDSP, string IDKho)
+        {
+            return factory.TongSoBan(IDSP, IDKho);
+        }
         public int ThemTonKho(TonKho tk)
         {
             return factory.ThemTonKho(tk);

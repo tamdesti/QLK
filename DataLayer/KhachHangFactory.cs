@@ -17,6 +17,54 @@ namespace QuanLyKho.DataLayer
 
             return m_Ds;
         }
+        public DataTable DanhsachKhachHangXuatKho(bool loai, string IDKHO, DateTime fromDate, DateTime toDate)
+        {
+            string WhereString = "";
+            if (IDKHO != "0")
+            {
+                WhereString += " AND CHI_TIET_PHIEU_BAN.ID_KHO=@IDKHO";
+            }
+            OleDbCommand cmd = new OleDbCommand("SELECT KHACH_HANG.ID, KHACH_HANG.HO_TEN, KHACH_HANG.DIA_CHI, KHACH_HANG.DIEN_THOAI, KHACH_HANG.LOAI_KH, KHACH_HANG.DAI_LY " +
+                                                "FROM ((KHACH_HANG INNER JOIN PHIEU_BAN ON KHACH_HANG.ID = PHIEU_BAN.ID_KHACH_HANG) INNER JOIN CHI_TIET_PHIEU_BAN ON PHIEU_BAN.ID = CHI_TIET_PHIEU_BAN.ID_PHIEU_BAN) " +
+                                                "WHERE LOAI_KH = " + loai + " AND CHI_TIET_PHIEU_BAN.NGAY_BAN >= @date1 AND CHI_TIET_PHIEU_BAN.NGAY_BAN <= @date2 " + WhereString +
+                                                " GROUP BY KHACH_HANG.ID, KHACH_HANG.HO_TEN, KHACH_HANG.DIA_CHI, KHACH_HANG.DIEN_THOAI, KHACH_HANG.LOAI_KH, KHACH_HANG.DAI_LY " +
+                                                " ORDER BY " + (loai ? "DAI_LY" : "HO_TEN"));
+            cmd.Parameters.Add("date1", OleDbType.Date).Value = fromDate.Date;
+            cmd.Parameters.Add("date2", OleDbType.Date).Value = toDate.Date;
+            if (IDKHO != "0") cmd.Parameters.Add("IDKHO", OleDbType.VarChar, 50).Value = IDKHO;
+            m_Ds.Load(cmd);
+            return m_Ds;
+        }
+        public DataTable DanhsachKhachHangXuatKhoTheoSanPham(bool loai, string IDKHO, string IDSP, DateTime fromDate, DateTime toDate)
+        {
+            string WhereString = "";
+            if (IDSP != "0")
+            {
+                WhereString = " AND CHI_TIET_PHIEU_BAN.ID_SAN_PHAM=@IDSP ";
+                if (IDKHO != "0")
+                {
+                    WhereString += " AND CHI_TIET_PHIEU_BAN.ID_KHO=@IDKHO";
+                }
+            }
+            else
+            {
+                if (IDKHO != "0")
+                {
+                    WhereString += " AND CHI_TIET_PHIEU_BAN.ID_KHO=@IDKHO";
+                }
+            }
+            OleDbCommand cmd = new OleDbCommand("SELECT KHACH_HANG.ID, KHACH_HANG.HO_TEN, KHACH_HANG.DIA_CHI, KHACH_HANG.DIEN_THOAI, KHACH_HANG.LOAI_KH, KHACH_HANG.DAI_LY " +
+                                                "FROM ((KHACH_HANG INNER JOIN PHIEU_BAN ON KHACH_HANG.ID = PHIEU_BAN.ID_KHACH_HANG) INNER JOIN CHI_TIET_PHIEU_BAN ON PHIEU_BAN.ID = CHI_TIET_PHIEU_BAN.ID_PHIEU_BAN) " +
+                                                "WHERE LOAI_KH = " + loai + " AND CHI_TIET_PHIEU_BAN.NGAY_BAN >= @date1 AND CHI_TIET_PHIEU_BAN.NGAY_BAN <= @date2 " + WhereString +
+                                                " GROUP BY KHACH_HANG.ID, KHACH_HANG.HO_TEN, KHACH_HANG.DIA_CHI, KHACH_HANG.DIEN_THOAI, KHACH_HANG.LOAI_KH, KHACH_HANG.DAI_LY " +
+                                                " ORDER BY " + (loai ? "DAI_LY" : "HO_TEN"));
+            cmd.Parameters.Add("date1", OleDbType.Date).Value = fromDate.Date;
+            cmd.Parameters.Add("date2", OleDbType.Date).Value = toDate.Date;
+            if (IDSP != "0") cmd.Parameters.Add("IDSP", OleDbType.VarChar, 50).Value = IDSP;
+            if (IDKHO != "0") cmd.Parameters.Add("IDKHO", OleDbType.VarChar, 50).Value = IDKHO;
+            m_Ds.Load(cmd);
+            return m_Ds;
+        }
         public DataTable TimHoTen(String hoten, bool loai)
         {
             OleDbCommand cmd = new OleDbCommand("SELECT * FROM KHACH_HANG WHERE HO_TEN LIKE '%' + @hoten + '%' AND LOAI_KH = " + loai);

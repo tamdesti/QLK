@@ -12,13 +12,11 @@ namespace QuanLyKho
 {
     public partial class frmInDaBan : Form
     {
-        String NhaCungCap = "";
         DateTime FromDate = DateTime.Now;
         DateTime ToDate = DateTime.Now;
         public frmInDaBan(DataGridView dg, String NCC, DateTime fromdate, DateTime todate)
         {
             InitializeComponent();
-            NhaCungCap = NCC;
             FromDate = fromdate;
             ToDate = todate;
             GetData(dg);
@@ -30,20 +28,17 @@ namespace QuanLyKho
             int STT = 1;
             foreach (DataGridViewRow row in dg.Rows)
             {
-                //BusinessObject.InChiTietQuanLy item = new BusinessObject.InChiTietQuanLy();
-                //item.STT = STT;
-                //item.TenSanPham = row.Cells["colTenSanPham"].Value.ToString();
-                //item.LoHang = row.Cells["colLoID"].Value.ToString();
-                //item.TenDonViTinh = dvt.LayDVT(Convert.ToInt32(row.Cells["colDVT"].Value)).Ten;
-                //item.SoLuongBan = Convert.ToInt32(row.Cells["Số lượng bán"].Value);
-                //item.TongTien = Convert.ToInt32(row.Cells["Tổng tiền"].Value);
-                //item.TongBanSi = Convert.ToInt32(row.Cells["Bán sỉ"].Value);
-                //item.TongBanLe = Convert.ToInt32(row.Cells["Bán lẻ"].Value);
-                //item.NhaCungCap = NhaCungCap;
-                //item.fromDate = FromDate;
-                //item.toDate = ToDate;
-                //listIn.Add(item);
-                //STT++;
+                BusinessObject.InChiTietQuanLy item = new BusinessObject.InChiTietQuanLy();
+                item.STT = STT;
+                item.TenSanPham = row.Cells["Tên sản phẩm"].Value.ToString();
+                item.DonGiaNhap = Convert.ToInt32(row.Cells["Đơn giá"].Value);
+                item.SoLuongBan = Convert.ToInt32(row.Cells["Số lượng"].Value);
+                item.TongTien = Convert.ToInt32(row.Cells["Thành tiền"].Value);
+                item.NhaCungCap = row.Cells["colKhachHang"].FormattedValue.ToString(); ;
+                item.fromDate = FromDate;
+                item.toDate = ToDate;
+                listIn.Add(item);
+                STT++;
             }
         }
         private void frmInDaBan_Load(object sender, EventArgs e)

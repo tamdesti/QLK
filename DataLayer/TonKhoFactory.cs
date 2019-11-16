@@ -26,6 +26,12 @@ namespace QuanLyKho.DataLayer
             cmd.Parameters.Add("SoLuong", OleDbType.Integer).Value = TK.SoLuongTon;
             return m_Ds.ExecuteNoneQuery(cmd);
         }
+        public DataTable LayTonKho()
+        {
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM TON_KHO");
+            m_Ds.Load(cmd);
+            return m_Ds;
+        }
         public DataTable LayTonKho(string IDSP, string IDKHO)
         {
             OleDbCommand cmd = new OleDbCommand("SELECT * FROM TON_KHO WHERE (ID_SAN_PHAM=@IDSP AND ID_KHO=@IDKHO)");
@@ -60,6 +66,26 @@ namespace QuanLyKho.DataLayer
             cmd.Parameters.Add("IDKHO", OleDbType.VarChar, 50).Value = IDKHO;
             cmd.Parameters.Add("IDSP", OleDbType.VarChar, 50).Value = IDSP;
             ds.ExecuteNoneQuery(cmd);
+        }
+        public void CapNhatTatCaTonKho()
+        {
+            DataService ds = new DataService();
+            OleDbCommand cmd = new OleDbCommand("UPDATE TON_KHO SET SO_LUONG_TON = " +
+                "DSUM(\"CHI_TIET_PHIEU_NHAP.SO_LUONG\", \"CHI_TIET_PHIEU_NHAP\", \"ID_SAN_PHAM='\" & TON_KHO.ID_SAN_PHAM & \"' AND ID_KHO='\" & TON_KHO.ID_KHO & \"'\") - " +
+                "DSUM(\"CHI_TIET_PHIEU_BAN.SO_LUONG\", \"CHI_TIET_PHIEU_BAN\", \"ID_SAN_PHAM='\" & TON_KHO.ID_SAN_PHAM & \"' AND ID_KHO='\" & TON_KHO.ID_KHO & \"'\")");
+            ds.ExecuteNoneQuery(cmd);
+        }
+        public long TongSoNhap(string IDSP, string IDKHO)
+        {
+            DataService ds = new DataService();
+            OleDbCommand cmd = new OleDbCommand("SELECT DSUM(\"CHI_TIET_PHIEU_NHAP.SO_LUONG\", \"CHI_TIET_PHIEU_NHAP\", \"ID_SAN_PHAM='\" & " + IDSP + " & \"' AND ID_KHO='\" & " + IDKHO + " & \"'\")");
+            return Convert.ToInt64(m_Ds.ExecuteScalar(cmd));
+        }
+        public long TongSoBan(string IDSP, string IDKHO)
+        {
+            DataService ds = new DataService();
+            OleDbCommand cmd = new OleDbCommand("SELECT DSUM(\"CHI_TIET_PHIEU_BAN.SO_LUONG\", \"CHI_TIET_PHIEU_BAN\", \"ID_SAN_PHAM='\" & " + IDSP + " & \"' AND ID_KHO='\" & " + IDKHO + " & \"'\")");
+            return Convert.ToInt64(m_Ds.ExecuteScalar(cmd));
         }
         public DataRow NewRow()
         {

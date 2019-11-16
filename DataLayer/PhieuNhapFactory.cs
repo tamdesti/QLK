@@ -43,7 +43,7 @@ namespace QuanLyKho.DataLayer
         }
         public DataTable DanhsachPhieuNhap()
         {
-            OleDbCommand cmd = new OleDbCommand("SELECT ID, NGAY_NHAP, NO_CU, TONG_TIEN, NO_CU + TONG_TIEN AS [Tổng tiền], DA_TRA, CON_NO, ID_NHA_CUNG_CAP FROM PHIEU_NHAP ORDER BY ID DESC");
+            OleDbCommand cmd = new OleDbCommand("SELECT ID, NGAY_NHAP, NO_CU, TONG_TIEN, NO_CU + TONG_TIEN AS [Tổng tiền], DA_TRA, CON_NO, ID_NHA_CUNG_CAP FROM PHIEU_NHAP WHERE TONG_TIEN > 0 ORDER BY ID DESC");
             m_Ds.Load(cmd);
 
             return m_Ds;
@@ -56,7 +56,7 @@ namespace QuanLyKho.DataLayer
             }
             else
             {
-                OleDbCommand cmd = new OleDbCommand("SELECT ID, NGAY_NHAP, NO_CU, TONG_TIEN, NO_CU + TONG_TIEN AS [Tổng tiền],  DA_TRA, CON_NO, ID_NHA_CUNG_CAP FROM PHIEU_NHAP WHERE ID_NHA_CUNG_CAP= '" + MaNCC + "' ORDER BY ID DESC");
+                OleDbCommand cmd = new OleDbCommand("SELECT ID, NGAY_NHAP, NO_CU, TONG_TIEN, NO_CU + TONG_TIEN AS [Tổng tiền],  DA_TRA, CON_NO, ID_NHA_CUNG_CAP FROM PHIEU_NHAP WHERE TONG_TIEN > 0 AND ID_NHA_CUNG_CAP= '" + MaNCC + "' ORDER BY ID DESC");
                 m_Ds.Load(cmd);
                 return m_Ds;
             }

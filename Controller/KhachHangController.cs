@@ -81,6 +81,68 @@ namespace QuanLyKho.Controller
             cmb.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             cmb.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
         }
+        public IList<KhachHang> LayDanhsachKhachHangXuatKho(Boolean loai, string IDKHO, DateTime from, DateTime to)
+        {
+            KhachHangFactory KHfactory = new KhachHangFactory();
+            DataTable tbl = KHfactory.DanhsachKhachHangXuatKho(loai, IDKHO, from, to);
+            IList<KhachHang> ds = new List<KhachHang>();
+            foreach (DataRow row in tbl.Rows)
+            {
+                KhachHang kh = new KhachHang();
+                kh.HoTen = row["HO_TEN"].ToString();
+                kh.Id = row["ID"].ToString();
+                kh.DiaChi = row["DIA_CHI"].ToString();
+                kh.DienThoai = row["DIEN_THOAI"].ToString();
+                kh.LoaiKH = Convert.ToBoolean(row["LOAI_KH"].ToString());
+                kh.TenDaiLy = row["DAI_LY"].ToString();
+                ds.Add(kh);
+            }
+            return ds;
+        }
+        public void HienthiAllKhachHangXuatKhoAutoComboBox(System.Windows.Forms.ComboBox cmb, string IDKHO, DateTime from, DateTime to, bool loai = false)
+        {
+            IList<KhachHang> dsKH = this.LayDanhsachKhachHangXuatKho(loai, IDKHO, from, to);
+            IList<KhachHang> ds = new List<KhachHang>();
+            ds.Add(new KhachHang("0", "Tất cả"));
+            foreach (KhachHang kh in dsKH)
+                ds.Add(kh);
+            cmb.DataSource = ds;
+            cmb.DisplayMember = "HoTen";
+            cmb.ValueMember = "Id";
+            cmb.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            cmb.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+        }
+        public IList<KhachHang> LayDanhsachKhachHangXuatKhoTheoSanPham(Boolean loai, string IDKHO, string IDSP, DateTime from, DateTime to)
+        {
+            KhachHangFactory KHfactory = new KhachHangFactory();
+            DataTable tbl = KHfactory.DanhsachKhachHangXuatKhoTheoSanPham(loai, IDKHO, IDSP, from, to);
+            IList<KhachHang> ds = new List<KhachHang>();
+            foreach (DataRow row in tbl.Rows)
+            {
+                KhachHang kh = new KhachHang();
+                kh.HoTen = row["HO_TEN"].ToString();
+                kh.Id = row["ID"].ToString();
+                kh.DiaChi = row["DIA_CHI"].ToString();
+                kh.DienThoai = row["DIEN_THOAI"].ToString();
+                kh.LoaiKH = Convert.ToBoolean(row["LOAI_KH"].ToString());
+                kh.TenDaiLy = row["DAI_LY"].ToString();
+                ds.Add(kh);
+            }
+            return ds;
+        }
+        public void HienthiAllKhachHangXuatKhoTheoSanPham(System.Windows.Forms.ComboBox cmb, string IDKHO, string IDSP, DateTime from, DateTime to, bool loai = false)
+        {
+            IList<KhachHang> dsKH = this.LayDanhsachKhachHangXuatKhoTheoSanPham(loai, IDKHO, IDSP, from, to);
+            IList<KhachHang> ds = new List<KhachHang>();
+            ds.Add(new KhachHang("0", "Tất cả"));
+            foreach (KhachHang kh in dsKH)
+                ds.Add(kh);
+            cmb.DataSource = ds;
+            cmb.DisplayMember = "HoTen";
+            cmb.ValueMember = "Id";
+            cmb.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            cmb.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+        }
         public void HienthiChungAutoComboBox(System.Windows.Forms.ComboBox cmb)
         {
             cmb.DataSource = factory.DanhsachKhachHang();
@@ -103,24 +165,18 @@ namespace QuanLyKho.Controller
 
         public void HienthiKhachHangChungDataGridviewComboBox(System.Windows.Forms.DataGridViewComboBoxColumn cmb)
         {
-
             cmb.DataSource = factory.DanhsachKhachHang();
             cmb.DisplayMember = "HO_TEN";
             cmb.ValueMember = "ID";
-            cmb.DataPropertyName = "ID_KHACH_HANG";
-            cmb.HeaderText = "Khách hàng";
-
+            cmb.AutoComplete = true;
         }
 
         public void HienthiKhachHangDataGridviewComboBox(System.Windows.Forms.DataGridViewComboBoxColumn cmb)
         {
-        
             cmb.DataSource = factory.DanhsachKhachHang(false);
             cmb.DisplayMember = "HO_TEN";
             cmb.ValueMember = "ID";
-            cmb.DataPropertyName = "ID_KHACH_HANG";
-            cmb.HeaderText = "Khách hàng";
-
+            cmb.AutoComplete = true;
         }
         public void HienthiDaiLyDataGridviewComboBox(System.Windows.Forms.DataGridViewComboBoxColumn cmb)
         {

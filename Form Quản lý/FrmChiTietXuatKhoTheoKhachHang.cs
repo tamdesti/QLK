@@ -20,12 +20,14 @@ namespace QuanLyKho
         PhieuBanController PB = new PhieuBanController();
         KhoHangController ctrlKho = new KhoHangController();
         KhachHangController ctrlKhach = new KhachHangController();
+        SanPhamController ctrlSanPham = new SanPhamController();
         private void FrmChiTietXuatKhoTheoKhachHang_Load(object sender, EventArgs e)
         {
             fromDate.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
             ctrlKho.HienthiAllComboBox(cmbKho, false);
             ctrlKhach.HienthiAllKhachHangAutoComboBox(cmbKhachHang);
-            PB.HienThiChiTietXuatKhoTheoKhachHang(dataGridView1, cmbKhachHang.SelectedValue.ToString(), cmbKho.SelectedValue.ToString(), fromDate.Value, toDate.Value);
+            ctrlSanPham.HienthiAutoComboBoxByKhoVaKhach(cmbSanPham, cmbKho.SelectedValue.ToString(), cmbKhachHang.SelectedValue.ToString(), fromDate.Value, toDate.Value, true);
+            PB.HienThiChiTietXuatKhoTheoKhachHang(dataGridView1, cmbKhachHang.SelectedValue.ToString(), cmbKho.SelectedValue.ToString(), cmbSanPham.SelectedValue.ToString(), fromDate.Value, toDate.Value);
             foreach (DataGridViewColumn col in dataGridView1.Columns)
             {
                 col.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
@@ -45,12 +47,20 @@ namespace QuanLyKho
         }
         private void cmbKho_SelectedIndexChanged(object sender, EventArgs e)
         {
+            ctrlKhach.HienthiAllKhachHangXuatKhoAutoComboBox(cmbKhachHang, cmbKho.SelectedValue.ToString(), fromDate.Value, toDate.Value);
+        }
+        private void cmbKhachHang_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ctrlSanPham.HienthiAutoComboBoxByKhoVaKhach(cmbSanPham, cmbKho.SelectedValue.ToString(), cmbKhachHang.SelectedValue.ToString(), fromDate.Value, toDate.Value, true);
+        }
+        private void cmbSanPham_SelectedIndexChanged(object sender, EventArgs e)
+        {
             DataLoading();
         }
         public void DataLoading()
         {
             if (cmbKhachHang.SelectedValue != null)
-                PB.HienThiChiTietXuatKhoTheoKhachHang(dataGridView1, cmbKhachHang.SelectedValue.ToString(), cmbKho.SelectedValue.ToString(), fromDate.Value, toDate.Value);
+                PB.HienThiChiTietXuatKhoTheoKhachHang(dataGridView1, cmbKhachHang.SelectedValue.ToString(), cmbKho.SelectedValue.ToString(), cmbSanPham.SelectedValue.ToString(), fromDate.Value, toDate.Value);
         }
         private void fromDate_KeyDown(object sender, KeyEventArgs e)
         {
@@ -82,6 +92,28 @@ namespace QuanLyKho
             KhoHangController KH = new KhoHangController();
             if (!KH.KhoTonTai(cmbKho.Text)) cmbKho.SelectedIndex = 0;
         }
+        private void cmbKhachHang_Leave(object sender, EventArgs e)
+        {
+            KhachHangController Khach = new KhachHangController();
+            if (!Khach.KhachHangTonTai(cmbKhachHang.Text))
+            {
+                if (cmbKhachHang.Items.Count > 0)
+                    cmbKhachHang.SelectedIndex = 0;
+                else
+                    cmbKhachHang.Text = "";
+            }
+        }
+        private void cmbSanPham_Leave(object sender, EventArgs e)
+        {
+            SanPhamController SP = new SanPhamController();
+            if (!SP.SanPhamDaTonTai(cmbSanPham.Text))
+            {
+                if (cmbSanPham.Items.Count > 0)
+                    cmbSanPham.SelectedIndex = 0;
+                else
+                    cmbSanPham.Text = "";
+            }
+        }
         private void toDate_ValueChanged(object sender, EventArgs e)
         {
             if (toDate.Value < fromDate.Value)
@@ -104,28 +136,14 @@ namespace QuanLyKho
             DataLoading();
         }
 
-        private void cmbKhachHang_Leave(object sender, EventArgs e)
-        {
-            KhachHangController Khach = new KhachHangController();
-            if (!Khach.KhachHangTonTai(cmbKhachHang.Text))
-            {
-                if (cmbKhachHang.Items.Count > 0)
-                    cmbKhachHang.SelectedIndex = 0;
-                else
-                    cmbKhachHang.Text = "";
-            }
-        }
-
-        private void cmbKhachHang_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            DataLoading();
-        }
-
+        
         private void btnPrint_Click(object sender, EventArgs e)
         {
             frmInChiTietXuatKhoTheoKhachHang frm = new frmInChiTietXuatKhoTheoKhachHang(dataGridView1, fromDate.Value, toDate.Value, cmbKhachHang.Text);
             frm.WindowState = FormWindowState.Maximized;
             frm.ShowDialog();
         }
+
+        
     }
 }

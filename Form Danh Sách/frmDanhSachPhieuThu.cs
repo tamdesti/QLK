@@ -23,8 +23,8 @@ namespace QuanLyKho
         {
             fromDate.Value = DateTime.Now.AddMonths(-1);
             cbDanhsach.Items.Insert(0, "Đại lý");
-            cbDanhsach.Items.Insert(1, "Khách hàng lẻ");
-            cbDanhsach.SelectedIndex = 0;
+            cbDanhsach.Items.Insert(1, "Khách hàng");
+            cbDanhsach.SelectedIndex = 1;
             dataGridView.AutoGenerateColumns = false;
             dataGridView.Columns["colId"].DisplayIndex = 1;
             dataGridView.Columns["colDaiLy"].DisplayIndex = 2;

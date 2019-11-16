@@ -285,10 +285,10 @@
             // 
             this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolSanPham,
+            this.toolTonKho,
             this.toolStripSeparator6,
             this.toolNhapHang,
             this.toolNhaCungCap,
-            this.toolTonKho,
             this.toolStripDropDownButton1,
             this.toolStripSeparator4});
             this.toolStrip.Location = new System.Drawing.Point(0, 24);
@@ -359,25 +359,23 @@
             // 
             this.sảnPhẩmĐãNhậpToolStripMenuItem.Image = global::QuanLyKho.Properties.Resources.danhap;
             this.sảnPhẩmĐãNhậpToolStripMenuItem.Name = "sảnPhẩmĐãNhậpToolStripMenuItem";
-            this.sảnPhẩmĐãNhậpToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.sảnPhẩmĐãNhậpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sảnPhẩmĐãNhậpToolStripMenuItem.Text = "Sản phẩm đã nhập";
-            this.sảnPhẩmĐãNhậpToolStripMenuItem.Visible = false;
             this.sảnPhẩmĐãNhậpToolStripMenuItem.Click += new System.EventHandler(this.sảnPhẩmĐãNhậpToolStripMenuItem_Click);
             // 
             // sảnPhẩmĐãBánToolStripMenuItem
             // 
             this.sảnPhẩmĐãBánToolStripMenuItem.Image = global::QuanLyKho.Properties.Resources.daban;
             this.sảnPhẩmĐãBánToolStripMenuItem.Name = "sảnPhẩmĐãBánToolStripMenuItem";
-            this.sảnPhẩmĐãBánToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.sảnPhẩmĐãBánToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sảnPhẩmĐãBánToolStripMenuItem.Text = "Sản phẩm đã bán";
-            this.sảnPhẩmĐãBánToolStripMenuItem.Visible = false;
             this.sảnPhẩmĐãBánToolStripMenuItem.Click += new System.EventHandler(this.sảnPhẩmĐãBánToolStripMenuItem_Click);
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Image = global::QuanLyKho.Properties.Resources.TonKho;
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(173, 22);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem4.Text = "Tồn kho mới";
             this.toolStripMenuItem4.Visible = false;
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
@@ -386,7 +384,7 @@
             // 
             this.tồnKhoToolStripMenuItem.Image = global::QuanLyKho.Properties.Resources.TonKho;
             this.tồnKhoToolStripMenuItem.Name = "tồnKhoToolStripMenuItem";
-            this.tồnKhoToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.tồnKhoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tồnKhoToolStripMenuItem.Text = "Tồn kho";
             this.tồnKhoToolStripMenuItem.Click += new System.EventHandler(this.mnuBaocaoSoluongton_Click);
             // 
@@ -394,7 +392,7 @@
             // 
             this.sảnPhẩmHếtHạnToolStripMenuItem.Image = global::QuanLyKho.Properties.Resources.hethan;
             this.sảnPhẩmHếtHạnToolStripMenuItem.Name = "sảnPhẩmHếtHạnToolStripMenuItem";
-            this.sảnPhẩmHếtHạnToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.sảnPhẩmHếtHạnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sảnPhẩmHếtHạnToolStripMenuItem.Text = "Sản phẩm hết hạn";
             this.sảnPhẩmHếtHạnToolStripMenuItem.Visible = false;
             this.sảnPhẩmHếtHạnToolStripMenuItem.Click += new System.EventHandler(this.sảnPhẩmHếtHạnToolStripMenuItem_Click);
@@ -430,6 +428,7 @@
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(253, 22);
             this.toolStripMenuItem2.Text = "Đại lý";
+            this.toolStripMenuItem2.Visible = false;
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem3

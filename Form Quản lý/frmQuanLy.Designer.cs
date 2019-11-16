@@ -33,10 +33,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLy));
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colKhoHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTenSanPham = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colGhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupbox3 = new System.Windows.Forms.GroupBox();
             this.DateGroup = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,6 +46,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cmbSanPham = new System.Windows.Forms.ComboBox();
             this.SoLuongTonbingdingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colKhachHang = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.colNCC = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.colGhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupbox3.SuspendLayout();
@@ -82,8 +82,8 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colID,
-            this.colKhoHang,
-            this.colTenSanPham,
+            this.colKhachHang,
+            this.colNCC,
             this.colGhiChu});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 168);
@@ -92,37 +92,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1165, 308);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.Sorted += new System.EventHandler(this.dataGridView1_Sorted);
-            // 
-            // colID
-            // 
-            this.colID.DataPropertyName = "ID";
-            this.colID.HeaderText = "ID";
-            this.colID.Name = "colID";
-            this.colID.ReadOnly = true;
-            this.colID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.colID.Visible = false;
-            // 
-            // colKhoHang
-            // 
-            this.colKhoHang.DataPropertyName = "Kho hàng";
-            this.colKhoHang.HeaderText = "Kho hàng";
-            this.colKhoHang.Name = "colKhoHang";
-            this.colKhoHang.ReadOnly = true;
-            this.colKhoHang.Visible = false;
-            // 
-            // colTenSanPham
-            // 
-            this.colTenSanPham.DataPropertyName = "Tên sản phẩm";
-            this.colTenSanPham.HeaderText = "Tên Sản Phẩm";
-            this.colTenSanPham.Name = "colTenSanPham";
-            this.colTenSanPham.ReadOnly = true;
-            this.colTenSanPham.Width = 300;
-            // 
-            // colGhiChu
-            // 
-            this.colGhiChu.HeaderText = "Ghi chú";
-            this.colGhiChu.Name = "colGhiChu";
-            this.colGhiChu.ReadOnly = true;
             // 
             // groupbox3
             // 
@@ -257,6 +226,35 @@
             this.cmbSanPham.SelectionChangeCommitted += new System.EventHandler(this.cmbSanPham_SelectionChangeCommitted);
             this.cmbSanPham.Leave += new System.EventHandler(this.cmbSanPham_Leave);
             // 
+            // colID
+            // 
+            this.colID.DataPropertyName = "ID";
+            this.colID.HeaderText = "ID";
+            this.colID.Name = "colID";
+            this.colID.ReadOnly = true;
+            this.colID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.colID.Visible = false;
+            // 
+            // colKhachHang
+            // 
+            this.colKhachHang.DataPropertyName = "Khách hàng";
+            this.colKhachHang.HeaderText = "Khách hàng";
+            this.colKhachHang.Name = "colKhachHang";
+            this.colKhachHang.ReadOnly = true;
+            // 
+            // colNCC
+            // 
+            this.colNCC.DataPropertyName = "ID_NHA_CUNG_CAP";
+            this.colNCC.HeaderText = "Nhà cung cấp";
+            this.colNCC.Name = "colNCC";
+            this.colNCC.ReadOnly = true;
+            // 
+            // colGhiChu
+            // 
+            this.colGhiChu.HeaderText = "Ghi chú";
+            this.colGhiChu.Name = "colGhiChu";
+            this.colGhiChu.ReadOnly = true;
+            // 
             // frmQuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -296,8 +294,8 @@
         private System.Windows.Forms.DateTimePicker fromDate;
         private System.Windows.Forms.GroupBox DateGroup;
         private System.Windows.Forms.DataGridViewTextBoxColumn colID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colKhoHang;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTenSanPham;
+        private System.Windows.Forms.DataGridViewComboBoxColumn colKhachHang;
+        private System.Windows.Forms.DataGridViewComboBoxColumn colNCC;
         private System.Windows.Forms.DataGridViewTextBoxColumn colGhiChu;
     }
 }

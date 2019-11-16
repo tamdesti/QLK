@@ -29,7 +29,9 @@ namespace QuanLyKho.DataLayer
             }
             else
             {
-                OleDbCommand cmd = new OleDbCommand("SELECT *, (NO_CU + TONG_TIEN) AS [THANH_TIEN] FROM PHIEU_BAN WHERE ID_KHACH_HANG=@kh ORDER BY ID DESC");
+                OleDbCommand cmd = new OleDbCommand("SELECT *, (NO_CU + TONG_TIEN) AS [THANH_TIEN] FROM PHIEU_BAN " +
+                                                    "WHERE ID_KHACH_HANG=@kh AND TONG_TIEN >0 " +
+                                                    "ORDER BY ID DESC");
                 cmd.Parameters.Add("kh", OleDbType.VarChar).Value = idKh;
                 m_Ds.Load(cmd);
             }
@@ -55,7 +57,7 @@ namespace QuanLyKho.DataLayer
         }
         public DataTable DanhsachPhieuBanLe()
         {
-            OleDbCommand cmd = new OleDbCommand("SELECT PB.*, (PB.NO_CU + PB.TONG_TIEN) AS [THANH_TIEN] FROM PHIEU_BAN PB INNER JOIN KHACH_HANG KH ON PB.ID_KHACH_HANG=KH.ID WHERE KH.LOAI_KH=FALSE ORDER BY PB.ID DESC");
+            OleDbCommand cmd = new OleDbCommand("SELECT PB.*, (PB.NO_CU + PB.TONG_TIEN) AS [THANH_TIEN] FROM PHIEU_BAN PB INNER JOIN KHACH_HANG KH ON PB.ID_KHACH_HANG=KH.ID WHERE KH.LOAI_KH=FALSE AND TONG_TIEN > 0 ORDER BY PB.ID DESC");
             m_Ds.Load(cmd);
 
             return m_Ds;
@@ -198,7 +200,7 @@ namespace QuanLyKho.DataLayer
             m_Ds.Load(cmd);
             return m_Ds;
         }
-        public DataTable ChiTietXuatKhoTheoSanPham(string IDSP, string IDKHO, DateTime fromDate, DateTime toDate)
+        public DataTable ChiTietXuatKhoTheoSanPham(string IDSP, string IDKHO, string IDKhachHang, DateTime fromDate, DateTime toDate)
         {
             string WhereString = "";
             if (IDSP != "0")
@@ -206,14 +208,22 @@ namespace QuanLyKho.DataLayer
                 WhereString = "AND ID_SAN_PHAM = @SP ";
                 if (IDKHO != "0")
                 {
-                    WhereString += "AND ID_KHO = @KHO";
+                    WhereString += " AND ID_KHO = @KHO";
+                }
+                if (IDKhachHang != "0")
+                {
+                    WhereString += " AND KH.ID = @Khach";
                 }
             }
             else
             {
                 if (IDKHO != "0")
                 {
-                    WhereString += "AND ID_KHO = @KHO";
+                    WhereString += " AND ID_KHO = @KHO";
+                }
+                if (IDKhachHang != "0")
+                {
+                    WhereString += " AND KH.ID = @Khach";
                 }
             }
             OleDbCommand cmd = new OleDbCommand("SELECT [HO_TEN] & \"_\" & [DIEN_THOAI] AS [Tên Khách hàng], CTPB.NGAY_BAN AS [Ngày], CTPB.SO_LUONG AS [Số lượng], DON_GIA AS [Đơn giá], THANH_TIEN AS [Tiền hàng], SP.LOAI AS [Loại] " +
@@ -224,10 +234,11 @@ namespace QuanLyKho.DataLayer
             cmd.Parameters.Add("date2", OleDbType.Date).Value = toDate.Date;
             if (IDSP != "0") cmd.Parameters.Add("SP", OleDbType.VarChar, 50).Value = IDSP;
             if (IDKHO != "0") cmd.Parameters.Add("KHO", OleDbType.VarChar, 50).Value = IDKHO;
+            if (IDKhachHang != "0") cmd.Parameters.Add("Khach", OleDbType.VarChar, 50).Value = IDKhachHang;
             m_Ds.Load(cmd);
             return m_Ds;
         }
-        public DataTable ChiTietXuatKhoTheoKhachHang(string IDKH, string IDKHO, DateTime fromDate, DateTime toDate)
+        public DataTable ChiTietXuatKhoTheoKhachHang(string IDKH, string IDKHO, string IDSP, DateTime fromDate, DateTime toDate)
         {
             string WhereString = "";
             if (IDKH != "0")
@@ -235,14 +246,22 @@ namespace QuanLyKho.DataLayer
                 WhereString = "AND PB.ID_KHACH_HANG = @KH ";
                 if (IDKHO != "0")
                 {
-                    WhereString += "AND CTPB.ID_KHO = @KHO";
+                    WhereString += " AND CTPB.ID_KHO = @KHO ";
+                }
+                if (IDSP != "0")
+                {
+                    WhereString += " AND SP.ID = @SanPham ";
                 }
             }
             else
             {
                 if (IDKHO != "0")
                 {
-                    WhereString += "AND CTPB.ID_KHO = @KHO";
+                    WhereString += " AND CTPB.ID_KHO = @KHO ";
+                }
+                if (IDSP != "0")
+                {
+                    WhereString += " AND SP.ID = @SanPham ";
                 }
             }
             OleDbCommand cmd = new OleDbCommand("SELECT SP.TEN_SAN_PHAM AS [Mặt hàng], CTPB.NGAY_BAN AS [Ngày], CTPB.SO_LUONG AS [Số lượng], DON_GIA AS [Đơn giá], THANH_TIEN AS [Tiền hàng], SP.LOAI AS [Loại] " +
@@ -252,7 +271,8 @@ namespace QuanLyKho.DataLayer
             cmd.Parameters.Add("date1", OleDbType.Date).Value = fromDate.Date;
             cmd.Parameters.Add("date2", OleDbType.Date).Value = toDate.Date;
             if (IDKH != "0") cmd.Parameters.Add("KH", OleDbType.VarChar, 50).Value = IDKH;
-            if (IDKHO != "0") cmd.Parameters.Add("KHO", OleDbType.VarChar, 50).Value = IDKHO;
+            if (IDKHO != "0") cmd.Parameters.Add("KHO", OleDbType.VarChar, 50).Value = IDKHO; 
+            if (IDSP != "0") cmd.Parameters.Add("SanPham", OleDbType.VarChar, 50).Value = IDSP;
             m_Ds.Load(cmd);
             return m_Ds;
         }
