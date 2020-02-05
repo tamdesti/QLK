@@ -35,12 +35,12 @@ namespace QuanLyKho
         {
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.Columns["colKH"].DisplayIndex = 1;
-            dataGridView1.Columns["colNoCu"].DisplayIndex = 2;
-            dataGridView1.Columns["colThanhTien"].DisplayIndex = 3;
-            dataGridView1.Columns["colTongTien"].DisplayIndex = 4;
-            dataGridView1.Columns["colDaTra"].DisplayIndex = 5;
-            dataGridView1.Columns["colConNo"].DisplayIndex = 6;
-            dataGridView1.Columns["colNgayBan"].DisplayIndex = 7;
+            dataGridView1.Columns["colNgayBan"].DisplayIndex = 2;
+            dataGridView1.Columns["colNoCu"].DisplayIndex = 3;
+            dataGridView1.Columns["colThanhTien"].DisplayIndex = 4;
+            dataGridView1.Columns["colTongTien"].DisplayIndex = 5;
+            dataGridView1.Columns["colDaTra"].DisplayIndex = 6;
+            dataGridView1.Columns["colConNo"].DisplayIndex = 7;
             dataGridView1.Columns["colID"].Visible = false;
         }
         private void ReloadData()
@@ -48,7 +48,7 @@ namespace QuanLyKho
             PhieuBanController PBCtrl = new PhieuBanController();
             if (type == DuNo.BanSi)
             {
-                ctrlKH.HienthiDaiLyDataGridviewComboBox(colKH);
+                //ctrlKH.HienthiDaiLyDataGridviewComboBox(colKH);
                 ctrl.HienthiPhieuBanSiConNo(bn, dataGridView1, ID_KhachHang);
             }
             else

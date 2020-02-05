@@ -29,16 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDuNo));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.GhiChu = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnThanhToan = new System.Windows.Forms.Button();
@@ -67,7 +68,6 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.label1 = new System.Windows.Forms.Label();
             this.dtNgayTra = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -91,8 +91,8 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.dtNgayTra);
+            this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.GhiChu);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.btnThanhToan);
@@ -106,6 +106,15 @@
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thanh Toán";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(243, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Ngày trả:";
             // 
             // GhiChu
             // 
@@ -240,9 +249,9 @@
             // colNoCu
             // 
             this.colNoCu.DataPropertyName = "NO_CU";
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle15.Format = "N0";
-            this.colNoCu.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle1.Format = "N0";
+            this.colNoCu.DefaultCellStyle = dataGridViewCellStyle1;
             this.colNoCu.HeaderText = "Nợ cũ";
             this.colNoCu.Name = "colNoCu";
             this.colNoCu.ReadOnly = true;
@@ -250,10 +259,10 @@
             // colThanhTien
             // 
             this.colThanhTien.DataPropertyName = "TONG_TIEN";
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle16.Format = "N0";
-            dataGridViewCellStyle16.NullValue = null;
-            this.colThanhTien.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle2.Format = "N0";
+            dataGridViewCellStyle2.NullValue = null;
+            this.colThanhTien.DefaultCellStyle = dataGridViewCellStyle2;
             this.colThanhTien.HeaderText = "Thành tiền";
             this.colThanhTien.Name = "colThanhTien";
             this.colThanhTien.ReadOnly = true;
@@ -261,9 +270,9 @@
             // colVAT
             // 
             this.colVAT.DataPropertyName = "VAT";
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle17.Format = "N0";
-            this.colVAT.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle3.Format = "N0";
+            this.colVAT.DefaultCellStyle = dataGridViewCellStyle3;
             this.colVAT.HeaderText = "VAT";
             this.colVAT.Name = "colVAT";
             this.colVAT.ReadOnly = true;
@@ -271,9 +280,9 @@
             // colTongTien
             // 
             this.colTongTien.DataPropertyName = "Tổng tiền";
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle18.Format = "N0";
-            this.colTongTien.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle4.Format = "N0";
+            this.colTongTien.DefaultCellStyle = dataGridViewCellStyle4;
             this.colTongTien.HeaderText = "Tổng Tiền";
             this.colTongTien.Name = "colTongTien";
             this.colTongTien.ReadOnly = true;
@@ -281,9 +290,9 @@
             // colDaTra
             // 
             this.colDaTra.DataPropertyName = "DA_TRA";
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle19.Format = "N0";
-            this.colDaTra.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle5.Format = "N0";
+            this.colDaTra.DefaultCellStyle = dataGridViewCellStyle5;
             this.colDaTra.HeaderText = "Đã trả";
             this.colDaTra.Name = "colDaTra";
             this.colDaTra.ReadOnly = true;
@@ -292,9 +301,9 @@
             // colConNo
             // 
             this.colConNo.DataPropertyName = "CON_NO";
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle20.Format = "N0";
-            this.colConNo.DefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle6.Format = "N0";
+            this.colConNo.DefaultCellStyle = dataGridViewCellStyle6;
             this.colConNo.HeaderText = "Còn nợ";
             this.colConNo.Name = "colConNo";
             this.colConNo.ReadOnly = true;
@@ -303,10 +312,10 @@
             // colNgayNhap
             // 
             this.colNgayNhap.DataPropertyName = "NGAY_NHAP";
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle21.Format = "dd/MM/yyyy";
-            dataGridViewCellStyle21.NullValue = null;
-            this.colNgayNhap.DefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.Format = "dd/MM/yyyy";
+            dataGridViewCellStyle7.NullValue = null;
+            this.colNgayNhap.DefaultCellStyle = dataGridViewCellStyle7;
             this.colNgayNhap.HeaderText = "Ngày Nhập Hàng";
             this.colNgayNhap.Name = "colNgayNhap";
             this.colNgayNhap.ReadOnly = true;
@@ -373,7 +382,6 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -407,21 +415,16 @@
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(243, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 13);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Ngày trả:";
-            // 
             // dtNgayTra
             // 
-            this.dtNgayTra.Location = new System.Drawing.Point(310, 20);
+            this.dtNgayTra.CustomFormat = "dd/MM/yyyy";
+            this.dtNgayTra.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtNgayTra.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtNgayTra.Location = new System.Drawing.Point(310, 14);
             this.dtNgayTra.Name = "dtNgayTra";
-            this.dtNgayTra.Size = new System.Drawing.Size(200, 20);
-            this.dtNgayTra.TabIndex = 3;
+            this.dtNgayTra.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dtNgayTra.Size = new System.Drawing.Size(100, 20);
+            this.dtNgayTra.TabIndex = 38;
             // 
             // frmDuNo
             // 

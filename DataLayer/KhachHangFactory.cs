@@ -12,7 +12,8 @@ namespace QuanLyKho.DataLayer
 
         public DataTable DanhsachKhachHang(bool loai)
         {
-            OleDbCommand cmd = new OleDbCommand("SELECT * FROM KHACH_HANG WHERE LOAI_KH = " + loai + " ORDER BY " + (loai ? "DAI_LY" : "HO_TEN"));
+            //OleDbCommand cmd = new OleDbCommand("SELECT * FROM KHACH_HANG WHERE LOAI_KH = " + loai + " ORDER BY " + (loai ? "DAI_LY" : "HO_TEN"));
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM KHACH_HANG ORDER BY HO_TEN");
             m_Ds.Load(cmd);
 
             return m_Ds;

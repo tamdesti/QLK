@@ -48,7 +48,6 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.toolXemLai = new System.Windows.Forms.ToolStripButton();
             this.toolPrint = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
@@ -83,7 +82,6 @@
             this.bindingNavigatorMoveLastItem,
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
-            this.toolXemLai,
             this.toolPrint,
             this.toolStripSeparator1,
             this.toolStripLabel1,
@@ -176,17 +174,6 @@
             this.bindingNavigatorAddNewItem.Text = "Thêm mới";
             this.bindingNavigatorAddNewItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.bindingNavigatorAddNewItem.Click += new System.EventHandler(this.bindingNavigatorAddNewItem_Click);
-            // 
-            // toolXemLai
-            // 
-            this.toolXemLai.Image = global::QuanLyKho.Properties.Resources.reload_24;
-            this.toolXemLai.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolXemLai.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolXemLai.Name = "toolXemLai";
-            this.toolXemLai.Size = new System.Drawing.Size(50, 43);
-            this.toolXemLai.Text = "Xem lại";
-            this.toolXemLai.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolXemLai.Click += new System.EventHandler(this.frmDanhsachPhieuNhap_Load);
             // 
             // toolPrint
             // 
@@ -355,7 +342,6 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.DataGridView dataGridView;
-        private System.Windows.Forms.ToolStripButton toolXemLai;
         private System.Windows.Forms.ToolStripButton toolPrint;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;

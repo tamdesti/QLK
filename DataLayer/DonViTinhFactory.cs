@@ -28,7 +28,7 @@ namespace QuanLyKho.DataLayer
         }
         public DataTable LayDVT(string ten)
         {
-            OleDbCommand cmd = new OleDbCommand("SELECT * FROM DON_VI_TINH WHERE TEN_DON_VI_TINH = @ten");
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM DON_VI_TINH WHERE TEN_DON_VI = @ten");
             cmd.Parameters.Add("ten", OleDbType.VarChar, 50).Value = ten;
             m_Ds.Load(cmd);
             return m_Ds;

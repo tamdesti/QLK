@@ -29,15 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDuNoKhachHang));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dtNgayTra = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
             this.GhiChu = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnThanhToan = new System.Windows.Forms.Button();
@@ -47,14 +49,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNoCu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTongTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDaTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colConNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNgayBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colKH = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.bn = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -65,8 +59,14 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.dtNgayTra = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
+            this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colKH = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.colNoCu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTongTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDaTra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colConNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNgayBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numThanhToan)).BeginInit();
@@ -89,8 +89,8 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.dtNgayTra);
+            this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.GhiChu);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.btnThanhToan);
@@ -104,6 +104,26 @@
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thanh Toán";
+            // 
+            // dtNgayTra
+            // 
+            this.dtNgayTra.CustomFormat = "dd/MM/yyyy";
+            this.dtNgayTra.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtNgayTra.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtNgayTra.Location = new System.Drawing.Point(315, 14);
+            this.dtNgayTra.Name = "dtNgayTra";
+            this.dtNgayTra.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dtNgayTra.Size = new System.Drawing.Size(100, 20);
+            this.dtNgayTra.TabIndex = 37;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(248, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 13);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Ngày trả:";
             // 
             // GhiChu
             // 
@@ -202,98 +222,19 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colID,
+            this.colKH,
             this.colNoCu,
             this.colThanhTien,
             this.colTongTien,
             this.colDaTra,
             this.colConNo,
-            this.colNgayBan,
-            this.colKH});
+            this.colNgayBan});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 41);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(949, 211);
             this.dataGridView1.TabIndex = 2;
-            // 
-            // colID
-            // 
-            this.colID.DataPropertyName = "ID";
-            this.colID.HeaderText = "ID";
-            this.colID.Name = "colID";
-            this.colID.ReadOnly = true;
-            this.colID.Visible = false;
-            // 
-            // colNoCu
-            // 
-            this.colNoCu.DataPropertyName = "NO_CU";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle7.Format = "N0";
-            this.colNoCu.DefaultCellStyle = dataGridViewCellStyle7;
-            this.colNoCu.HeaderText = "Nợ Cũ";
-            this.colNoCu.Name = "colNoCu";
-            this.colNoCu.ReadOnly = true;
-            // 
-            // colThanhTien
-            // 
-            this.colThanhTien.DataPropertyName = "TONG_TIEN";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle8.Format = "N0";
-            this.colThanhTien.DefaultCellStyle = dataGridViewCellStyle8;
-            this.colThanhTien.HeaderText = "Thành tiền";
-            this.colThanhTien.Name = "colThanhTien";
-            this.colThanhTien.ReadOnly = true;
-            // 
-            // colTongTien
-            // 
-            this.colTongTien.DataPropertyName = "TỔNG TIỀN";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle9.Format = "N0";
-            dataGridViewCellStyle9.NullValue = null;
-            this.colTongTien.DefaultCellStyle = dataGridViewCellStyle9;
-            this.colTongTien.HeaderText = "Tổng Tiền";
-            this.colTongTien.Name = "colTongTien";
-            this.colTongTien.ReadOnly = true;
-            // 
-            // colDaTra
-            // 
-            this.colDaTra.DataPropertyName = "DA_TRA";
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle10.Format = "N0";
-            dataGridViewCellStyle10.NullValue = null;
-            this.colDaTra.DefaultCellStyle = dataGridViewCellStyle10;
-            this.colDaTra.HeaderText = "Đã Trả";
-            this.colDaTra.Name = "colDaTra";
-            this.colDaTra.ReadOnly = true;
-            // 
-            // colConNo
-            // 
-            this.colConNo.DataPropertyName = "CON_NO";
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle11.Format = "N0";
-            this.colConNo.DefaultCellStyle = dataGridViewCellStyle11;
-            this.colConNo.HeaderText = "Còn Nợ";
-            this.colConNo.Name = "colConNo";
-            this.colConNo.ReadOnly = true;
-            // 
-            // colNgayBan
-            // 
-            this.colNgayBan.DataPropertyName = "NGAY_BAN";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle12.Format = "dd/MM/yyyy";
-            dataGridViewCellStyle12.NullValue = null;
-            this.colNgayBan.DefaultCellStyle = dataGridViewCellStyle12;
-            this.colNgayBan.HeaderText = "Ngày Bán";
-            this.colNgayBan.Name = "colNgayBan";
-            this.colNgayBan.ReadOnly = true;
-            // 
-            // colKH
-            // 
-            this.colKH.HeaderText = "";
-            this.colKH.Name = "colKH";
-            this.colKH.ReadOnly = true;
-            this.colKH.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.colKH.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // bn
             // 
@@ -355,7 +296,6 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -389,21 +329,83 @@
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // dtNgayTra
+            // colID
             // 
-            this.dtNgayTra.Location = new System.Drawing.Point(315, 20);
-            this.dtNgayTra.Name = "dtNgayTra";
-            this.dtNgayTra.Size = new System.Drawing.Size(200, 20);
-            this.dtNgayTra.TabIndex = 3;
+            this.colID.DataPropertyName = "ID";
+            this.colID.HeaderText = "ID";
+            this.colID.Name = "colID";
+            this.colID.ReadOnly = true;
+            this.colID.Visible = false;
             // 
-            // label1
+            // colKH
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(248, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 13);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Ngày trả:";
+            this.colKH.DataPropertyName = "ID_KHACH_HANG";
+            this.colKH.HeaderText = "Khách hàng";
+            this.colKH.Name = "colKH";
+            this.colKH.ReadOnly = true;
+            // 
+            // colNoCu
+            // 
+            this.colNoCu.DataPropertyName = "NO_CU";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle1.Format = "N0";
+            this.colNoCu.DefaultCellStyle = dataGridViewCellStyle1;
+            this.colNoCu.HeaderText = "Nợ Cũ";
+            this.colNoCu.Name = "colNoCu";
+            this.colNoCu.ReadOnly = true;
+            // 
+            // colThanhTien
+            // 
+            this.colThanhTien.DataPropertyName = "TONG_TIEN";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle2.Format = "N0";
+            this.colThanhTien.DefaultCellStyle = dataGridViewCellStyle2;
+            this.colThanhTien.HeaderText = "Thành tiền";
+            this.colThanhTien.Name = "colThanhTien";
+            this.colThanhTien.ReadOnly = true;
+            // 
+            // colTongTien
+            // 
+            this.colTongTien.DataPropertyName = "TỔNG TIỀN";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle3.Format = "N0";
+            dataGridViewCellStyle3.NullValue = null;
+            this.colTongTien.DefaultCellStyle = dataGridViewCellStyle3;
+            this.colTongTien.HeaderText = "Tổng Tiền";
+            this.colTongTien.Name = "colTongTien";
+            this.colTongTien.ReadOnly = true;
+            // 
+            // colDaTra
+            // 
+            this.colDaTra.DataPropertyName = "DA_TRA";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle4.Format = "N0";
+            dataGridViewCellStyle4.NullValue = null;
+            this.colDaTra.DefaultCellStyle = dataGridViewCellStyle4;
+            this.colDaTra.HeaderText = "Đã Trả";
+            this.colDaTra.Name = "colDaTra";
+            this.colDaTra.ReadOnly = true;
+            // 
+            // colConNo
+            // 
+            this.colConNo.DataPropertyName = "CON_NO";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle5.Format = "N0";
+            this.colConNo.DefaultCellStyle = dataGridViewCellStyle5;
+            this.colConNo.HeaderText = "Còn Nợ";
+            this.colConNo.Name = "colConNo";
+            this.colConNo.ReadOnly = true;
+            // 
+            // colNgayBan
+            // 
+            this.colNgayBan.DataPropertyName = "NGAY_BAN";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle6.Format = "dd/MM/yyyy";
+            dataGridViewCellStyle6.NullValue = null;
+            this.colNgayBan.DefaultCellStyle = dataGridViewCellStyle6;
+            this.colNgayBan.HeaderText = "Ngày Bán";
+            this.colNgayBan.Name = "colNgayBan";
+            this.colNgayBan.ReadOnly = true;
             // 
             // frmDuNoKhachHang
             // 
@@ -452,15 +454,15 @@
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.RichTextBox GhiChu;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker dtNgayTra;
         private System.Windows.Forms.DataGridViewTextBoxColumn colID;
+        private System.Windows.Forms.DataGridViewComboBoxColumn colKH;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNoCu;
         private System.Windows.Forms.DataGridViewTextBoxColumn colThanhTien;
         private System.Windows.Forms.DataGridViewTextBoxColumn colTongTien;
         private System.Windows.Forms.DataGridViewTextBoxColumn colDaTra;
         private System.Windows.Forms.DataGridViewTextBoxColumn colConNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNgayBan;
-        private System.Windows.Forms.DataGridViewComboBoxColumn colKH;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dtNgayTra;
     }
 }
