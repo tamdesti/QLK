@@ -336,7 +336,7 @@ namespace QuanLyKho
         private void cmbNhaCungCap_SelectedIndexChanged(object sender, EventArgs e)
         {
             NhaCungCapController NCC = new NhaCungCapController();
-            dtHanNo.Value = dtNgayNhap.Value.AddDays(NCC.LayThoiHanNoTuNCC(cmbNhaCungCap.SelectedValue.ToString()));
+            //dtHanNo.Value = dtNgayNhap.Value.AddDays(NCC.LayThoiHanNoTuNCC(cmbNhaCungCap.SelectedValue.ToString()));
             cmbSanPham.Text = "";
             ctrlSanPham.HienthiAutoComboBox(cmbSanPham, cmbNhaCungCap.SelectedValue.ToString());
             vitriPN = ctrl.VitriPhieuNhapMoiNhatTuNhaCungCap(cmbNhaCungCap.SelectedValue.ToString());

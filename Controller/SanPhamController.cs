@@ -211,6 +211,15 @@ namespace QuanLyKho.Controller
             dt = f.LaySoLuongTonByKho(IDKHO);
             BusinessObject.Util.AddSTTColumn(ref dt, ref bs, ref bn, ref dg);
         }
+        public void NewAvaiableProductListByKho(System.Windows.Forms.DataGridView dg, String IDKHO)
+        {
+            System.Windows.Forms.BindingSource bs = new System.Windows.Forms.BindingSource();
+            SanPhamFactory f = new SanPhamFactory();
+            DataTable dt = new DataTable();
+            System.Windows.Forms.BindingNavigator bn = new BindingNavigator();
+            dt = f.LaySoLuongTonByKhoMoi(IDKHO);
+            BusinessObject.Util.AddSTTColumn(ref dt, ref bs, ref bn, ref dg);
+        }
         public void AvaiableProductListBySP(System.Windows.Forms.DataGridView dg, string IDSP)
         {
             System.Windows.Forms.BindingSource bs = new System.Windows.Forms.BindingSource();

@@ -171,7 +171,7 @@ namespace QuanLyKho.Controller
             {
                 List<int> removelist = new List<int>();
                 for (int i = dt.Rows.Count - 1; i > -1; i--)
-                    if (Convert.ToInt64(dt.Rows[i]["TONG_NO"].ToString()) <= 0) removelist.Add(i);
+                    if (Convert.ToInt64(dt.Rows[i]["TONG_NO"].ToString()) == 0) removelist.Add(i);
                 foreach (int index in removelist)
                 {
                     dt.Rows.RemoveAt(index);
@@ -188,7 +188,7 @@ namespace QuanLyKho.Controller
             {
                 List<int> removelist = new List<int>();
                 for (int i = dt.Rows.Count - 1; i > -1; i--)
-                    if (Convert.ToInt64(dt.Rows[i]["TONG_NO"].ToString()) <= 0) removelist.Add(i);
+                    if (Convert.ToInt64(dt.Rows[i]["TONG_NO"].ToString()) == 0) removelist.Add(i);
                 foreach (int index in removelist)
                 {
                     dt.Rows.RemoveAt(index);

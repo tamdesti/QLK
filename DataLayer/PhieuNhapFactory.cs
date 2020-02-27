@@ -71,13 +71,13 @@ namespace QuanLyKho.DataLayer
         }
         public DataTable DanhsachPhieuNhapConNo()
         {
-            OleDbCommand cmd = new OleDbCommand("SELECT PHIEU_NHAP.*, DateAdd('d', NHA_CUNG_CAP.THOI_HAN_NO - val(Date() - NGAY_NHAP), Date()) AS [Hạn cuối trả], NHA_CUNG_CAP.THOI_HAN_NO - val(Date() - NGAY_NHAP) AS [Còn lại (ngày)] FROM PHIEU_NHAP INNER JOIN NHA_CUNG_CAP ON NHA_CUNG_CAP.ID = PHIEU_NHAP.ID_NHA_CUNG_CAP ORDER BY PHIEU_NHAP.ID DESC");
+            OleDbCommand cmd = new OleDbCommand("SELECT PHIEU_NHAP.* FROM PHIEU_NHAP INNER JOIN NHA_CUNG_CAP ON NHA_CUNG_CAP.ID = PHIEU_NHAP.ID_NHA_CUNG_CAP ORDER BY PHIEU_NHAP.ID DESC");
             m_Ds.Load(cmd);
             return m_Ds;
         }
         public DataTable DanhsachPhieuNhapConNo(String NCC)
         {
-            OleDbCommand cmd = new OleDbCommand("SELECT PHIEU_NHAP.*, NO_CU + TONG_TIEN AS [Tổng tiền], DateAdd('d', NHA_CUNG_CAP.THOI_HAN_NO - val(Date() - NGAY_NHAP), Date()) AS [Hạn cuối trả], NHA_CUNG_CAP.THOI_HAN_NO - val(Date() - NGAY_NHAP) AS [Còn lại (ngày)] FROM PHIEU_NHAP INNER JOIN NHA_CUNG_CAP ON NHA_CUNG_CAP.ID = PHIEU_NHAP.ID_NHA_CUNG_CAP " + (NCC == "0" ? "" : "WHERE NHA_CUNG_CAP.ID= '" + NCC + "'") + " ORDER BY PHIEU_NHAP.ID DESC");
+            OleDbCommand cmd = new OleDbCommand("SELECT PHIEU_NHAP.*, NO_CU + TONG_TIEN AS [Tổng tiền] FROM PHIEU_NHAP INNER JOIN NHA_CUNG_CAP ON NHA_CUNG_CAP.ID = PHIEU_NHAP.ID_NHA_CUNG_CAP " + (NCC == "0" ? "" : "WHERE NHA_CUNG_CAP.ID= '" + NCC + "'") + " ORDER BY PHIEU_NHAP.ID DESC");
             m_Ds.Load(cmd);
 
             return m_Ds;
@@ -148,7 +148,7 @@ namespace QuanLyKho.DataLayer
         }
         public DataTable TongHopNoCongTy()
         {
-            OleDbCommand cmd = new OleDbCommand("SELECT PN.ID_NHA_CUNG_CAP, FIRST(NO_CU) + SUM(TONG_TIEN * 1.05) AS [TONG_MUA], SUM(DA_TRA) AS [TONG_TRA], SUM(TONG_TIEN * 1.05) + FIRST(NO_CU) - SUM(DA_TRA) AS [TONG_NO] FROM PHIEU_NHAP PN INNER JOIN NHA_CUNG_CAP NCC ON PN.ID_NHA_CUNG_CAP = NCC.ID GROUP BY PN.ID_NHA_CUNG_CAP");
+            OleDbCommand cmd = new OleDbCommand("SELECT PN.ID_NHA_CUNG_CAP, FIRST(NO_CU) + SUM(TONG_TIEN * 1.05) AS [TONG_MUA], SUM(DA_TRA) AS [TONG_TRA], SUM(TONG_TIEN) + FIRST(NO_CU) - SUM(DA_TRA) AS [TONG_NO] FROM PHIEU_NHAP PN INNER JOIN NHA_CUNG_CAP NCC ON PN.ID_NHA_CUNG_CAP = NCC.ID GROUP BY PN.ID_NHA_CUNG_CAP");
             m_Ds.Load(cmd);
             return m_Ds;
         }

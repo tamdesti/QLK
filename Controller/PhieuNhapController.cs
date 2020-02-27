@@ -149,7 +149,7 @@ namespace QuanLyKho.Controller
             {
                 List<int> removelist = new List<int>();
                 for (int i = dt.Rows.Count - 1; i > -1; i--)
-                    if (Convert.ToDouble(dt.Rows[i]["TONG_NO"].ToString()) <= 0) removelist.Add(i);
+                    if (Convert.ToDouble(dt.Rows[i]["TONG_NO"].ToString()) == 0) removelist.Add(i);
                 foreach (int index in removelist)
                 {
                     dt.Rows.RemoveAt(index);
@@ -216,11 +216,11 @@ namespace QuanLyKho.Controller
                 {
                     row["NO_CU"] = tbl.Rows[rowcount-1]["CON_NO"];
                 }
-                double TongTien = Convert.ToInt32(row["NO_CU"]) + (Convert.ToInt32(row["TONG_TIEN"]) * 1.05);
+                double TongTien = Convert.ToInt32(row["NO_CU"]) + (Convert.ToInt32(row["TONG_TIEN"]));
                 double Datra = Convert.ToInt32(row["DA_TRA"]);
                 if (Datra > TongTien) Datra = TongTien;
                 double ConNo = TongTien - Datra;
-                row["CON_NO"] = ConNo <= 0 ? 0 : ConNo;
+                row["CON_NO"] = ConNo;
                 rowcount++;
             }
             PNFactory.Save();

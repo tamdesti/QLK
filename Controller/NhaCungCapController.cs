@@ -132,15 +132,15 @@ namespace QuanLyKho.Controller
         }
         public void CapNhatNhaCungCap(DataRowView row)
         {
-            DonViTinhFactory DVT = new DonViTinhFactory();
-            DataTable tbl = DVT.LayDVT(row["ID"].ToString());
+            NhaCungCapFactory NCC = new NhaCungCapFactory();
+            DataTable tbl = NCC.LayNCC(row["ID"].ToString());
             if (tbl.Rows.Count > 0)
             {
                 tbl.Rows[0]["HO_TEN"] = row["HO_TEN"];
                 tbl.Rows[0]["DIA_CHI"] = row["DIA_CHI"];
                 tbl.Rows[0]["DIEN_THOAI"] = row["DIEN_THOAI"];
                 tbl.Rows[0]["THOI_HAN_NO"] = row["THOI_HAN_NO"];
-                DVT.Save();
+                NCC.Save();
             }
         }
         public void XoaNhaCungCap(String ID)

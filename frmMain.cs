@@ -445,7 +445,7 @@ namespace QuanLyKho
                     }
                     catch { }
                 }
-                PN.DaTra = random.Next(0, (int)(PN.TongTien * 1.05 + PN.NoCu));
+                PN.DaTra = random.Next(0, (int)(PN.TongTien + PN.NoCu));
                 PhieuChiController PhieuChi = new PhieuChiController();
                 BusinessObject.PhieuChi PC = new BusinessObject.PhieuChi();
                 long _maso = ThamSo.PhieuChi;
@@ -456,7 +456,7 @@ namespace QuanLyKho
                 PC.GhiChu = "Số tiền thanh toán trong lần đầu lập phiếu nhập";
                 PhieuChi.ThemPhieuChi(PC);
                 ThamSo.PhieuChi = maso + 1;
-                PN.ConNo = (PN.TongTien * 1.05) + PN.NoCu - PN.DaTra;
+                PN.ConNo = PN.TongTien + PN.NoCu - PN.DaTra;
                 PNCtrl.CapNhatPhieuNhap(PN);
             }
             
@@ -481,18 +481,18 @@ namespace QuanLyKho
             //    CapNhatPhieuNhap();
             //}
         }
-        QuanLySanPhamMoi SoLuongTonMoi = null;
+        frmQuanLy SoLuongTonMoi = null;
         private void toolStripMenuItem4_Click(object sender, EventArgs e)
         {
             if (SoLuongTonMoi == null || SoLuongTonMoi.IsDisposed)
             {
-                SoLuongTonMoi = new QuanLySanPhamMoi();
+                SoLuongTonMoi = new frmQuanLy(TypeOfReport.TonKhoMoi);
                 FillFullScreen(SoLuongTonMoi);
                 SoLuongTonMoi.MdiParent = this;
                 SoLuongTonMoi.Show();
             }
             else
-                SoLuongTonMoi.Activate();
+                SoLuongTon.Activate();
         }
         frmKhoHang KhoHang = null;
         private void taskItem4_Click(object sender, EventArgs e)

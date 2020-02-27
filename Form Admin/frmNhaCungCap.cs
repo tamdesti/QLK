@@ -31,10 +31,11 @@ namespace QuanLyKho
             txtCompany.Text = "";
             txtPhone.Text = "";
             numHanNo.Value = 30;
+            companySelected = "";
             btnClear.Enabled = false;
             btnLuu.Enabled = false;
         }
-
+        string companySelected = "";
         private void dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             DataRowView row = (DataRowView)bindingNavigator.BindingSource.Current;
@@ -42,6 +43,7 @@ namespace QuanLyKho
             txtCompany.Text = row["HO_TEN"].ToString();
             txtPhone.Text = row["DIEN_THOAI"].ToString();
             numHanNo.Value = Convert.ToDecimal(row["THOI_HAN_NO"].ToString());
+            companySelected = txtCompany.Text;
             btnLuu.Enabled = true;
             btnClear.Enabled = true;
         }
@@ -76,7 +78,7 @@ namespace QuanLyKho
                 MessageBox.Show("Thiếu tên nhà cung cấp", "Nhà cung cấp", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (ctrl.NhaCungCapTonTai(txtCompany.Text))
+            if (companySelected != txtCompany.Text && ctrl.NhaCungCapTonTai(txtCompany.Text))
             {
                 MessageBox.Show("Nhà cung cấp này đã tồn tại", "Nhà cung cấp", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -102,6 +104,7 @@ namespace QuanLyKho
                 txtCompany.Text = "";
                 txtPhone.Text = "";
                 numHanNo.Value = 30;
+                companySelected = "";
                 btnClear.Enabled = false;
                 btnLuu.Enabled = false;
             }

@@ -39,12 +39,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTenCuaHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colHoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colLoaiKH = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.bindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -60,6 +54,12 @@
             this.toolLuu = new System.Windows.Forms.ToolStripButton();
             this.toolThoat = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTenCuaHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colHoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colLoaiKH = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -167,55 +167,6 @@
             this.dataGridView.TabStop = false;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             // 
-            // colID
-            // 
-            this.colID.DataPropertyName = "ID";
-            this.colID.HeaderText = "Mã số";
-            this.colID.Name = "colID";
-            this.colID.ReadOnly = true;
-            this.colID.Visible = false;
-            this.colID.Width = 50;
-            // 
-            // colTenCuaHang
-            // 
-            this.colTenCuaHang.DataPropertyName = "DAI_LY";
-            this.colTenCuaHang.HeaderText = "Tên đại lý";
-            this.colTenCuaHang.Name = "colTenCuaHang";
-            this.colTenCuaHang.ReadOnly = true;
-            this.colTenCuaHang.Visible = false;
-            this.colTenCuaHang.Width = 150;
-            // 
-            // colHoTen
-            // 
-            this.colHoTen.DataPropertyName = "HO_TEN";
-            this.colHoTen.HeaderText = "Khách hàng";
-            this.colHoTen.Name = "colHoTen";
-            this.colHoTen.ReadOnly = true;
-            this.colHoTen.Width = 150;
-            // 
-            // colDiaChi
-            // 
-            this.colDiaChi.DataPropertyName = "DIA_CHI";
-            this.colDiaChi.HeaderText = "Địa chỉ";
-            this.colDiaChi.Name = "colDiaChi";
-            this.colDiaChi.ReadOnly = true;
-            this.colDiaChi.Width = 200;
-            // 
-            // colDienThoai
-            // 
-            this.colDienThoai.DataPropertyName = "DIEN_THOAI";
-            this.colDienThoai.HeaderText = "Điện thoại";
-            this.colDienThoai.Name = "colDienThoai";
-            this.colDienThoai.ReadOnly = true;
-            // 
-            // colLoaiKH
-            // 
-            this.colLoaiKH.DataPropertyName = "LOAI_KH";
-            this.colLoaiKH.HeaderText = "Loại khách hàng";
-            this.colLoaiKH.Name = "colLoaiKH";
-            this.colLoaiKH.ReadOnly = true;
-            this.colLoaiKH.Visible = false;
-            // 
             // bindingNavigator
             // 
             this.bindingNavigator.AddNewItem = null;
@@ -281,6 +232,7 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -321,7 +273,7 @@
             this.btnClear.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnClear.Name = "btnClear";
             this.btnClear.RightToLeftAutoMirrorImage = true;
-            this.btnClear.Size = new System.Drawing.Size(55, 43);
+            this.btnClear.Size = new System.Drawing.Size(54, 43);
             this.btnClear.Text = "Tạo mới";
             this.btnClear.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
@@ -332,7 +284,7 @@
             this.bindingNavigatorAddNewItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(42, 43);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(41, 43);
             this.bindingNavigatorAddNewItem.Text = "Thêm";
             this.bindingNavigatorAddNewItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.bindingNavigatorAddNewItem.Click += new System.EventHandler(this.bindingNavigatorAddNewItem_Click);
@@ -355,7 +307,7 @@
             this.toolThoat.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolThoat.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolThoat.Name = "toolThoat";
-            this.toolThoat.Size = new System.Drawing.Size(45, 43);
+            this.toolThoat.Size = new System.Drawing.Size(44, 43);
             this.toolThoat.Text = " Thoát";
             this.toolThoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolThoat.Click += new System.EventHandler(this.toolThoat_Click);
@@ -364,6 +316,56 @@
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 46);
+            // 
+            // colID
+            // 
+            this.colID.DataPropertyName = "ID";
+            this.colID.HeaderText = "Mã số";
+            this.colID.Name = "colID";
+            this.colID.ReadOnly = true;
+            this.colID.Visible = false;
+            this.colID.Width = 50;
+            // 
+            // colTenCuaHang
+            // 
+            this.colTenCuaHang.DataPropertyName = "DAI_LY";
+            this.colTenCuaHang.HeaderText = "Tên đại lý";
+            this.colTenCuaHang.Name = "colTenCuaHang";
+            this.colTenCuaHang.ReadOnly = true;
+            this.colTenCuaHang.Visible = false;
+            this.colTenCuaHang.Width = 150;
+            // 
+            // colHoTen
+            // 
+            this.colHoTen.DataPropertyName = "HO_TEN";
+            this.colHoTen.HeaderText = "Khách hàng";
+            this.colHoTen.Name = "colHoTen";
+            this.colHoTen.ReadOnly = true;
+            this.colHoTen.Width = 150;
+            // 
+            // colDiaChi
+            // 
+            this.colDiaChi.DataPropertyName = "DIA_CHI";
+            this.colDiaChi.HeaderText = "Địa chỉ";
+            this.colDiaChi.Name = "colDiaChi";
+            this.colDiaChi.ReadOnly = true;
+            this.colDiaChi.Width = 200;
+            // 
+            // colDienThoai
+            // 
+            this.colDienThoai.DataPropertyName = "DIEN_THOAI";
+            this.colDienThoai.HeaderText = "Điện thoại";
+            this.colDienThoai.Name = "colDienThoai";
+            this.colDienThoai.ReadOnly = true;
+            this.colDienThoai.Width = 200;
+            // 
+            // colLoaiKH
+            // 
+            this.colLoaiKH.DataPropertyName = "LOAI_KH";
+            this.colLoaiKH.HeaderText = "Loại khách hàng";
+            this.colLoaiKH.Name = "colLoaiKH";
+            this.colLoaiKH.ReadOnly = true;
+            this.colLoaiKH.Visible = false;
             // 
             // frmKhachHang
             // 
@@ -399,12 +401,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTenCuaHang;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colHoTen;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colDiaChi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colDienThoai;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn colLoaiKH;
         private System.Windows.Forms.BindingNavigator bindingNavigator;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
@@ -420,5 +416,11 @@
         private System.Windows.Forms.ToolStripButton toolLuu;
         private System.Windows.Forms.ToolStripButton toolThoat;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTenCuaHang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colHoTen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDiaChi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDienThoai;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn colLoaiKH;
     }
 }

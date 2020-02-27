@@ -72,7 +72,7 @@ namespace QuanLyKho
         }
         private void numThanhToan_ValueChanged(object sender, EventArgs e)
         {
-            if (numThanhToan.Value > numConNo.Value) numThanhToan.Value = numConNo.Value;
+            //if (numThanhToan.Value > numConNo.Value) numThanhToan.Value = numConNo.Value;
             if (numThanhToan.Value > 0) btnThanhToan.Enabled = true;
             else btnThanhToan.Enabled = false;
         }

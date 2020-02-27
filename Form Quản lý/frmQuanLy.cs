@@ -30,7 +30,7 @@ namespace QuanLyKho
             fromDate.Value = new DateTime(toDate.Value.Year, toDate.Value.Month, 1);
             ctrlKho.HienthiAllComboBox(cmbKho, false);
             ctrlSanPham.HienthiAutoComboBoxByKho(cmbSanPham, cmbKho.SelectedValue.ToString(), true);
-            
+
             if (type == TypeOfReport.TonKho)
             {
                 LoadHangTon();
@@ -42,27 +42,68 @@ namespace QuanLyKho
                 LoadDaNhap();
             else if (type == TypeOfReport.HetHan)
                 LoadHetHan();
+            else if (type == TypeOfReport.TonKhoMoi)
+                LoadHangTonMoi();
+        }
+        private void LoadHangTonMoi()
+        {
+            DateGroup.Visible = true;
+            ctrlSanPham.NewAvaiableProductListByKho(dataGridView1, "0");
+            this.Text = "SẢN PHẨM TỒN KHO";
+            BusinessObject.Util.AdjustColumnOrder(ref dataGridView1);
+            ReArrangeColumnHangTonMoi();
+        }
+        private void ReArrangeColumnHangTonMoi()
+        {
+            //ColID, colGhiChu, Kho hàng, Tồn cuối, Tồn đầu, Tên sản phẩm, Dài, Rộng, Nhập, Xuất, Đơn giá, Loại, Thành Tiền, STT
+            foreach (DataGridViewColumn col in dataGridView1.Columns)
+            {
+                col.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            }
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.Columns["colNCC"].Visible = false;
+            dataGridView1.Columns["colKhachHang"].Visible = false;
+            dataGridView1.Columns["Kho hàng"].Visible = false;
+            dataGridView1.Columns["Tên sản phẩm"].DisplayIndex = 2;
+            dataGridView1.Columns["Tên sản phẩm"].Width = 200;
+            dataGridView1.Columns["Dài"].DisplayIndex = 3;
+            dataGridView1.Columns["Dài"].DefaultCellStyle.Format = "N0";
+            dataGridView1.Columns["Rộng"].DisplayIndex = 4;
+            dataGridView1.Columns["Rộng"].DefaultCellStyle.Format = "N0";
+            dataGridView1.Columns["Nhập"].DisplayIndex = 6;
+            dataGridView1.Columns["Nhập"].DefaultCellStyle.Format = "N0";
+            dataGridView1.Columns["Xuất"].DisplayIndex = 7;
+            dataGridView1.Columns["Xuất"].DefaultCellStyle.Format = "N0";
+            dataGridView1.Columns["Đơn giá"].DisplayIndex = 8;
+            dataGridView1.Columns["Đơn giá"].DefaultCellStyle.Format = "N0";
+            dataGridView1.Columns["Thành tiền"].DisplayIndex = 9;
+            dataGridView1.Columns["Thành tiền"].DefaultCellStyle.Format = "N0";
+            dataGridView1.Columns["colGhiChu"].DisplayIndex = 10;
+            dataGridView1.Columns["Loại"].Visible = false; 
+            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            {
+                decimal gia = Convert.ToDecimal(dataGridView1[10, i].Value);
+                decimal soluong = Convert.ToDecimal(dataGridView1[3, i].Value);
+                string loai = dataGridView1[11, i].Value.ToString(); ;
+                decimal dai = Convert.ToDecimal(dataGridView1[8, i].Value);
+                decimal rong = Convert.ToDecimal(dataGridView1[9, i].Value);
+                if (loai == "Khác")
+                    dataGridView1[12, i].Value = gia * soluong;
+                else if (loai == "Kính")
+                    dataGridView1[12, i].Value = dai * Convert.ToDecimal(0.001) * dai * Convert.ToDecimal(0.001) * gia * soluong;
+                else if (loai == "Mài")
+                    dataGridView1[12, i].Value = gia * soluong;
+                dataGridView1[12, i].Value = Math.Round(Convert.ToDecimal(dataGridView1[12, i].Value) / 1000, 0) * 1000;
+            }
         }
         private void LoadHangTon()
         {
-            //TonKhoController TKCtrl = new TonKhoController();
-            //for (int kho = 1; kho < 4; kho++)
-            //{
-            //    for (int i = 1; i < 77; i++)
-            //    {
-            //        long TongNhap = 0;
-            //        long TongBan = 0;
-            //        TongNhap = TKCtrl.TongDaNhap(i.ToString(), kho.ToString());
-            //        TongBan = TKCtrl.TongDaBan(i.ToString(), kho.ToString());
-            //        TKCtrl.CapNhatSoLuongTon(i.ToString(), kho.ToString(), TongNhap - TongBan);
-            //    }
-            //}
             DateGroup.Visible = false;
             ctrlSanPham.AvaiableProductListByKho(dataGridView1, "0"); 
-            this.Text = "SẢN PHẨM TỒN KHO";
+            this.Text = "QUẢN LÝ XUẤT - NHẬP";
             BusinessObject.Util.AdjustColumnOrder(ref dataGridView1);
             ReArrangeColumnHangTon();
-    }
+        }
         private void ReArrangeColumnHangTon()
         {
             //ColID, colGhiChu, Kho hàng, Tồn cuối, Tồn đầu, Tên sản phẩm, Dài, Rộng, Nhập, Xuất, Đơn giá, Loại, Thành Tiền, STT

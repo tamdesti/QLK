@@ -41,13 +41,10 @@ namespace QuanLyKho
             dataGridView1.Columns["colID"].Visible = false;
             foreach (DataGridViewColumn col in dataGridView1.Columns)
                 col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridView1.Columns["Hạn cuối trả"].DefaultCellStyle = colNgayNhap.DefaultCellStyle;
-            dataGridView1.Columns["Còn lại (ngày)"].DefaultCellStyle.Format = "N0";
-            dataGridView1.Columns["Còn lại (ngày)"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
         }
         private void numThanhToan_ValueChanged(object sender, EventArgs e)
         {
-            if (numThanhToan.Value > numConNo.Value) numThanhToan.Value = numConNo.Value;
+            //if (numThanhToan.Value > numConNo.Value) numThanhToan.Value = numConNo.Value;
             btnThanhToan.Enabled = (numThanhToan.Value > 0);
         }
 

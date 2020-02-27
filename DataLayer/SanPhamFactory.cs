@@ -159,6 +159,19 @@ namespace QuanLyKho.DataLayer
             m_Ds.Load(cmd);
             return m_Ds;
         }
+        public DataTable LaySoLuongTonByKhoMoi(String IDKHO)
+        {
+            OleDbCommand cmd = new OleDbCommand("SELECT KH.TEN_KHO AS [Kho hàng], SP.TEN_SAN_PHAM AS [Tên sản phẩm], SP.DAI AS [Dài], SP.RONG AS [Rộng], " +
+                                                "DSum(\"CHI_TIET_PHIEU_NHAP.SO_LUONG\",\"CHI_TIET_PHIEU_NHAP\",\"ID_SAN_PHAM = '\" & SP.ID & \"' AND ID_KHO = '\" & KH.ID & \"' AND NGAY_NHAP = Date() \") AS [Nhập], " +
+                                                "DSum(\"CHI_TIET_PHIEU_BAN.SO_LUONG\",\"CHI_TIET_PHIEU_BAN\",\"ID_SAN_PHAM = '\" & SP.ID & \"' AND ID_KHO = '\" & KH.ID & \"' AND NGAY_BAN = Date() \") AS [Xuất], " +
+                                                "SP.GIA_NHAP AS [Đơn giá], SP.LOAI AS [Loại], SP.GIA_NHAP AS [Thành tiền] " +
+                                                "FROM(SAN_PHAM  SP INNER JOIN TON_KHO TK ON SP.ID = TK.ID_SAN_PHAM) INNER JOIN KHO_HANG KH ON TK.ID_KHO = KH.ID " +
+                                                "WHERE TK.SO_LUONG_TON > 0 " + (IDKHO == "0" ? " " : " AND TK.ID_KHO = @KHO ") +
+                                                "ORDER BY SP.TEN_SAN_PHAM; ");
+            if (IDKHO != "0") cmd.Parameters.Add("KHO", OleDbType.VarChar, 50).Value = IDKHO;
+            m_Ds.Load(cmd);
+            return m_Ds;
+        }
         public DataTable LaySoLuongTonBySP(string IDSP)
         {
             OleDbCommand cmd = new OleDbCommand("SELECT KH.TEN_KHO AS [Kho hàng], TK.SO_LUONG_TON AS [Tồn cuối], TK.SO_LUONG_TON AS [Tồn đầu], SP.TEN_SAN_PHAM AS [Tên sản phẩm], SP.DAI AS [Dài], SP.RONG AS [Rộng], " +

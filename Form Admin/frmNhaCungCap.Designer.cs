@@ -56,16 +56,16 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolTimNhaCungCap = new System.Windows.Forms.ToolStripTextBox();
             this.btnClear = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.btnLuu = new System.Windows.Forms.ToolStripButton();
             this.toolThoat = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolTimKiem = new System.Windows.Forms.ToolStripDropDownButton();
             this.toolTimHoTen = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTimDiaChi = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolTimNhaCungCap = new System.Windows.Forms.ToolStripTextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numHanNo)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -303,6 +303,7 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -333,19 +334,6 @@
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 46);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 46);
-            // 
-            // toolTimNhaCungCap
-            // 
-            this.toolTimNhaCungCap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.toolTimNhaCungCap.Name = "toolTimNhaCungCap";
-            this.toolTimNhaCungCap.Size = new System.Drawing.Size(150, 46);
-            this.toolTimNhaCungCap.Text = "Tìm theo Nhà cung cấp";
-            this.toolTimNhaCungCap.Visible = false;
             // 
             // btnClear
             // 
@@ -404,6 +392,11 @@
             this.toolThoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolThoat.Click += new System.EventHandler(this.toolThoat_Click);
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 46);
+            // 
             // toolTimKiem
             // 
             this.toolTimKiem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -431,6 +424,15 @@
             this.toolTimDiaChi.Name = "toolTimDiaChi";
             this.toolTimDiaChi.Size = new System.Drawing.Size(148, 22);
             this.toolTimDiaChi.Text = "Địa chỉ";
+            // 
+            // toolTimNhaCungCap
+            // 
+            this.toolTimNhaCungCap.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolTimNhaCungCap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.toolTimNhaCungCap.Name = "toolTimNhaCungCap";
+            this.toolTimNhaCungCap.Size = new System.Drawing.Size(150, 46);
+            this.toolTimNhaCungCap.Text = "Tìm theo Nhà cung cấp";
+            this.toolTimNhaCungCap.Visible = false;
             // 
             // frmNhaCungCap
             // 

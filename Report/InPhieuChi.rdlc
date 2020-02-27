@@ -488,7 +488,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!TongTien.Value * 1.05 + Fields!NoCu.Value</Value>
+                              <Value>=Fields!TongTien.Value + Fields!NoCu.Value</Value>
                               <Style>
                                 <Format>#,0;(#,0)</Format>
                               </Style>
