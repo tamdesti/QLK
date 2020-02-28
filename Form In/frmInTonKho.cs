@@ -26,9 +26,9 @@ namespace QuanLyKho
                 item.STT = Convert.ToInt32(row.Cells["STT"].Value.ToString());
                 item.TenSanPham = row.Cells["Tên sản phẩm"].Value.ToString();
                 item.Dai = Convert.ToInt64(row.Cells["Dài"].Value.ToString());
-                if (item.Dai > 1) item.Dai = item.Dai / (double)1000;
+                //if (item.Dai > 1) item.Dai = item.Dai / (double)1000;
                 item.Rong = Convert.ToInt64(row.Cells["Rộng"].Value.ToString());
-                if (item.Rong > 1) item.Rong = item.Rong / (double)1000;
+                //if (item.Rong > 1) item.Rong = item.Rong / (double)1000;
                 double nhap = 0;
                 Double.TryParse(row.Cells["Nhập"].Value.ToString(), out nhap);
                 item.Nhap = nhap;

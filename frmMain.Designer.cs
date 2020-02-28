@@ -317,7 +317,7 @@
             // 
             this.sảnPhẩmĐãNhậpToolStripMenuItem.Image = global::QuanLyKho.Properties.Resources.danhap;
             this.sảnPhẩmĐãNhậpToolStripMenuItem.Name = "sảnPhẩmĐãNhậpToolStripMenuItem";
-            this.sảnPhẩmĐãNhậpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sảnPhẩmĐãNhậpToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.sảnPhẩmĐãNhậpToolStripMenuItem.Text = "Sản phẩm đã nhập";
             this.sảnPhẩmĐãNhậpToolStripMenuItem.Click += new System.EventHandler(this.sảnPhẩmĐãNhậpToolStripMenuItem_Click);
             // 
@@ -325,7 +325,7 @@
             // 
             this.sảnPhẩmĐãBánToolStripMenuItem.Image = global::QuanLyKho.Properties.Resources.daban;
             this.sảnPhẩmĐãBánToolStripMenuItem.Name = "sảnPhẩmĐãBánToolStripMenuItem";
-            this.sảnPhẩmĐãBánToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sảnPhẩmĐãBánToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.sảnPhẩmĐãBánToolStripMenuItem.Text = "Sản phẩm đã bán";
             this.sảnPhẩmĐãBánToolStripMenuItem.Click += new System.EventHandler(this.sảnPhẩmĐãBánToolStripMenuItem_Click);
             // 
@@ -333,7 +333,7 @@
             // 
             this.tồnKhoToolStripMenuItem.Image = global::QuanLyKho.Properties.Resources.TonKho;
             this.tồnKhoToolStripMenuItem.Name = "tồnKhoToolStripMenuItem";
-            this.tồnKhoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tồnKhoToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.tồnKhoToolStripMenuItem.Text = "Tồn kho";
             this.tồnKhoToolStripMenuItem.Click += new System.EventHandler(this.mnuBaocaoSoluongton_Click);
             // 
@@ -341,7 +341,7 @@
             // 
             this.toolStripMenuItem4.Image = global::QuanLyKho.Properties.Resources.TonKho;
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(179, 22);
             this.toolStripMenuItem4.Text = "Quản lý xuất - nhập";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
@@ -349,7 +349,7 @@
             // 
             this.sảnPhẩmHếtHạnToolStripMenuItem.Image = global::QuanLyKho.Properties.Resources.hethan;
             this.sảnPhẩmHếtHạnToolStripMenuItem.Name = "sảnPhẩmHếtHạnToolStripMenuItem";
-            this.sảnPhẩmHếtHạnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sảnPhẩmHếtHạnToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.sảnPhẩmHếtHạnToolStripMenuItem.Text = "Sản phẩm hết hạn";
             this.sảnPhẩmHếtHạnToolStripMenuItem.Visible = false;
             this.sảnPhẩmHếtHạnToolStripMenuItem.Click += new System.EventHandler(this.sảnPhẩmHếtHạnToolStripMenuItem_Click);
@@ -823,7 +823,7 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
             this.Name = "frmMain";
-            this.Text = "CÔNG TY TNHH TM & DV DIỆU THÀNH PHƯỚC";
+            this.Text = "CÔNG TY TNHH TM & DV DIỆU PHƯỚC THÀNH";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.Load += new System.EventHandler(this.frmMain_Load);

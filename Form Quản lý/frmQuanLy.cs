@@ -47,9 +47,8 @@ namespace QuanLyKho
         }
         private void LoadHangTonMoi()
         {
-            DateGroup.Visible = true;
             ctrlSanPham.NewAvaiableProductListByKho(dataGridView1, "0");
-            this.Text = "SẢN PHẨM TỒN KHO";
+            this.Text = "QUẢN LÝ NHẬP - XUẤT";
             BusinessObject.Util.AdjustColumnOrder(ref dataGridView1);
             ReArrangeColumnHangTonMoi();
         }
@@ -90,7 +89,7 @@ namespace QuanLyKho
                 if (loai == "Khác")
                     dataGridView1[12, i].Value = gia * soluong;
                 else if (loai == "Kính")
-                    dataGridView1[12, i].Value = dai * Convert.ToDecimal(0.001) * dai * Convert.ToDecimal(0.001) * gia * soluong;
+                    dataGridView1[12, i].Value = dai * Convert.ToDecimal(0.001) * rong * Convert.ToDecimal(0.001) * gia * soluong;
                 else if (loai == "Mài")
                     dataGridView1[12, i].Value = gia * soluong;
                 dataGridView1[12, i].Value = Math.Round(Convert.ToDecimal(dataGridView1[12, i].Value) / 1000, 0) * 1000;
@@ -100,7 +99,7 @@ namespace QuanLyKho
         {
             DateGroup.Visible = false;
             ctrlSanPham.AvaiableProductListByKho(dataGridView1, "0"); 
-            this.Text = "QUẢN LÝ XUẤT - NHẬP";
+            this.Text = "SẢN PHẨM TỒN KHO";
             BusinessObject.Util.AdjustColumnOrder(ref dataGridView1);
             ReArrangeColumnHangTon();
         }
@@ -147,7 +146,7 @@ namespace QuanLyKho
                 if (loai == "Khác")
                     dataGridView1[14, i].Value = gia * soluong;
                 else if (loai == "Kính")
-                    dataGridView1[14, i].Value = dai * Convert.ToDecimal(0.001) * dai * Convert.ToDecimal(0.001) * gia * soluong;
+                    dataGridView1[14, i].Value = dai * Convert.ToDecimal(0.001) * rong * Convert.ToDecimal(0.001) * gia * soluong;
                 else if (loai == "Mài")
                     dataGridView1[14, i].Value = gia * soluong;
                 dataGridView1[14, i].Value = Math.Round(Convert.ToDecimal(dataGridView1[14, i].Value) / 1000, 0) * 1000;

@@ -10,7 +10,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>QuanLyKho</RootNamespace>
-    <AssemblyName>CÔNG TY TNHH TM &amp; DV DIỆU THÀNH PHƯỚC</AssemblyName>
+    <AssemblyName>CÔNG TY TNHH TM &amp; DV DIỆU PHƯỚC THÀNH</AssemblyName>
     <ApplicationIcon>door-3-48.ico</ApplicationIcon>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileUpgradeFlags>

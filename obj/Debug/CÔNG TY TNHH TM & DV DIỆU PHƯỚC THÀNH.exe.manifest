@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="CÔNG TY TNHH TM &amp; DV DIỆU THÀNH PHƯỚC.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="CÔNG TY TNHH TM &amp; DV DIỆU PHƯỚC THÀNH.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="door-3-48.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="CÔNG TY TNHH TM &amp; DV DIỆU THÀNH PHƯỚC" version="1.0.0.26" language="neutral" processorArchitecture="msil" />
-    <commandLine file="CÔNG TY TNHH TM &amp; DV DIỆU THÀNH PHƯỚC.exe" parameters="" />
+    <assemblyIdentity name="CÔNG TY TNHH TM &amp; DV DIỆU PHƯỚC THÀNH" version="1.0.0.26" language="neutral" processorArchitecture="msil" />
+    <commandLine file="CÔNG TY TNHH TM &amp; DV DIỆU PHƯỚC THÀNH.exe" parameters="" />
   </entryPoint>
   <trustInfo>
     <security>
@@ -233,14 +233,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CÔNG TY TNHH TM &amp; DV DIỆU THÀNH PHƯỚC.exe" size="2052608">
-      <assemblyIdentity name="CÔNG TY TNHH TM &amp; DV DIỆU THÀNH PHƯỚC" version="1.0.0.26" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CÔNG TY TNHH TM &amp; DV DIỆU PHƯỚC THÀNH.exe" size="2045440">
+      <assemblyIdentity name="CÔNG TY TNHH TM &amp; DV DIỆU PHƯỚC THÀNH" version="1.0.0.26" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>qEpWuKW1f1fQLdXX4ZQn0AsIAy+Wia/2GynazKvdiaU=</dsig:DigestValue>
+        <dsig:DigestValue>G1Husat+Dtg06qzsV+41UUzu79sjkr9AJWU7k9Vkaz8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -520,7 +520,7 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="CÔNG TY TNHH TM &amp; DV DIỆU THÀNH PHƯỚC.exe.config" size="1116">
+  <file name="CÔNG TY TNHH TM &amp; DV DIỆU PHƯỚC THÀNH.exe.config" size="1116">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
