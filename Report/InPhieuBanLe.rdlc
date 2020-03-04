@@ -1170,7 +1170,7 @@
                             <TextRun>
                               <Value>=Fields!NoCu.Value</Value>
                               <Style>
-                                <Format>#,0;(#,0)</Format>
+                                <Format>#,0</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -1307,7 +1307,7 @@
                               <Value>=Fields!TongTien.Value + Fields!NoCu.Value</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
-                                <Format>#,0;(#,0)</Format>
+                                <Format>#,0</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -1444,7 +1444,7 @@
                               <Value>=Fields!ConNo.Value</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
-                                <Format>#,0;(#,0)</Format>
+                                <Format>#,0;- #,0</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -1464,6 +1464,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>

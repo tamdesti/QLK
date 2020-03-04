@@ -527,7 +527,7 @@
                             <TextRun>
                               <Value>=Sum(Fields!ConNo.Value)</Value>
                               <Style>
-                                <Format>#,0;(#,0)</Format>
+                                <Format>#,0;- #,0</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -584,13 +584,13 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.51042in</Width>
+              <Width>1.57292in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.69792in</Width>
+              <Width>1.76042in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>3.02083in</Width>
+              <Width>3.70833in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -824,9 +824,9 @@
         </TablixRowHierarchy>
         <DataSetName>PhieuThu</DataSetName>
         <Top>2.405in</Top>
-        <Left>0.92583in</Left>
+        <Left>0.73833in</Left>
         <Height>0.5in</Height>
-        <Width>6.22917in</Width>
+        <Width>7.04167in</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>

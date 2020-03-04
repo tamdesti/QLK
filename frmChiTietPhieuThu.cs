@@ -68,5 +68,15 @@ namespace QuanLyKho
 
             }
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //DataRowView row = (DataRowView)bindingNavigator1.BindingSource.Current;
+            //txtHoTen.Text = row["HO_TEN"].ToString();
+            //txtDiaChi.Text = row["DIA_CHI"].ToString();
+            //txtSDT.Text = row["DIEN_THOAI"].ToString();
+            //toolLuu.Enabled = true;
+            //btnClear.Enabled = true;
+        }
     }
 }

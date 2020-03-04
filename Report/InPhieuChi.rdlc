@@ -628,7 +628,7 @@
                             <TextRun>
                               <Value>=Fields!ConNo.Value</Value>
                               <Style>
-                                <Format>#,0;(#,0)</Format>
+                                <Format>#,0;- #,0</Format>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -687,13 +687,13 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.69792in</Width>
+              <Width>1.58334in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.875in</Width>
+              <Width>2.26042in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.34375in</Width>
+              <Width>3.125in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -928,9 +928,9 @@
         </TablixRowHierarchy>
         <DataSetName>PhieuThuChi</DataSetName>
         <Top>2.655in</Top>
-        <Left>1.18625in</Left>
+        <Left>0.68625in</Left>
         <Height>0.5in</Height>
-        <Width>5.91667in</Width>
+        <Width>6.96875in</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
