@@ -162,6 +162,7 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -180,7 +181,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Mặt hàng</Value>
+                              <Value>MẶT HÀNG</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -196,6 +197,7 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -214,7 +216,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Ngày</Value>
+                              <Value>NGÀY</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -230,6 +232,7 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -248,7 +251,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Số lượng</Value>
+                              <Value>SỐ LƯỢNG</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -264,6 +267,7 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -282,7 +286,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Đơn giá</Value>
+                              <Value>ĐƠN GIÁ</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -298,6 +302,7 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -316,7 +321,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Tiền hàng</Value>
+                              <Value>TIỀN HÀNG</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -332,6 +337,7 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>

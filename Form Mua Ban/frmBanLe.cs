@@ -489,12 +489,12 @@ namespace QuanLyKho
         }
         private void numDaTra_ValueChanged(object sender, EventArgs e)
         {
-            if (numDaTra.Value > numTongPhieuBan.Value) numDaTra.Value = numTongPhieuBan.Value;
+            //if (numDaTra.Value > numTongPhieuBan.Value) numDaTra.Value = numTongPhieuBan.Value;
             numConNo.Value = numTongPhieuBan.Value - numDaTra.Value;
         }
         private void numTongPhieuBan_ValueChanged(object sender, EventArgs e)
         {
-            if (numDaTra.Value > numTongPhieuBan.Value) numDaTra.Value = numTongPhieuBan.Value;
+            //if (numDaTra.Value > numTongPhieuBan.Value) numDaTra.Value = numTongPhieuBan.Value;
             numConNo.Value = numTongPhieuBan.Value - numDaTra.Value;
         }
 

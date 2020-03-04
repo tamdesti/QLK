@@ -713,7 +713,7 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>InPhieuBanLe</DataSetName>
-        <Top>2.03472in</Top>
+        <Top>2.40972in</Top>
         <Left>0.3259in</Left>
         <Height>0.79167in</Height>
         <Width>7.22867in</Width>
@@ -813,16 +813,10 @@
               <Width>1.57587in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.4375in</Width>
+              <Width>0.73958in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.18404in</Width>
-            </TablixColumn>
-            <TablixColumn>
-              <Width>0.5625in</Width>
-            </TablixColumn>
-            <TablixColumn>
-              <Width>1.6528in</Width>
+              <Width>3.97572in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -957,16 +951,21 @@
                     </Textbox>
                   </CellContents>
                 </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.25in</Height>
+              <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox27">
+                    <Textbox Name="Textbox14">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Địa chỉ:</Value>
+                              <Value />
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -975,7 +974,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox27</rd:DefaultName>
+                      <rd:DefaultName>Textbox14</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>White</Color>
@@ -991,7 +990,71 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="DiaChi1">
+                    <Textbox Name="Textbox16">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox16</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>White</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox18">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Địa chỉ:</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox18</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>White</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox20">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -1007,7 +1070,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>DiaChi1</rd:DefaultName>
+                      <rd:DefaultName>Textbox20</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>White</Color>
@@ -1031,20 +1094,19 @@
             <TablixMember />
             <TablixMember />
             <TablixMember />
-            <TablixMember />
-            <TablixMember />
           </TablixMembers>
         </TablixColumnHierarchy>
         <TablixRowHierarchy>
           <TablixMembers>
+            <TablixMember />
             <TablixMember />
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>InPhieuBanLe</DataSetName>
         <Top>1.63417in</Top>
         <Left>0.3259in</Left>
-        <Height>0.25in</Height>
-        <Width>6.35021in</Width>
+        <Height>0.5in</Height>
+        <Width>7.22867in</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -1440,7 +1502,7 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>InPhieuBanLe</DataSetName>
-        <Top>3.03125in</Top>
+        <Top>3.40625in</Top>
         <Left>4.49331in</Left>
         <Height>1.25in</Height>
         <Width>2.06126in</Width>
@@ -1641,7 +1703,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox46</rd:DefaultName>
-        <Top>4.67188in</Top>
+        <Top>5.04688in</Top>
         <Left>6.16801in</Left>
         <Height>0.30729in</Height>
         <Width>1.26156in</Width>
@@ -1675,7 +1737,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox46</rd:DefaultName>
-        <Top>4.67188in</Top>
+        <Top>5.04688in</Top>
         <Left>0.60095in</Left>
         <Height>0.30729in</Height>
         <Width>1.48031in</Width>
@@ -1709,7 +1771,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox46</rd:DefaultName>
-        <Top>4.67188in</Top>
+        <Top>5.04688in</Top>
         <Left>2.59385in</Left>
         <Height>0.30729in</Height>
         <Width>1.26156in</Width>
@@ -1743,7 +1805,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox46</rd:DefaultName>
-        <Top>4.67188in</Top>
+        <Top>5.04688in</Top>
         <Left>4.39021in</Left>
         <Height>0.30729in</Height>
         <Width>1.26156in</Width>
@@ -1826,7 +1888,7 @@
             <TablixMember />
           </TablixMembers>
         </TablixRowHierarchy>
-        <Top>3.03125in</Top>
+        <Top>3.40625in</Top>
         <Left>0.3259in</Left>
         <Height>0.63667in</Height>
         <Width>3.25295in</Width>

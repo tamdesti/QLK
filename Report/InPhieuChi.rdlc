@@ -687,10 +687,10 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.35417in</Width>
+              <Width>1.69792in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.4375in</Width>
+              <Width>1.875in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>2.34375in</Width>
@@ -709,7 +709,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Ngày thanh toán</Value>
+                              <Value>NGÀY THANH TOÁN</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -725,6 +725,7 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -742,7 +743,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Số tiền thanh toán</Value>
+                              <Value>SỐ TIỀN THANH TOÁN</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -758,6 +759,7 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -775,7 +777,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Ghi chú</Value>
+                              <Value>GHI CHÚ</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -791,6 +793,7 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -925,9 +928,9 @@
         </TablixRowHierarchy>
         <DataSetName>PhieuThuChi</DataSetName>
         <Top>2.655in</Top>
-        <Left>1.06125in</Left>
+        <Left>1.18625in</Left>
         <Height>0.5in</Height>
-        <Width>5.13542in</Width>
+        <Width>5.91667in</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -954,7 +957,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox25</rd:DefaultName>
         <Top>0.22792in</Top>
-        <Left>2.86333in</Left>
+        <Left>3.18625in</Left>
         <Height>0.51042in</Height>
         <Width>1.91667in</Width>
         <ZIndex>3</ZIndex>

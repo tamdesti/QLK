@@ -142,7 +142,7 @@ namespace QuanLyKho.DataLayer
         }
         public decimal LayTongTien(String ID)
         {
-            OleDbCommand cmd = new OleDbCommand("SELECT SUM(SO_LUONG * DON_GIA_NHAP) FROM CHI_TIET_PHIEU_NHAP WHERE ID_PHIEU_NHAP = @ID");
+            OleDbCommand cmd = new OleDbCommand("SELECT SUM(THANH_TIEN) FROM CHI_TIET_PHIEU_NHAP WHERE ID_PHIEU_NHAP = @ID");
             cmd.Parameters.Add("ID", OleDbType.VarChar, 50).Value = ID;
             return Convert.ToDecimal(m_Ds.ExecuteScalar(cmd));
         }

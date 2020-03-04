@@ -11,6 +11,7 @@
               <TextRun>
                 <Value>BÁO CÁO HÀNG HÓA NHẬP - XUẤT - TỒN</Value>
                 <Style>
+                  <FontSize>14pt</FontSize>
                   <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
@@ -19,10 +20,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox4</rd:DefaultName>
-        <Top>0.95708in</Top>
-        <Left>2.79389in</Left>
+        <Top>1.08208in</Top>
+        <Left>2.16889in</Left>
         <Height>0.32292in</Height>
-        <Width>3.13542in</Width>
+        <Width>4.08334in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -87,7 +88,7 @@
               <Width>0.375in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.22917in</Width>
+              <Width>2.02083in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>0.45in</Width>
@@ -108,7 +109,7 @@
               <Width>0.625in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.53125in</Width>
+              <Width>0.80577in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.05208in</Width>
@@ -1144,7 +1145,7 @@
         <Top>2.04042in</Top>
         <Left>0.32771in</Left>
         <Height>0.90625in</Height>
-        <Width>7.12917in</Width>
+        <Width>8.19535in</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -1167,8 +1168,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox30</rd:DefaultName>
-        <Top>1.28in</Top>
-        <Left>2.79389in</Left>
+        <Top>1.405in</Top>
+        <Left>2.16889in</Left>
         <Height>0.25in</Height>
         <Width>3.13542in</Width>
         <ZIndex>3</ZIndex>
@@ -1186,7 +1187,7 @@
     <Height>11in</Height>
     <Style />
   </Body>
-  <Width>9.23833in</Width>
+  <Width>8.78348in</Width>
   <Page>
     <PageHeight>11.69in</PageHeight>
     <PageWidth>8.27in</PageWidth>

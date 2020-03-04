@@ -606,7 +606,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Ngày thanh toán</Value>
+                              <Value>NGÀY THANH TOÁN</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -640,7 +640,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Số tiền thanh toán</Value>
+                              <Value>SỐ TIỀN THANH TOÁN</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -674,7 +674,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Ghi chú</Value>
+                              <Value>GHI CHÚ</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>

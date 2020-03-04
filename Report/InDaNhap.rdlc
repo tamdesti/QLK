@@ -53,6 +53,7 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -70,7 +71,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Tên Sản Phẩm</Value>
+                              <Value>TÊN SẢN PHẨM</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -86,6 +87,7 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -103,7 +105,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Nhà cung cấp</Value>
+                              <Value>NHÀ CUNG CẤP</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -119,6 +121,7 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -136,7 +139,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Số lượng</Value>
+                              <Value>SỐ LƯỢNG</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -152,6 +155,7 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -169,7 +173,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Đơn giá</Value>
+                              <Value>ĐƠN GIÁ</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -185,6 +189,7 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -202,7 +207,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Tổng tiền</Value>
+                              <Value>TỔNG TIỀN</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -218,6 +223,7 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -596,8 +602,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DaNhap</DataSetName>
-        <Top>1.12375in</Top>
-        <Left>0.16541in</Left>
+        <Top>2.12375in</Top>
+        <Left>0.29041in</Left>
         <Height>0.75in</Height>
         <Width>7.53125in</Width>
         <Style>
@@ -624,8 +630,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox35</rd:DefaultName>
-        <Top>0.23833in</Top>
-        <Left>4.75916in</Left>
+        <Top>0.86333in</Top>
+        <Left>3.13416in</Left>
         <Height>0.51042in</Height>
         <Width>1.8125in</Width>
         <ZIndex>1</ZIndex>
@@ -805,8 +811,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DaNhap</DataSetName>
-        <Top>0.79042in</Top>
-        <Left>4.00916in</Left>
+        <Top>1.41542in</Top>
+        <Left>2.38416in</Left>
         <Height>0.25in</Height>
         <Width>3.6875in</Width>
         <ZIndex>2</ZIndex>

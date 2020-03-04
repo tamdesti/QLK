@@ -97,10 +97,10 @@
               <Width>0.96618in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.14583in</Width>
+              <Width>1.33333in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.08333in</Width>
+              <Width>1.36458in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>1.0625in</Width>
@@ -135,6 +135,7 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -153,7 +154,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Tên khách hàng</Value>
+                              <Value>TÊN KHÁCH HÀNG</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -169,6 +170,7 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -187,7 +189,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Địa chỉ</Value>
+                              <Value>ĐỊA CHỈ</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -203,6 +205,7 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -221,7 +224,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Nợ đầu kỳ</Value>
+                              <Value>NỢ ĐẦU KỲ</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -237,6 +240,7 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -255,7 +259,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Phát sinh tăng</Value>
+                              <Value>PHÁT SINH TĂNG</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -271,6 +275,7 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -289,7 +294,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Phát sinh giảm</Value>
+                              <Value>PHÁT SINH GIẢM</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -305,6 +310,7 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -323,7 +329,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Nợ hiện tại</Value>
+                              <Value>NỢ HIỆN TẠI</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -339,6 +345,7 @@
                         <Border>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
                         <VerticalAlign>Middle</VerticalAlign>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
@@ -779,9 +786,9 @@
         </TablixRowHierarchy>
         <DataSetName>DataSetKhoanPhaiThu</DataSetName>
         <Top>1.73833in</Top>
-        <Left>0.32771in</Left>
+        <Left>0.26521in</Left>
         <Height>0.75in</Height>
-        <Width>7.74743in</Width>
+        <Width>8.21618in</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -823,7 +830,7 @@
     <Height>11in</Height>
     <Style />
   </Body>
-  <Width>9.23833in</Width>
+  <Width>8.7in</Width>
   <Page>
     <PageHeight>11.69in</PageHeight>
     <PageWidth>8.27in</PageWidth>
