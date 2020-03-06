@@ -71,12 +71,20 @@ namespace QuanLyKho
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            //DataRowView row = (DataRowView)bindingNavigator1.BindingSource.Current;
-            //txtHoTen.Text = row["HO_TEN"].ToString();
-            //txtDiaChi.Text = row["DIA_CHI"].ToString();
-            //txtSDT.Text = row["DIEN_THOAI"].ToString();
-            //toolLuu.Enabled = true;
-            //btnClear.Enabled = true;
+            DataRowView row = (DataRowView)bindingNavigator1.BindingSource.Current;
+            GhiChu.Text = row["GHI_CHU"].ToString();
+            numThanhToan.Value  = Convert.ToInt64(row["TONG_TIEN"].ToString());
+            btnLuu.Enabled = true;
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            DataRowView row = (DataRowView)bindingNavigator1.BindingSource.Current;
+            row["GHI_CHU"] = GhiChu.Text;
+            row["TONG_TIEN"] = numThanhToan.Value;
+            PTT.CapNhatChiTietPhieuThu(row);
+            dataGridView1.Refresh();
+            btnLuu.Enabled = false;
         }
     }
 }

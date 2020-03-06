@@ -43,7 +43,17 @@ namespace QuanLyKho.Controller
             }
             return ph;
         }
-        
+        public void CapNhatChiTietPhieuThu(DataRowView row)
+        {
+            PhieuThanhToanFactory CTPT = new PhieuThanhToanFactory();
+            DataTable tbl = CTPT.LayPhieuThanhToan(row["ID"].ToString());
+            if (tbl.Rows.Count > 0)
+            {
+                tbl.Rows[0]["GHI_CHU"] = row["GHI_CHU"];
+                tbl.Rows[0]["TONG_TIEN"] = row["TONG_TIEN"];
+                CTPT.Save();
+            }
+        }
         public void HienthiPhieuThanhToan(BindingNavigator bn, DataGridView dg, String IDPhieuBan)
         {
             BindingSource bs = new BindingSource();
