@@ -51,6 +51,7 @@ namespace QuanLyKho.Controller
             {
                 tbl.Rows[0]["GHI_CHU"] = row["GHI_CHU"];
                 tbl.Rows[0]["TONG_TIEN"] = row["TONG_TIEN"];
+                tbl.Rows[0]["NGAY_THANH_TOAN"] = row["NGAY_THANH_TOAN"];
                 CTPT.Save();
             }
         }

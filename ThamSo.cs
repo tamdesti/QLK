@@ -63,16 +63,16 @@ namespace QuanLyKho
 
         }
 
-        public static long LayMaPhieuThanhToan()
+        public static long LayMaPhieuThu()
         {
             DataService ds = new DataService();
-            object obj = ds.ExecuteScalar(new OleDbCommand("SELECT PHIEU_THANH_TOAN FROM THAM_SO"));
+            object obj = ds.ExecuteScalar(new OleDbCommand("SELECT PHIEU_THU FROM THAM_SO"));
             return Convert.ToInt64(obj);
         }
         public static void GanMaPhieuThanhToan(long id)
         {
             DataService ds = new DataService();
-            ds.ExecuteNoneQuery(new OleDbCommand("UPDATE THAM_SO SET PHIEU_THANH_TOAN = " + id));
+            ds.ExecuteNoneQuery(new OleDbCommand("UPDATE THAM_SO SET PHIEU_THU = " + id));
 
         }
 

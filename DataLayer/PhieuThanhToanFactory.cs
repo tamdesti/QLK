@@ -12,21 +12,21 @@ namespace QuanLyKho.DataLayer
 
         public DataTable DanhsachPhieuThanhToan()
         {
-            OleDbCommand cmd = new OleDbCommand("SELECT * FROM PHIEU_THANH_TOAN");
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM PHIEU_THU");
             m_Ds.Load(cmd);
 
             return m_Ds;
         }
         public DataTable DanhsachPhieuThanhToanTheoPhieuBan(String IDPhieuBan)
         {
-            OleDbCommand cmd = new OleDbCommand("SELECT * FROM PHIEU_THANH_TOAN WHERE ID_PHIEU_BAN=@PB");
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM PHIEU_THU WHERE ID_PHIEU_BAN=@PB");
             cmd.Parameters.Add("PB", OleDbType.VarChar, 50).Value = IDPhieuBan;
             m_Ds.Load(cmd);
             return m_Ds;
         }
         public DataTable LayPhieuThanhToan(String id)
         {
-            OleDbCommand cmd = new OleDbCommand("SELECT * FROM PHIEU_THANH_TOAN WHERE ID = @id");
+            OleDbCommand cmd = new OleDbCommand("SELECT * FROM PHIEU_THU WHERE ID = @id");
             cmd.Parameters.Add("id", OleDbType.VarChar,50).Value = id;
             m_Ds.Load(cmd);
             return m_Ds;
@@ -34,7 +34,7 @@ namespace QuanLyKho.DataLayer
         public static long LayTongTien(String kh, int thang, int nam)
         {
             DataService ds = new DataService();
-            OleDbCommand cmd = new OleDbCommand("SELECT SUM(TONG_TIEN) FROM PHIEU_THANH_TOAN WHERE ID_KHACH_HANG = @kh AND MONTH(NGAY_THANH_TOAN)=@thang AND YEAR(NGAY_THANH_TOAN)= @nam");
+            OleDbCommand cmd = new OleDbCommand("SELECT SUM(TONG_TIEN) FROM PHIEU_THU WHERE ID_KHACH_HANG = @kh AND MONTH(NGAY_THANH_TOAN)=@thang AND YEAR(NGAY_THANH_TOAN)= @nam");
             cmd.Parameters.Add("kh", OleDbType.VarChar, 50).Value = kh;
             cmd.Parameters.Add("thang", OleDbType.Integer).Value = thang;
             cmd.Parameters.Add("nam", OleDbType.Integer).Value = nam;
@@ -48,7 +48,7 @@ namespace QuanLyKho.DataLayer
         }
         public int ThemPhieuThanhToan(BusinessObject.PhieuThanhToan PTT)
         {
-            OleDbCommand cmd = new OleDbCommand("INSERT INTO PHIEU_THANH_TOAN VALUES(@ID, @NgayThanhToan, @TongTien, @KH, @GhiChu, @PB)");
+            OleDbCommand cmd = new OleDbCommand("INSERT INTO PHIEU_THU VALUES(@ID, @NgayThanhToan, @TongTien, @KH, @GhiChu, @PB)");
             cmd.Parameters.Add("ID", OleDbType.VarChar, 50).Value = PTT.Id;
             cmd.Parameters.Add("NgayThanhToan", OleDbType.Date).Value = PTT.NgayThanhToan;
             cmd.Parameters.Add("TongTien", OleDbType.Double).Value = PTT.TongTien;
@@ -59,7 +59,7 @@ namespace QuanLyKho.DataLayer
         }
         public int XoaPhieuThanhToanTheoIDPhieuBan(String IDPhieuBan)
         {
-            OleDbCommand cmd = new OleDbCommand("DELETE FROM PHIEU_THANH_TOAN WHERE ID_PHIEU_BAN = @ID");
+            OleDbCommand cmd = new OleDbCommand("DELETE FROM PHIEU_THU WHERE ID_PHIEU_BAN = @ID");
             cmd.Parameters.Add("ID", OleDbType.VarChar, 50).Value = IDPhieuBan;
             return m_Ds.ExecuteNoneQuery(cmd);
         }

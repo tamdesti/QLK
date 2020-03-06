@@ -83,7 +83,7 @@ namespace QuanLyKho
             KhachHangController KH = new KhachHangController();
             PhieuBanController PB = new PhieuBanController();
             BusinessObject.PhieuThanhToan PTT = new BusinessObject.PhieuThanhToan();
-            long maso = ThamSo.LayMaPhieuThanhToan();
+            long maso = ThamSo.LayMaPhieuThu();
             PTT.Id = maso.ToString();
             PTT.NgayThanhToan = dtNgayTra.Value.Date;
             PTT.TongTien = (long)numThanhToan.Value;

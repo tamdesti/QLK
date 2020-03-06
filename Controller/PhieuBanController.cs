@@ -127,6 +127,18 @@ namespace QuanLyKho.Controller
             PhieuBanFactory PBFactory = new PhieuBanFactory();
             return PBFactory.LayTongTien(IDPhieuNhap);
         }
+        public void CapNhatPhieuBan(string IDPhieuban, decimal TongTien, decimal Datra, decimal ConNo)
+        {
+            PhieuBanFactory PBFactory = new PhieuBanFactory();
+            DataTable tbl = PBFactory.LayPhieuBan(IDPhieuban);
+            if (tbl.Rows.Count > 0)
+            {
+                tbl.Rows[0]["TONG_TIEN"] = TongTien;
+                tbl.Rows[0]["DA_TRA"] = Datra;
+                tbl.Rows[0]["CON_NO"] = ConNo;
+                PBFactory.Save();
+            }
+        }
         public void CapNhatPhieuBan(DataRow row)
         {
             PhieuBanFactory PBFactory = new PhieuBanFactory();

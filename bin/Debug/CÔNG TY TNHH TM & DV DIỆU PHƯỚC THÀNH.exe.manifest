@@ -233,14 +233,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CÔNG TY TNHH TM &amp; DV DIỆU PHƯỚC THÀNH.exe" size="2053120">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CÔNG TY TNHH TM &amp; DV DIỆU PHƯỚC THÀNH.exe" size="2053632">
       <assemblyIdentity name="CÔNG TY TNHH TM &amp; DV DIỆU PHƯỚC THÀNH" version="1.0.0.26" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>vj/y006JfJ4bDYjd6CIvM5zrAYXrSVDvL64NuRsklug=</dsig:DigestValue>
+        <dsig:DigestValue>lhgVEcmmCc2n2EUbeF74MUo+eRynI1LdrCNsMQruq0Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

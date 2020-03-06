@@ -597,7 +597,7 @@ namespace QuanLyKho
                     PhieuThanhToanController PhieuThanhToan = new PhieuThanhToanController();
                     PhieuThanhToan.XoaPhieuThanhToanTheoIDPhieuBan(MaPhieuBan);
                     BusinessObject.PhieuThanhToan PTT = new BusinessObject.PhieuThanhToan();
-                    long maso = ThamSo.LayMaPhieuThanhToan();
+                    long maso = ThamSo.LayMaPhieuThu();
                     PTT.Id = maso.ToString();
                     PTT.NgayThanhToan = DateTime.Now.Date;
                     PTT.TongTien = (long)numDaTra.Value;

@@ -192,7 +192,7 @@ namespace QuanLyKho.DataLayer
             OleDbCommand cmd = new OleDbCommand("SELECT ID_KHACH_HANG, [HO_TEN] & \"_\" & [DIEN_THOAI] AS [Tên Khách hàng], DIA_CHI AS [Địa chỉ], " +
                                                 "[Nợ hiện tại] AS [Nợ đầu kỳ], " +
                                                 "DSUM(\"PHIEU_BAN.TONG_TIEN - PHIEU_BAN.DA_TRA\", \"PHIEU_BAN\", \"ID_KHACH_HANG='\" & ID_KHACH_HANG & \"' AND NGAY_BAN= Date() \") AS [Phát sinh tăng], " +
-                                                "DSUM(\"PHIEU_THANH_TOAN.TONG_TIEN\", \"PHIEU_THANH_TOAN\", \"ID_KHACH_HANG='\" & ID_KHACH_HANG & \"' AND NGAY_THANH_TOAN= Date() \") AS [Phát sinh giảm], "+
+                                                "DSUM(\"PHIEU_THU.TONG_TIEN\", \"PHIEU_THU\", \"ID_KHACH_HANG='\" & ID_KHACH_HANG & \"' AND NGAY_THANH_TOAN= Date() \") AS [Phát sinh giảm], "+
                                                 "LAST(CON_NO) AS [Nợ hiện tại] " +
                                                 "FROM PHIEU_BAN PB INNER JOIN KHACH_HANG KH ON KH.ID = PB.ID_KHACH_HANG " +
                                                 "WHERE KH.LOAI_KH=false " +
