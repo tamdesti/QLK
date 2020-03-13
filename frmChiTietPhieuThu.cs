@@ -86,6 +86,7 @@ namespace QuanLyKho
             GhiChu.Text = row["GHI_CHU"].ToString();
             numThanhToan.Value  = Convert.ToInt64(row["TONG_TIEN"].ToString());
             btnLuu.Enabled = true;
+            btnXoa.Enabled = true;
             TienThanhToan = numThanhToan.Value;
         }
 
@@ -98,11 +99,25 @@ namespace QuanLyKho
             PTT.CapNhatChiTietPhieuThu(row);
             dataGridView1.Refresh();
             btnLuu.Enabled = false;
+            btnXoa.Enabled = false;
             decimal TienLech = TienThanhToan - numThanhToan.Value;
             decimal DaTraMoi = 0;
             DaTraMoi = DaTraCu - TienLech;
             PB.CapNhatPhieuBan(IDPhieuBan, TongTien, DaTraMoi, TongTien - DaTraMoi);
             LoadChiTietPhieuBan();
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            decimal DaTraMoi = 0;
+            DaTraMoi = DaTraCu - TienThanhToan;
+            PB.CapNhatPhieuBan(IDPhieuBan, TongTien, DaTraMoi, TongTien - DaTraMoi);
+            LoadChiTietPhieuBan();
+            DataRowView row = (DataRowView)bindingNavigator1.BindingSource.Current;
+            PTT.XoaPhieuThu(row["ID"].ToString());
+            PTT.HienthiPhieuThanhToan(bindingNavigator1, dataGridView1, IDPhieuBan);
+            btnLuu.Enabled = false;
+            btnXoa.Enabled = false;
         }
     }
 }

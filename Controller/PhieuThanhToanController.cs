@@ -70,5 +70,9 @@ namespace QuanLyKho.Controller
         {
             return factory.XoaPhieuThanhToanTheoIDPhieuBan(IDPhieuBan);
         }
+        public int XoaPhieuThu(string ID)
+        {
+            return factory.XoaPhieuThu(ID);
+        }
     }
 }

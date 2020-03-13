@@ -32,8 +32,7 @@ namespace QuanLyKho
         private void frmMain_Load(object sender, EventArgs e)
         {
             DataService.OpenConnection();
-            //checkDB();
-            //AutoNotice();
+            checkDB();
         }
         private void checkDB()
         {
@@ -48,30 +47,12 @@ namespace QuanLyKho
                 {
                     Directory.CreateDirectory(@Str + @"\Back Up Data");
                 }
-                if (File.Exists(@Str + @"\cuahang.dll"))
+                if (File.Exists(@Str + @"\cuahang.mdb"))
                 {
                     String filename = @"\Back Up Data\cuahang_" + DateTime.Now.Date.ToString("yyyyMMdd");
                     if (!File.Exists(@Str + @filename))
                     {
-                        File.Copy(@Str + @"\cuahang.dll", @Str + @filename);
-                    }
-                }
-            }
-        }
-        private void AutoNotice()
-        {
-            QuanLyKho.Controller.SanPhamController sp = new Controller.SanPhamController();
-            if (sp.CohangSapHetHan())
-            {
-                if (MessageBox.Show("Có lô hàng sắp hết hạn. Đến kiểm tra?", "Sản phẩm sắp hết hạn", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    BusinessObject.CuaHang ch = ThamSo.LayCuaHang();
-                    if (ch.NgayBaoHetHan > 0)
-                    {
-                        frmGanHetHan BaoHethan = new frmGanHetHan();
-                        FillFullScreen(BaoHethan);
-                        BaoHethan.MdiParent = this;
-                        BaoHethan.Show();
+                        File.Copy(@Str + @"\cuahang.mdb", @Str + @filename);
                     }
                 }
             }

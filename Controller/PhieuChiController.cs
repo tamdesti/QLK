@@ -28,6 +28,18 @@ namespace QuanLyKho.Controller
         {
             return factory.ThemPhieuChi(PC);
         }
+        public void CapNhatChiTietPhieuChi(DataRowView row)
+        {
+            PhieuChiFactory PhieuChi = new PhieuChiFactory();
+            DataTable tbl = PhieuChi.LayPhieuChi(row["ID"].ToString());
+            if (tbl.Rows.Count > 0)
+            {
+                tbl.Rows[0]["GHI_CHU"] = row["GHI_CHU"];
+                tbl.Rows[0]["TONG_TIEN"] = row["TONG_TIEN"];
+                tbl.Rows[0]["NGAY_CHI"] = row["NGAY_CHI"];
+                PhieuChi.Save();
+            }
+        }
         public void HienThiDanhSachPhieuChiTheoPhieuNhap(BindingNavigator bn, DataGridView dg, String IDPhieuNhap)
         {
             BindingSource bs = new BindingSource();
@@ -38,6 +50,10 @@ namespace QuanLyKho.Controller
         public int XoaPhieuChiTheoIDPhieuNhap(string IDPhieuNhap)
         {
             return factory.XoaPhieuChiTheoIDPhieuNhap(IDPhieuNhap);
+        }
+        public int XoaPhieuChi(string ID)
+        {
+            return factory.XoaPhieuChi(ID);
         }
     }
 }

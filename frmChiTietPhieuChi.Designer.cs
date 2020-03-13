@@ -72,6 +72,15 @@
             this.lb5 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.dtNgayTra = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.GhiChu = new System.Windows.Forms.RichTextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.numThanhToan = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -79,6 +88,8 @@
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numThanhToan)).BeginInit();
             this.SuspendLayout();
             // 
             // lbConNo
@@ -201,7 +212,6 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -271,8 +281,9 @@
             this.dataGridView1.Location = new System.Drawing.Point(3, 62);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1015, 74);
+            this.dataGridView1.Size = new System.Drawing.Size(1015, 183);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // colID
             // 
@@ -336,9 +347,9 @@
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Controls.Add(this.bindingNavigator1);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(0, 314);
+            this.groupBox2.Location = new System.Drawing.Point(0, 376);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1021, 139);
+            this.groupBox2.Size = new System.Drawing.Size(1021, 248);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             // 
@@ -465,20 +476,127 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.groupBox5);
             this.groupBox1.Controls.Add(this.groupBox4);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1021, 314);
+            this.groupBox1.Size = new System.Drawing.Size(1021, 376);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.btnXoa);
+            this.groupBox5.Controls.Add(this.dtNgayTra);
+            this.groupBox5.Controls.Add(this.label1);
+            this.groupBox5.Controls.Add(this.GhiChu);
+            this.groupBox5.Controls.Add(this.label4);
+            this.groupBox5.Controls.Add(this.btnLuu);
+            this.groupBox5.Controls.Add(this.numThanhToan);
+            this.groupBox5.Controls.Add(this.label3);
+            this.groupBox5.Location = new System.Drawing.Point(269, 160);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(547, 196);
+            this.groupBox5.TabIndex = 10;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Thanh Toán";
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnXoa.Enabled = false;
+            this.btnXoa.Location = new System.Drawing.Point(285, 136);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(77, 37);
+            this.btnXoa.TabIndex = 38;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // dtNgayTra
+            // 
+            this.dtNgayTra.CustomFormat = "dd/MM/yyyy";
+            this.dtNgayTra.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtNgayTra.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtNgayTra.Location = new System.Drawing.Point(231, 16);
+            this.dtNgayTra.Name = "dtNgayTra";
+            this.dtNgayTra.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dtNgayTra.Size = new System.Drawing.Size(100, 20);
+            this.dtNgayTra.TabIndex = 37;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(164, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 13);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Ngày trả:";
+            // 
+            // GhiChu
+            // 
+            this.GhiChu.Location = new System.Drawing.Point(315, 59);
+            this.GhiChu.Name = "GhiChu";
+            this.GhiChu.Size = new System.Drawing.Size(200, 63);
+            this.GhiChu.TabIndex = 4;
+            this.GhiChu.Text = "";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(251, 83);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(47, 13);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Ghi chú:";
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLuu.Enabled = false;
+            this.btnLuu.Location = new System.Drawing.Point(191, 136);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(74, 37);
+            this.btnLuu.TabIndex = 5;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
+            // numThanhToan
+            // 
+            this.numThanhToan.Location = new System.Drawing.Point(94, 81);
+            this.numThanhToan.Maximum = new decimal(new int[] {
+            1410065408,
+            2,
+            0,
+            0});
+            this.numThanhToan.Minimum = new decimal(new int[] {
+            1410065408,
+            2,
+            0,
+            -2147483648});
+            this.numThanhToan.Name = "numThanhToan";
+            this.numThanhToan.Size = new System.Drawing.Size(120, 20);
+            this.numThanhToan.TabIndex = 3;
+            this.numThanhToan.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numThanhToan.ThousandsSeparator = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 83);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Thanh Toán:";
             // 
             // frmChiTietPhieuChi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1021, 453);
+            this.ClientSize = new System.Drawing.Size(1021, 624);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmChiTietPhieuChi";
@@ -495,6 +613,9 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numThanhToan)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -540,5 +661,14 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lbNoCu;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.DateTimePicker dtNgayTra;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RichTextBox GhiChu;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.NumericUpDown numThanhToan;
+        private System.Windows.Forms.Label label3;
     }
 }

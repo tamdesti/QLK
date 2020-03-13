@@ -104,6 +104,18 @@ namespace QuanLyKho.Controller
         {
             return factory.LayTongTien(IDPhieuNhap);
         }
+        public void CapNhatPhieuNhap(string IDPhieuNhap, decimal TongTien, decimal Datra, decimal ConNo)
+        {
+            PhieuNhapFactory PNFactory = new PhieuNhapFactory();
+            DataTable tbl = PNFactory.LayPhieuNhap(IDPhieuNhap);
+            if (tbl.Rows.Count > 0)
+            {
+                tbl.Rows[0]["TONG_TIEN"] = TongTien;
+                tbl.Rows[0]["DA_TRA"] = Datra;
+                tbl.Rows[0]["CON_NO"] = ConNo;
+                PNFactory.Save();
+            }
+        }
         public void CapNhatPhieuNhap(DataRow row)
         {
             PhieuNhapFactory PNFactory = new PhieuNhapFactory();

@@ -63,6 +63,12 @@ namespace QuanLyKho.DataLayer
             cmd.Parameters.Add("ID", OleDbType.VarChar, 50).Value = IDPhieuBan;
             return m_Ds.ExecuteNoneQuery(cmd);
         }
+        public int XoaPhieuThu(String ID)
+        {
+            OleDbCommand cmd = new OleDbCommand("DELETE FROM PHIEU_THU WHERE ID = @ID");
+            cmd.Parameters.Add("ID", OleDbType.VarChar, 50).Value = ID;
+            return m_Ds.ExecuteNoneQuery(cmd);
+        }
         public DataRow NewRow()
         {
             return m_Ds.NewRow();
